@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}KrishiMitra AI - Kerala Agriculture Scheme Intelligence{% endblock %}</title>
+  <meta name="description" content="AI-Powered Kerala Agriculture Government Scheme Discovery, Verification and Farmer Assistance Platform.">
+  <link rel="stylesheet" href="/static/css/app.css">
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+  <!-- Navigation Header -->
+  <nav class="navbar">
+    <a href="/" class="brand">
+      <div class="brand-icon">🌱</div>
+      <div>
+        <div class="brand-title">KrishiMitra AI</div>
+        <div class="brand-subtitle">Kerala Agriculture Intelligence</div>
+      </div>
+    </a>
+    <div class="nav-actions">
+      <button id="langToggleBtn" class="lang-toggle" title="Switch English / Malayalam">മലയാളം</button>
+      <a href="/admin-portal/" class="admin-link">⚙️ Admin Studio</a>
+    </div>
+  </nav>
+
+  {% block content %}{% endblock %}
+
+  <footer style="background: #0f172a; color: #94a3b8; text-align: center; padding: 2rem 1rem; font-size: 0.85rem; border-top: 1px solid #1e293b;">
+    <p><strong>KrishiMitra AI</strong> &mdash; Production Government Scheme Intelligence & Document Management System for Kerala, India.</p>
+    <p style="margin-top: 0.5rem; color: #64748b;">Continuously monitoring official portals: keralaagriculture.gov.in, aimsnew.kerala.gov.in, kathir.kerala.gov.in, Central Ministries & Commodity Boards.</p>
+  </footer>
+
+  {% block extra_scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+
+{% block title %}KrishiMitra AI - Kerala Agriculture Assistance Platform{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<header class="hero-section">
+  <div class="hero-badge">🟢 Official Kerala & Central Government Coverage</div>
+  <h1 id="heroTitle" class="hero-title">Kerala Agriculture Scheme Intelligence</h1>
+  <p id="heroDesc" class="hero-description">
+    Discover, verify and apply for agricultural subsidies, crop insurance, and farmer welfare benefits across Kerala.
+  </p>
+
+  <!-- Search & Voice Input -->
+  <div class="search-container">
+    <div class="search-box">
+      <input type="text" id="globalSearchInput" class="search-input" placeholder="Ask anything (e.g. Subsidy for Pepper, PM-KISAN documents, Wayanad schemes)...">
+      <button id="voiceSearchBtn" class="voice-btn" title="Speak in Malayalam or English">🎤</button>
+      <button id="searchSubmitBtn" class="search-submit-btn" onclick="performSearch()">Search</button>
+    </div>
+  </div>
+</header>
+
+<!-- Main Container -->
+<main class="main-container">
+  <!-- Crop Filter Pills -->
+  <div class="filter-pills">
+    <button class="pill active" onclick="filterByCrop('', this)">All Schemes</button>
+    <button class="pill" onclick="filterByCrop('Paddy', this)">Paddy (നെല്ല്)</button>
+    <button class="pill" onclick="filterByCrop('Coconut', this)">Coconut (തെങ്ങ്)</button>
+    <button class="pill" onclick="filterByCrop('Pepper', this)">Pepper (കുരുമുളക്)</button>
+    <button class="pill" onclick="filterByCrop('Cardamom', this)">Cardamom (ഏലം)</button>
+    <button class="pill" onclick="filterByCrop('Banana', this)">Banana (വാഴ)</button>
+    <button class="pill" onclick="filterByCrop('Dairy', this)">Dairy (ക്ഷീരം)</button>
+  </div>
+
+  <div class="content-grid">
+    <!-- Left Column: Schemes List & Eligibility Checker -->
+    <div>
+      <!-- Eligibility Checker Card -->
+      <section class="card" id="eligibilityCard">
+        <div class="card-header">
+          <div>
+            <h2 id="eligibilityCardTitle" class="card-title">Check Your Eligibility</h2>
+            <p style="font-size: 0.85rem; color: #64748b;">Instant subsidy calculation based on landholding and crop</p>
+          </div>
+          <span class="badge badge-subsidy">Instant Matching</span>
+        </div>
+
+        <form id="eligibilityForm">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label">District (ജില്ല)</label>
+              <select id="elDistrict" class="form-control">
+                <option value="Wayanad" selected>Wayanad (വയനാട്)</option>
+                <option value="Palakkad">Palakkad (പാലക്കാട്)</option>
+                <option value="Alappuzha">Alappuzha (ആലപ്പുഴ)</option>
+                <option value="Idukki">Idukki (ഇടുക്കി)</option>
+                <option value="Thrissur">Thrissur (തൃശ്ശൂർ)</option>
+                <option value="Ernakulam">Ernakulam (എറണാകുളം)</option>
+                <option value="Kottayam">Kottayam (കോട്ടയം)</option>
+                <option value="Kollam">Kollam (കൊല്ലം)</option>
+                <option value="Thiruvananthapuram">Thiruvananthapuram (തിരുവനന്തപുരം)</option>
+                <option value="Pathanamthitta">Pathanamthitta (പത്തനംതിട്ട)</option>
+                <option value="Malappuram">Malappuram (മലപ്പുറം)</option>
+                <option value="Kozhikode">Kozhikode (കോഴിക്കോട്)</option>
+                <option value="Kannur">Kannur (കണ്ണൂർ)</option>
+                <option value="Kasaragod">Kasaragod (കാസർഗോഡ്)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Total Land (ഭൂമി - ഏക്കർ)</label>
+              <input type="number" id="elLandAcres" class="form-control" value="2.0" step="0.1" min="0.1">
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label">Primary Crop (പ്രധാന വിള)</label>
+              <select id="elCrop" class="form-control">
+                <option value="Pepper" selected>Pepper (കുരുമുളക്)</option>
+                <option value="Paddy">Paddy (നെല്ല്)</option>
+                <option value="Coconut">Coconut (തെങ്ങ്)</option>
+                <option value="Cardamom">Cardamom (ഏലം)</option>
+                <option value="Banana">Banana (വാഴ)</option>
+                <option value="Vegetables">Vegetables (പച്ചക്കറി)</option>
+                <option value="Dairy">Dairy (പശു വളർത്തൽ)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Farmer Category (വിഭാഗം)</label>
+              <select id="elFarmerType" class="form-control">
+                <option value="Small Farmer" selected>Small Farmer (ചെറുകിട)</option>
+                <option value="Marginal Farmer">Marginal Farmer (നാമമാത്ര)</option>
+                <option value="Women Farmer">Women Farmer (വനിതാ കർഷക)</option>
+                <option value="Kudumbashree JLG">Kudumbashree JLG (കുടുംബശ്രീ)</option>
+                <option value="Tenant Farmer">Tenant Farmer (പാട്ടക്കർഷകൻ)</option>
+              </select>
+            </div>
+          </div>
+
+          <input type="hidden" id="elCategory" value="General">
+          <button type="submit" class="btn-primary">Find My Eligible Schemes</button>
+        </form>
+
+        <div id="eligibilityResultBox" style="display: none; margin-top: 1.25rem;"></div>
+      </section>
+
+      <!-- Schemes Catalogue -->
+      <section>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+          <h2 style="font-size: 1.35rem; font-weight: 700;">Verified Government Schemes</h2>
+          <span style="font-size: 0.85rem; color: #64748b;">Live official database</span>
+        </div>
+        <div id="schemesListContainer"></div>
+      </section>
+    </div>
+
+    <!-- Right Column: AI Assistant Chatbot -->
+    <aside>
+      <div class="chat-window">
+        <div class="chat-header">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <span>🤖</span>
+            <div>
+              <div id="chatTitleText" style="font-weight: 700; font-size: 0.95rem;">KrishiMitra AI Assistant</div>
+              <div style="font-size: 0.75rem; color: #a7f3d0;">Verified citations & guidelines</div>
+            </div>
+          </div>
+          <span class="badge" style="background: rgba(255,255,255,0.2); color: white;">Online</span>
+        </div>
+
+        <div id="chatMessagesContainer" class="chat-messages">
+          <div class="message message-bot">
+            നമസ്കാരം! I am KrishiMitra AI. You can ask me in Malayalam or English about any Kerala agricultural subsidy, crop loss assistance, or PM-KISAN guidelines.
+          </div>
+        </div>
+
+        <div class="chat-input-bar">
+          <input type="text" id="chatInputField" class="chat-input" placeholder="Ask in Malayalam or English...">
+          <button id="chatSendBtn" class="chat-send-btn">Send</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="/static/js/farmer.js"></script>
+{% endblock %}
