@@ -22,7 +22,12 @@ def get_logger(name: str) -> logging.Logger:
     level = getattr(logging, LOG_LEVEL.upper(), logging.INFO)
     logger.setLevel(level)
 
-    # Console Handler
+    # Console Handler (safe against UnicodeEncodeError on Windows cp1252 consoles)
+    try:
+        if hasattr(sys.stdout, "reconfigure"):
+            sys.stdout.reconfigure(errors="replace")
+    except Exception:
+        pass
     c_handler = logging.StreamHandler(sys.stdout)
     c_handler.setLevel(level)
     c_fmt = logging.Formatter("[%(asctime)s] [%(levelname)s] [%(name)s]: %(message)s", datefmt="%H:%M:%S")

@@ -223,6 +223,13 @@ class SchemeExtractor:
                     )
                 )
 
+                # Clean up existing child rows for idempotency
+                cur.execute("DELETE FROM scheme_eligibility WHERE scheme_id = %s;", (scheme_id,))
+                cur.execute("DELETE FROM scheme_benefits WHERE scheme_id = %s;", (scheme_id,))
+                cur.execute("DELETE FROM scheme_crops WHERE scheme_id = %s;", (scheme_id,))
+                cur.execute("DELETE FROM scheme_districts WHERE scheme_id = %s;", (scheme_id,))
+                cur.execute("DELETE FROM application_guidelines WHERE scheme_id = %s;", (scheme_id,))
+
                 # 2. Insert Eligibility
                 cur.execute(
                     """

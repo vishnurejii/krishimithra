@@ -20,7 +20,11 @@ COMMODITY_BOARD_TARGETS = [
         "name": "Coconut Development Board",
         "urls": [
             "https://coconutboard.gov.in/",
-            "https://coconutboard.gov.in/schemes.aspx",
+            "https://coconutboard.gov.in/index.aspx",
+            "https://coconutboard.gov.in/scheme.aspx",
+            "https://coconutboard.gov.in/ApplicationForms.aspx",
+            "https://coconutboard.gov.in/TechnologyMission.aspx",
+            "https://coconutboard.gov.in/NoticeBoard.aspx",
             "https://coconutboard.gov.in/Replanting.aspx"
         ]
     },
@@ -87,12 +91,13 @@ class CommodityBoardsCrawlerAdapter(BaseCrawler):
                     for link in soup.find_all("a", href=True):
                         href = link.get("href", "").strip()
                         full_url = self.normalize_url(url, href)
-                        text = link.get_text().strip()
+                        text = " ".join(link.get_text().split())
 
                         if self.is_document_url(full_url) and full_url not in seen_urls:
                             seen_urls.add(full_url)
                             score, matched_kws = match_keywords(f"{text} {full_url}")
-                            doc_title = text if len(text) > 4 else full_url.split("/")[-1]
+                            filename = full_url.split("/")[-1].split("?")[0]
+                            doc_title = text if len(text) > 4 else filename
 
                             doc = DiscoveredDocument(
                                 title=doc_title,
