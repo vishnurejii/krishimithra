@@ -98,3 +98,4 @@ def fix_db():
 if __name__ == "__main__":
     fix_file()
     fix_db()
+

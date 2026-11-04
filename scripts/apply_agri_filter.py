@@ -71,3 +71,4 @@ for line in lines:
 
 dep_path.write_text("\n".join(output), encoding="utf-8")
 print("Successfully updated registry/departments_data.py")
+

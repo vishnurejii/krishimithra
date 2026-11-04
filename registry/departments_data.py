@@ -1,13 +1,15 @@
 """
-Complete Registry of Kerala Government Departments (all 62 IGOD departments)
-plus Statutory Boards, Commodity Boards, and Central Government Agriculture Agencies.
+Official Agriculture & Farmer Schemes Registry for KrishiMitra AI.
+Contains strictly the verified Government Departments, Statutory Commodity Boards,
+and Central Ministries that administer schemes, subsidies, loans, and welfare benefits
+for agriculture and farmers in Kerala.
 """
 
 from registry.models import DepartmentCategory, InvestigationStatus
 
 DEPARTMENTS_REGISTRY = [
     # =========================================================================
-    # CORE & ALLIED AGRICULTURE (HIGH PRIORITY)
+    # CORE & ALLIED KERALA STATE AGRICULTURE DEPARTMENTS
     # =========================================================================
     {
         "id": "KL_AGRI_DEPT",
@@ -19,7 +21,7 @@ DEPARTMENTS_REGISTRY = [
         "scheme_listing_url": "https://keralaagriculture.gov.in/en/schemes/",
         "portal_type": "Department",
         "has_agriculture_schemes": True,
-        "investigation_status": InvestigationStatus.DOCUMENTS_COLLECTED,
+        "investigation_status": InvestigationStatus.VERIFIED,
         "notes": "Primary state nodal department for agriculture, paddy royalties, input subsidies, state plan schemes."
     },
     {
@@ -33,7 +35,7 @@ DEPARTMENTS_REGISTRY = [
         "portal_type": "Digital Portal",
         "has_agriculture_schemes": True,
         "investigation_status": InvestigationStatus.DOCUMENTS_COLLECTED,
-        "notes": "State online farmer registration portal for Royally, Crop Damage Compensation, Crop Insurance, and Subsidies."
+        "notes": "State online farmer registration portal for Royalty, Crop Damage Compensation, Crop Insurance, and Subsidies."
     },
     {
         "id": "KL_KATHIR_PORTAL",
@@ -58,8 +60,8 @@ DEPARTMENTS_REGISTRY = [
         "scheme_listing_url": "https://ahd.kerala.gov.in/schemes/",
         "portal_type": "Department",
         "has_agriculture_schemes": True,
-        "investigation_status": InvestigationStatus.DOCUMENTS_COLLECTED,
-        "notes": "Livestock, poultry, goat rearing subsidies, fodder development, veterinary health and insurance."
+        "investigation_status": InvestigationStatus.VERIFIED,
+        "notes": "Livestock subsidies, commercial dairy farm incentives, calf rearing, mobile veterinary clinics, disease control."
     },
     {
         "id": "KL_DAIRY_DEPT",
@@ -68,11 +70,11 @@ DEPARTMENTS_REGISTRY = [
         "level": "State",
         "category": DepartmentCategory.ALLIED_AGRICULTURE,
         "official_website": "https://dairydevelopment.kerala.gov.in/",
-        "scheme_listing_url": "https://dairydevelopment.kerala.gov.in/index.php/schemes",
+        "scheme_listing_url": "https://dairydevelopment.kerala.gov.in/schemes",
         "portal_type": "Department",
         "has_agriculture_schemes": True,
         "investigation_status": InvestigationStatus.DOCUMENTS_COLLECTED,
-        "notes": "Dairy farmer incentives, milk producer cooperative subsidies, cattle feed subsidy, Milma support."
+        "notes": "Milch animal induction subsidies, cattle feed assistance, silage making, dairy cooperative incentives."
     },
     {
         "id": "KL_FISHERIES_DEPT",
@@ -127,134 +129,17 @@ DEPARTMENTS_REGISTRY = [
         "notes": "Long-term farm development loans, plantation development, farm mechanization credit."
     },
     {
-        "id": "KL_LSGD_DEPT",
-        "name": "Local Self Government Department (LSGD)",
-        "malayalam_name": "തദ്ദേശ സ്വയംഭരണ വകുപ്പ്",
-        "level": "Local/State",
-        "category": DepartmentCategory.RURAL_AND_LOCAL_GOV,
-        "official_website": "https://lsgkerala.gov.in/",
-        "scheme_listing_url": "https://lsgkerala.gov.in/en/schemes",
-        "portal_type": "Department",
-        "has_agriculture_schemes": False,
-        "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND,
-        "notes": "Grama Panchayat, Block and District Panchayat agriculture component plans, fallow-land farming subsidies."
-    },
-    {
         "id": "KL_KUDUMBASHREE",
         "name": "Kudumbashree State Mission (Agriculture Wing)",
-        "malayalam_name": "കുടുംബശ്രീ സംസ്ഥാന മിഷൻ",
+        "malayalam_name": "കുടുംബശ്രീ സംസ്ഥാന മിഷൻ (കാർഷിക വിഭാഗം)",
         "level": "State",
         "category": DepartmentCategory.RURAL_AND_LOCAL_GOV,
         "official_website": "https://kudumbashree.org/",
         "scheme_listing_url": "https://kudumbashree.org/pages/53",
         "portal_type": "State Mission",
         "has_agriculture_schemes": True,
-        "investigation_status": InvestigationStatus.DOCUMENTS_COLLECTED,
-        "notes": "Joint Liability Groups (JLGs), Samagra agriculture projects, women farmer collectives, Harithakarma sena."
-    },
-    {
-        "id": "KL_RURAL_DEV",
-        "name": "Rural Development Department, Kerala",
-        "malayalam_name": "ഗ്രാമവികസന വകുപ്പ്",
-        "level": "State",
-        "category": DepartmentCategory.RURAL_AND_LOCAL_GOV,
-        "official_website": "https://rdd.kerala.gov.in/",
-        "scheme_listing_url": "https://rdd.kerala.gov.in/schemes",
-        "portal_type": "Department",
-        "has_agriculture_schemes": False,
-        "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND,
-        "notes": "MGNREGS farm bunding, rainwater harvesting on farmer lands, rural livelihood programmes."
-    },
-    {
-        "id": "KL_WATER_RESOURCES",
-        "name": "Water Resources & Irrigation Department",
-        "malayalam_name": "ജലവിഭവ വകുപ്പ്",
-        "level": "State",
-        "category": DepartmentCategory.WATER_AND_NATURAL_RESOURCES,
-        "official_website": "https://irrigation.kerala.gov.in/",
-        "scheme_listing_url": "https://irrigation.kerala.gov.in/schemes",
-        "portal_type": "Department",
-        "has_agriculture_schemes": False,
-        "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND,
-        "notes": "Lift irrigation, check dam maintenance, farmer water user associations (PIM), canal irrigation."
-    },
-    {
-        "id": "KL_FOREST_DEPT",
-        "name": "Forest and Wildlife Department, Kerala",
-        "malayalam_name": "വനവും വന്യജീവി വകുപ്പും",
-        "level": "State",
-        "category": DepartmentCategory.WATER_AND_NATURAL_RESOURCES,
-        "official_website": "http://forest.kerala.gov.in/",
-        "scheme_listing_url": "http://forest.kerala.gov.in/schemes/",
-        "portal_type": "Department",
-        "has_agriculture_schemes": False,
-        "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND,
-        "notes": "Agroforestry tree planting subsidies, crop compensation for wildlife damage, eco-development committees."
-    },
-    {
-        "id": "KL_SCDD_DEPT",
-        "name": "Scheduled Castes Development Department",
-        "malayalam_name": "പട്ടികജാതി വികസന വകുപ്പ്",
-        "level": "State",
-        "category": DepartmentCategory.WELFARE_AND_CREDIT,
-        "official_website": "https://scdd.kerala.gov.in/",
-        "scheme_listing_url": "https://scdd.kerala.gov.in/schemes/",
-        "portal_type": "Department",
-        "has_agriculture_schemes": False,
-        "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND,
-        "notes": "Assistance for purchase of agricultural land for SC landless, mini-tractors and farm inputs."
-    },
-    {
-        "id": "KL_STDD_DEPT",
-        "name": "Scheduled Tribes Development Department",
-        "malayalam_name": "പട്ടികവർഗ്ഗ വികസന വകുപ്പ്",
-        "level": "State",
-        "category": DepartmentCategory.WELFARE_AND_CREDIT,
-        "official_website": "https://stdd.kerala.gov.in/",
-        "scheme_listing_url": "https://stdd.kerala.gov.in/schemes/",
-        "portal_type": "Department",
-        "has_agriculture_schemes": False,
-        "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND,
-        "notes": "Tribal agricultural rejuvenation, traditional millet cultivation, minor forest produce and spices support."
-    },
-    {
-        "id": "KL_INDUSTRIES_DEPT",
-        "name": "Industries and Commerce Department (Agri-Enterprise Wing)",
-        "malayalam_name": "വ്യവസായ വാണിജ്യ വകുപ്പ്",
-        "level": "State",
-        "category": DepartmentCategory.ALLIED_AGRICULTURE,
-        "official_website": "https://industry.kerala.gov.in/",
-        "scheme_listing_url": "https://industry.kerala.gov.in/schemes",
-        "portal_type": "Department",
-        "has_agriculture_schemes": False,
-        "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND,
-        "notes": "PMFME state subsidies, agro-processing units, cold chain infrastructure, farmer producer enterprises."
-    },
-    {
-        "id": "KL_FINANCE_DEPT",
-        "name": "Finance Department (Agricultural Debt Relief & Credit)",
-        "malayalam_name": "ധനകാര്യ വകുപ്പ്",
-        "level": "State",
-        "category": DepartmentCategory.WELFARE_AND_CREDIT,
-        "official_website": "https://finance.kerala.gov.in/",
-        "scheme_listing_url": "https://finance.kerala.gov.in/",
-        "portal_type": "Department",
-        "has_agriculture_schemes": False,
-        "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND,
-        "notes": "Kerala State Farmers' Debt Relief Commission awards, interest subvention waivers, budget announcements."
-    },
-    {
-        "id": "KL_SPB_DEPT",
-        "name": "Kerala State Planning Board",
-        "malayalam_name": "സംസ്ഥാന ആസൂത്രണ ബോർഡ്",
-        "level": "State",
-        "category": DepartmentCategory.CORE_AGRICULTURE,
-        "official_website": "https://spb.kerala.gov.in/",
-        "scheme_listing_url": "https://spb.kerala.gov.in/economic-review-schemes",
-        "portal_type": "Statutory Board",
-        "has_agriculture_schemes": False,
-        "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND,
-        "notes": "Annual Plan outlays, Plan schemes for agriculture and allied sectors, Economic Review assessments."
+        "investigation_status": InvestigationStatus.VERIFIED,
+        "notes": "Joint Liability Groups (JLGs), collective farming interest subventions, fallow-land farming subsidies."
     },
     {
         "id": "KL_KAU_ACAD",
@@ -279,7 +164,7 @@ DEPARTMENTS_REGISTRY = [
         "scheme_listing_url": "https://vfpck.org/schemes",
         "portal_type": "Statutory Council",
         "has_agriculture_schemes": True,
-        "investigation_status": InvestigationStatus.INVESTIGATING,
+        "investigation_status": InvestigationStatus.DOCUMENTS_COLLECTED,
         "notes": "Self Help Groups (SHG) credit, vegetable production clusters, markets and base price support."
     },
     {
@@ -292,12 +177,12 @@ DEPARTMENTS_REGISTRY = [
         "scheme_listing_url": "https://horticorp.kerala.gov.in/schemes",
         "portal_type": "Public Undertaking",
         "has_agriculture_schemes": True,
-        "investigation_status": InvestigationStatus.INVESTIGATING,
+        "investigation_status": InvestigationStatus.DOCUMENTS_COLLECTED,
         "notes": "Honey mission subsidies, procurement at floor price, marketing of vegetables and fruit."
     },
 
     # =========================================================================
-    # COMMODITY BOARDS (CENTRAL & REGIONAL KERALA OPERATIONS)
+    # STATUTORY COMMODITY BOARDS (CENTRAL & KERALA REGIONAL HUBS)
     # =========================================================================
     {
         "id": "BD_RUBBER",
@@ -306,7 +191,7 @@ DEPARTMENTS_REGISTRY = [
         "level": "Central/Board",
         "category": DepartmentCategory.COMMODITY_BOARD,
         "official_website": "https://rubberboard.gov.in/",
-        "scheme_listing_url": "https://rubberboard.gov.in/",
+        "scheme_listing_url": "https://rubberboard.gov.in/public/schemes",
         "portal_type": "Statutory Board",
         "has_agriculture_schemes": True,
         "investigation_status": InvestigationStatus.DOCUMENTS_COLLECTED,
@@ -319,11 +204,11 @@ DEPARTMENTS_REGISTRY = [
         "level": "Central/Board",
         "category": DepartmentCategory.COMMODITY_BOARD,
         "official_website": "https://coconutboard.gov.in/",
-        "scheme_listing_url": "https://coconutboard.gov.in/schemes.aspx",
+        "scheme_listing_url": "https://coconutboard.gov.in/scheme.aspx",
         "portal_type": "Statutory Board",
         "has_agriculture_schemes": True,
-        "investigation_status": InvestigationStatus.DOCUMENTS_COLLECTED,
-        "notes": "Replanting and rejuvenation of diseased palms, organic manure units, coconut palm insurance."
+        "investigation_status": InvestigationStatus.VERIFIED,
+        "notes": "Replanting and rejuvenation of diseased palms, TMOC processing subsidies, Kera Suraksha insurance, nursery aid."
     },
     {
         "id": "BD_SPICES",
@@ -335,7 +220,7 @@ DEPARTMENTS_REGISTRY = [
         "scheme_listing_url": "https://indianspices.com/schemes",
         "portal_type": "Statutory Board",
         "has_agriculture_schemes": True,
-        "investigation_status": InvestigationStatus.DOCUMENTS_COLLECTED,
+        "investigation_status": InvestigationStatus.VERIFIED,
         "notes": "Small cardamom replanting, pepper rejuvenation, irrigation equipment subsidy, organic spice certification."
     },
     {
@@ -345,11 +230,11 @@ DEPARTMENTS_REGISTRY = [
         "level": "Central/Board",
         "category": DepartmentCategory.COMMODITY_BOARD,
         "official_website": "https://coffeeboard.gov.in/",
-        "scheme_listing_url": "https://coffeeboard.gov.in/",
+        "scheme_listing_url": "https://coffeeboard.gov.in/schemes.html",
         "portal_type": "Statutory Board",
         "has_agriculture_schemes": True,
-        "investigation_status": InvestigationStatus.INVESTIGATING,
-        "notes": "Wayanad Robusta coffee development, water augmentation, mechanization and replanting."
+        "investigation_status": InvestigationStatus.VERIFIED,
+        "notes": "Wayanad Robusta coffee development, water augmentation, mechanization, replanting subsidies."
     },
     {
         "id": "BD_NABARD",
@@ -358,7 +243,7 @@ DEPARTMENTS_REGISTRY = [
         "level": "Central/Financial",
         "category": DepartmentCategory.WELFARE_AND_CREDIT,
         "official_website": "https://www.nabard.org/",
-        "scheme_listing_url": "https://www.nabard.org/",
+        "scheme_listing_url": "https://www.nabard.org/content.aspx?id=597",
         "portal_type": "Development Bank",
         "has_agriculture_schemes": True,
         "investigation_status": InvestigationStatus.DOCUMENTS_COLLECTED,
@@ -366,7 +251,7 @@ DEPARTMENTS_REGISTRY = [
     },
 
     # =========================================================================
-    # CENTRAL GOVERNMENT SCHEMES APPLICABLE TO KERALA
+    # CENTRAL GOVERNMENT AGRICULTURE SCHEMES APPLICABLE TO KERALA
     # =========================================================================
     {
         "id": "CEN_PM_KISAN",
@@ -378,7 +263,7 @@ DEPARTMENTS_REGISTRY = [
         "scheme_listing_url": "https://pmkisan.gov.in/",
         "portal_type": "Central Portal",
         "has_agriculture_schemes": True,
-        "investigation_status": InvestigationStatus.DOCUMENTS_COLLECTED,
+        "investigation_status": InvestigationStatus.VERIFIED,
         "notes": "Rs 6,000/year income support delivered in 3 equal installments via DBT to landholding farmers in Kerala."
     },
     {
@@ -405,20 +290,20 @@ DEPARTMENTS_REGISTRY = [
         "portal_type": "Central Portal",
         "has_agriculture_schemes": True,
         "investigation_status": InvestigationStatus.DOCUMENTS_COLLECTED,
-        "notes": "Horticulture mission in Kerala covering banana, vegetables, polyhouses, micro-irrigation, cold storage."
+        "notes": "Commercial horticulture, high-density banana, pineapple, polyhouses, mushrooms, and pack-houses in Kerala."
     },
     {
         "id": "CEN_AIF",
         "name": "Agriculture Infrastructure Fund (AIF)",
-        "malayalam_name": "കാർഷിക അടിസ്ഥാന സൗകര്യ ഫണ്ട്",
+        "malayalam_name": "കാർഷിക അടിസ്ഥാന സൗകര്യ വികസന ഫണ്ട്",
         "level": "Central",
         "category": DepartmentCategory.CENTRAL_MINISTRY,
         "official_website": "https://agriinfra.dac.gov.in/",
         "scheme_listing_url": "https://agriinfra.dac.gov.in/",
         "portal_type": "Central Portal",
         "has_agriculture_schemes": True,
-        "investigation_status": InvestigationStatus.DOCUMENTS_COLLECTED,
-        "notes": "Medium-long term debt financing for post-harvest management infrastructure with 3% interest subvention."
+        "investigation_status": InvestigationStatus.VERIFIED,
+        "notes": "Long-term debt financing up to Rs 2 Crores with 3% interest subvention for post-harvest agri-infrastructure."
     },
     {
         "id": "CEN_SOIL_HEALTH",
@@ -431,7 +316,7 @@ DEPARTMENTS_REGISTRY = [
         "portal_type": "Central Portal",
         "has_agriculture_schemes": True,
         "investigation_status": InvestigationStatus.DOCUMENTS_COLLECTED,
-        "notes": "Soil sample analysis, macro/micronutrient advisory issued through Krishi Bhavans."
+        "notes": "Soil test-based customized nutrient recommendations and soil health cards issued to farmers across Kerala."
     },
     {
         "id": "CEN_PM_KUSUM",
@@ -469,60 +354,24 @@ DEPARTMENTS_REGISTRY = [
         "scheme_listing_url": "https://agriwelfare.gov.in/",
         "portal_type": "Central Scheme",
         "has_agriculture_schemes": True,
-        "investigation_status": InvestigationStatus.DOCUMENTS_COLLECTED,
+        "investigation_status": InvestigationStatus.VERIFIED,
         "notes": "Short term crop loan up to Rs 3 lakh at 4% effective interest rate for prompt paying farmers in Kerala."
     },
 
     # =========================================================================
-    # REMAINING KERALA GOVERNMENT DEPARTMENTS (FROM 62 IGOD LIST)
-    # Fully inventoried and cataloged to complete all 62 departments.
-    # Non-agriculture line departments are investigated and marked accordingly.
+    # ALLIED STATUTORY BOARDS WITH FARMER WELFARE SCHEMES
     # =========================================================================
-    {"id": "KL_GAD", "name": "General Administration Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://gad.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Secretariat administration and protocol."},
-    {"id": "KL_HOME", "name": "Home Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://home.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Law, order and police administration."},
-    {"id": "KL_REVENUE", "name": "Revenue Department", "level": "State", "category": DepartmentCategory.RURAL_AND_LOCAL_GOV, "official_website": "https://revenue.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "State Disaster Response Fund (SDRF) crop loss relief and land tenure records."},
-    {"id": "KL_PWD", "name": "Public Works Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://pwd.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Roads and public infrastructure."},
-    {"id": "KL_GEN_EDU", "name": "General Education Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://education.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Primary and secondary schooling."},
-    {"id": "KL_HIGH_EDU", "name": "Higher Education Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://highereducation.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Universities and collegiate education."},
-    {"id": "KL_HEALTH", "name": "Health and Family Welfare Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://dhs.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Public healthcare services."},
-    {"id": "KL_FOOD_CS", "name": "Food and Civil Supplies Department", "level": "State", "category": DepartmentCategory.CORE_AGRICULTURE, "official_website": "https://civilsupplieskerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Supplyco paddy procurement, Minimum Support Price (MSP) disbursement to Kerala paddy farmers."},
-    {"id": "KL_POWER", "name": "Power (Electricity) Department", "level": "State", "category": DepartmentCategory.WATER_AND_NATURAL_RESOURCES, "official_website": "https://kseb.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Free / subsidized electricity for agricultural pumping connections (LT-V tariff)."},
-    {"id": "KL_LABOUR", "name": "Labour and Skills Department", "level": "State", "category": DepartmentCategory.WELFARE_AND_CREDIT, "official_website": "https://labour.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Kerala Agricultural Workers Welfare Fund Board (KAWWFB) pensions and welfare benefits."},
-    {"id": "KL_TRANSPORT", "name": "Transport Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://mvd.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Motor vehicles and transit."},
-    {"id": "KL_TAXES", "name": "Taxes Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://keralataxes.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Commercial taxes and registration."},
-    {"id": "KL_LAW", "name": "Law Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://law.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Statute and legal affairs."},
-    {"id": "KL_SOC_JUSTICE", "name": "Social Justice Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://sjd.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Welfare for elderly and disabled citizens."},
-    {"id": "KL_WOMEN_CHILD", "name": "Women and Child Development Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://wcd.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Nutritional and child care programmes."},
-    {"id": "KL_CULTURAL", "name": "Cultural Affairs Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://culture.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Art and cultural preservation."},
-    {"id": "KL_TOURISM", "name": "Tourism Department", "level": "State", "category": DepartmentCategory.ALLIED_AGRICULTURE, "official_website": "https://keralatourism.org/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Responsible Tourism (RT) Mission Farm Tourism subsidies and farmstay registration."},
-    {"id": "KL_ENV_CLIMATE", "name": "Environment and Climate Change Department", "level": "State", "category": DepartmentCategory.WATER_AND_NATURAL_RESOURCES, "official_website": "https://envt.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "State Climate Change Action Plan, Pokkali saline paddy conservation incentives."},
-    {"id": "KL_INFO_PR", "name": "Information and Public Relations Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://prd.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Government media and public communications."},
-    {"id": "KL_IT_DEPT", "name": "Electronics and Information Technology Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://it.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Digital governance infrastructure."},
-    {"id": "KL_HOUSING", "name": "Housing Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://housing.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Public housing schemes."},
-    {"id": "KL_MINING", "name": "Mining and Geology Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://dmg.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Mineral extraction regulation."},
-    {"id": "KL_PORTS", "name": "Ports Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://keralaports.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Maritime port operations."},
-    {"id": "KL_SPORTS", "name": "Sports and Youth Affairs Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://dsya.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Athletics and sports facilities."},
-    {"id": "KL_COASTAL", "name": "Coastal Area Development Corporation", "level": "State", "category": DepartmentCategory.ALLIED_AGRICULTURE, "official_website": "https://kadea.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Aquaculture infrastructure in coastal zones."},
-    {"id": "KL_AYUSH", "name": "AYUSH Department", "level": "State", "category": DepartmentCategory.ALLIED_AGRICULTURE, "official_website": "https://ayush.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Medicinal plant cultivation subsidies under State Medicinal Plants Board (SMPB)."},
-    {"id": "KL_NON_RESIDENT", "name": "Non-Resident Keralites Affairs (NORKA)", "level": "State", "category": DepartmentCategory.WELFARE_AND_CREDIT, "official_website": "https://norkaroots.org/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "NDPREM capital and interest subsidy for returnee pravasis starting agricultural and dairy farms."},
-    {"id": "KL_BACKWARD_CLASSES", "name": "Backward Classes Development Department", "level": "State", "category": DepartmentCategory.WELFARE_AND_CREDIT, "official_website": "https://bcdd.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "OBC farmer micro-credit and self-employment assistance in agriculture."},
-    {"id": "KL_MINORITY", "name": "Minority Welfare Department", "level": "State", "category": DepartmentCategory.WELFARE_AND_CREDIT, "official_website": "https://minoritywelfare.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Scholarships and minority community youth training."},
-    {"id": "KL_PARLIAMENTARY", "name": "Parliamentary Affairs Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://pad.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Legislative liaison and sessions."},
-    {"id": "KL_PERSONNEL", "name": "Personnel and Administrative Reforms", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://par.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Civil service cadre rules."},
-    {"id": "KL_PRINTING", "name": "Printing Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://printing.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Government press and gazette publishing."},
-    {"id": "KL_REGISTRATION", "name": "Registration Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://keralaregistration.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Deed and land registry services."},
-    {"id": "KL_STORE_PURCHASE", "name": "Stores Purchase Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://spd.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "State public procurement manual and rules."},
-    {"id": "KL_VIGILANCE", "name": "Vigilance and Anti-Corruption Bureau", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://vigilance.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Integrity enforcement and vigilance."},
-    {"id": "KL_ARCHAEOLOGY", "name": "Archaeology Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://archaeology.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Monuments and excavations."},
-    {"id": "KL_ARCHIVES", "name": "State Archives Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://keralaarchives.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Historical government records."},
-    {"id": "KL_MUSEUMS", "name": "Museums and Zoos Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://museumandzoo.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Zoological parks and museums."},
-    {"id": "KL_LEGAL_METROLOGY", "name": "Legal Metrology Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://legalmetrology.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Weights and measures enforcement."},
-    {"id": "KL_FIRE_RESCUE", "name": "Fire and Rescue Services Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://fire.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Emergency fire and rescue services."},
-    {"id": "KL_PRISONS", "name": "Prisons and Correctional Services", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://keralaprisons.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Correctional facilities."},
-    {"id": "KL_EXCISE", "name": "Excise Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://keralaexcise.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Excise and revenue control."},
-    {"id": "KL_SAINIK_WELFARE", "name": "Sainik Welfare Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://sainikwelfarekerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Ex-servicemen rehabilitation."},
-    {"id": "KL_STATISTICS", "name": "Economics and Statistics Department", "level": "State", "category": DepartmentCategory.CORE_AGRICULTURE, "official_website": "https://ecostat.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "EARAS agricultural statistics, crop cutting experiments, area and yield estimation."},
-    {"id": "KL_FACTORY_BOILERS", "name": "Factories and Boilers Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://fab.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Industrial safety and factory inspection."},
-    {"id": "KL_HYDROGRAPHIC", "name": "Hydrographic Survey Department", "level": "State", "category": DepartmentCategory.LINE_DEPARTMENT, "official_website": "https://hydrographicsurvey.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Marine and port bathymetry."},
-    {"id": "KL_GROUND_WATER", "name": "Ground Water Department", "level": "State", "category": DepartmentCategory.WATER_AND_NATURAL_RESOURCES, "official_website": "https://groundwater.kerala.gov.in/", "has_agriculture_schemes": False, "investigation_status": InvestigationStatus.NO_RELEVANT_SCHEMES_FOUND, "notes": "Subsidies for digging farm borewells, tube wells, and water level recharge for farmers."}
+    {
+        "id": "KL_LABOUR",
+        "name": "Labour and Skills Department (Kerala Agricultural Workers Welfare Fund)",
+        "malayalam_name": "തൊഴിൽ വകുപ്പ് (കേരള കർഷകത്തൊഴിലാളി ക്ഷേമനിധി ബോർഡ്)",
+        "level": "State",
+        "category": DepartmentCategory.WELFARE_AND_CREDIT,
+        "official_website": "https://labour.kerala.gov.in/",
+        "scheme_listing_url": "https://labour.kerala.gov.in/",
+        "portal_type": "Statutory Board",
+        "has_agriculture_schemes": True,
+        "investigation_status": InvestigationStatus.VERIFIED,
+        "notes": "Administers Kerala Agricultural Workers Welfare Fund Board (KAWWFB) providing pensions and welfare grants."
+    }
 ]

@@ -44,7 +44,7 @@ async function loadAdminMetrics() {
 }
 
 // Load Coverage Matrix
-async function loadCoverageMatrix(statusFilter = 'agri') {
+async function loadCoverageMatrix(statusFilter = '') {
   const container = document.getElementById("coverageTableBody");
   container.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 2rem;">Loading Scheme Coverage Matrix across agriculture portals...</td></tr>`;
 
@@ -54,13 +54,11 @@ async function loadCoverageMatrix(statusFilter = 'agri') {
   if (clicked && clicked.classList.contains("pill")) clicked.classList.add("active");
 
   try {
-    const isAgriOnly = statusFilter === 'agri' || !statusFilter;
-    const url = isAgriOnly ? "/api/coverage/matrix/?agri_only=true" : "/api/coverage/matrix/";
-    const resp = await fetch(url);
+    const resp = await fetch("/api/coverage/matrix/");
     const data = await resp.json();
     let matrix = data.matrix || [];
 
-    if (statusFilter && statusFilter !== 'agri' && statusFilter !== 'all') {
+    if (statusFilter) {
       matrix = matrix.filter(m => m.investigation_status === statusFilter);
     }
 
