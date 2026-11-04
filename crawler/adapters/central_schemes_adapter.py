@@ -31,6 +31,7 @@ CENTRAL_PORTALS = [
         "source_id": "SRC_CEN_PMFBY",
         "name": "PMFBY Crop Insurance",
         "urls": [
+            "https://pmfby.amnex.co.in/pmfby/pdf/operational_guidelines_pmfby.pdf",
             "https://pmfby.gov.in/",
             "https://pmfby.gov.in/guidelines"
         ]
@@ -76,8 +77,18 @@ CENTRAL_PORTALS = [
         "source_id": "SRC_CEN_RKVY",
         "name": "Rashtriya Krishi Vikas Yojana",
         "urls": [
+            "https://rkvy.da.gov.in/",
             "https://rkvy.nic.in/",
             "https://rkvy.nic.in/static/guidelines.html"
+        ]
+    },
+    {
+        "dept_id": "CEN_MISS_KCC",
+        "source_id": "SRC_CEN_MISS_KCC",
+        "name": "Modified Interest Subvention Scheme & KCC",
+        "urls": [
+            "https://agriwelfare.gov.in/",
+            "https://www.myscheme.gov.in/schemes/kcc"
         ]
     }
 ]
@@ -99,6 +110,27 @@ class CentralSchemesCrawlerAdapter(BaseCrawler):
 
             for url in portal["urls"]:
                 try:
+                    if self.is_document_url(url):
+                        if url not in seen_urls:
+                            seen_urls.add(url)
+                            doc_title = f"{portal['name']} Operational Guidelines"
+                            score, matched_kws = match_keywords(f"{doc_title} {url}")
+                            doc = DiscoveredDocument(
+                                title=doc_title,
+                                original_url=url,
+                                department_id=dept_id,
+                                source_id=source_id,
+                                file_type="pdf",
+                                doc_type="Guidelines",
+                                language="en",
+                                context_snippet=f"{portal['name']} official guidelines document",
+                                match_score=max(score, 10),
+                                matched_keywords=matched_kws
+                            )
+                            all_docs.append(doc)
+                            logger.info(f"[{portal['name']}] Found direct document: {doc.title} -> {doc.original_url}")
+                        continue
+
                     resp = self.session.get(url, timeout=12, check_robots=False)
                     if resp.status_code != 200:
                         continue

@@ -566,6 +566,533 @@ SCHEMES_FROM_DOCUMENTS = [
             is_confirmed=True,
             confidence_score=0.98
         )
+    },
+
+    # ---------------------------------------------------------------------
+    # RUBBER BOARD INDIA
+    # ---------------------------------------------------------------------
+    {
+        "dept_id": "BD_RUBBER",
+        "doc_match_keywords": ["rain guarding", "1035", "rainguarding"],
+        "scheme": ExtractedSchemeInformation(
+            scheme_name="Rubber Board Rain Guarding Financial Assistance Scheme",
+            malayalam_name="റബ്ബർ ബോർഡ് റെയിൻ ഗാർഡിംഗ് സാമ്പത്തിക സഹായ പദ്ധതി",
+            scheme_code="RB-SCH-RG-01",
+            classification="Subsidy",
+            scheme_status="Active",
+            government_department="BD_RUBBER",
+            government_level="Central/Board",
+            scheme_objective="Financial assistance for fixing rain guard polythene and sealant on tapping trees to ensure uninterrupted tapping during monsoon months.",
+            scheme_description="Provides cash subsidy assistance of Rs. 4,000 per hectare to Rubber Producers' Societies (RPS) and small growers in traditional areas (Kerala & Kanyakumari) for rain guarding materials including polythene sheets, adhesive, and staple wire.",
+            beneficiary_categories=["Rubber Growers", "Small and Marginal Planters", "RPS Member Farmers"],
+            eligible_farmer_types=["Small rubber holders up to 5 hectares", "RPS members"],
+            min_land_acres=0.25,
+            max_land_acres=12.5,
+            subsidy_amount=4000.0,
+            subsidy_percentage=50.0,
+            unit_of_assistance="per hectare",
+            disbursement_mode="Direct Benefit Transfer via ServicePlus Portal",
+            eligible_crops=["Rubber"],
+            applicable_districts=["All 14 Districts of Kerala"],
+            application_procedure="Submit online application via ServicePlus portal on Rubber Board website (rubberboard.gov.in -> E-SERVICES -> ServicePlus -> Assistance for rain guarding) through local Rubber Producers Society (RPS).",
+            official_application_portal="https://serviceonline.gov.in/dbt/",
+            required_documents=["Aadhaar Card", "RPS Membership Certificate", "Land Possession Certificate / Tax Receipt", "Bank Passbook"],
+            source_document_name="Approved EFC Guidelines - Assistance for Rain Guarding (rbfilereader?fileid=1035)",
+            source_page_numbers=[1, 2],
+            is_confirmed=True,
+            confidence_score=0.98
+        )
+    },
+    {
+        "dept_id": "BD_RUBBER",
+        "doc_match_keywords": ["spraying", "1036", "plant protection"],
+        "scheme": ExtractedSchemeInformation(
+            scheme_name="Rubber Board Spraying & Plant Protection Assistance Scheme",
+            malayalam_name="റബ്ബർ രോഗ നിയന്ത്രണ മരുന്ന് തളിക്കൽ സഹായ പദ്ധതി",
+            scheme_code="RB-SCH-SP-02",
+            classification="Subsidy",
+            scheme_status="Active",
+            government_department="BD_RUBBER",
+            government_level="Central/Board",
+            scheme_objective="To safeguard rubber holdings from Phytophthora abnormal leaf fall disease through timely prophylactic copper fungicide spraying.",
+            scheme_description="Provides subsidy assistance of Rs. 4,000 per hectare for community spraying of copper oxychloride / oil-dispersible copper fungicide using power dusters or aerial spraying in holding clusters.",
+            beneficiary_categories=["Rubber Smallholders", "RPS Clusters"],
+            eligible_farmer_types=["Small rubber growers"],
+            min_land_acres=0.25,
+            max_land_acres=12.5,
+            subsidy_amount=4000.0,
+            subsidy_percentage=50.0,
+            unit_of_assistance="per hectare",
+            disbursement_mode="Direct Benefit Transfer via RPS",
+            eligible_crops=["Rubber"],
+            applicable_districts=["All 14 Districts of Kerala"],
+            application_procedure="Apply through nearest Rubber Producers' Society (RPS) / Field Station of Rubber Board before the pre-monsoon spraying period.",
+            official_application_portal="https://rubberboard.gov.in/",
+            required_documents=["Aadhaar Card", "RPS Membership", "Current Year Land Tax Receipt"],
+            source_document_name="Approved EFC Guidelines - Assistance for Spraying (rbfilereader?fileid=1036)",
+            source_page_numbers=[1, 2],
+            is_confirmed=True,
+            confidence_score=0.97
+        )
+    },
+    {
+        "dept_id": "BD_RUBBER",
+        "doc_match_keywords": ["replanting", "plantation development", "1048", "traditional region"],
+        "scheme": ExtractedSchemeInformation(
+            scheme_name="Rubber Board Plantation Development Subsidy Scheme (Traditional Region)",
+            malayalam_name="റബ്ബർ ബോർഡ് പുതിയ തോട്ടം നിർമ്മാണവും പുനർനടീൽ സബ്‌സിഡിയും",
+            scheme_code="RB-SCH-PL-03",
+            classification="Subsidy",
+            scheme_status="Active",
+            government_department="BD_RUBBER",
+            government_level="Central/Board",
+            scheme_objective="Encouraging replanting of senile, unproductive rubber trees and new planting in suitable areas with high-yielding clones (RRII 105, 414, 430).",
+            scheme_description="Provides cash planting subsidy of Rs. 40,000 per hectare for small growers (up to 5 ha), disbursed in installments across immature years, alongside fencing, terrace, and planting material concessions.",
+            beneficiary_categories=["Small Rubber Planters", "SC/ST Rubber Farmers", "Women Planters"],
+            eligible_farmer_types=["Small growers with holdings up to 5 hectares"],
+            min_land_acres=0.25,
+            max_land_acres=12.5,
+            subsidy_amount=40000.0,
+            subsidy_percentage=50.0,
+            unit_of_assistance="per hectare over immature years",
+            disbursement_mode="Direct Benefit Transfer",
+            eligible_crops=["Rubber"],
+            applicable_districts=["All 14 Districts of Kerala"],
+            application_procedure="Register online via Rubber Board ServicePlus portal or apply at local Rubber Board Regional Office / Field Station.",
+            official_application_portal="https://serviceonline.gov.in/dbt/",
+            required_documents=["Land Title Deed (Aadhaar / Thandaper)", "Tax Receipt", "Bank Passbook", "Nursery Purchase Voucher"],
+            source_document_name="Approved EFC Guidelines - Rubber Plantation Development in Traditional Region (rbfilereader?fileid=1048)",
+            source_page_numbers=[1, 3],
+            is_confirmed=True,
+            confidence_score=0.98
+        )
+    },
+    {
+        "dept_id": "BD_RUBBER",
+        "doc_match_keywords": ["incentive", "rpis", "1044", "branding"],
+        "scheme": ExtractedSchemeInformation(
+            scheme_name="Rubber Production Incentive Scheme (RPIS Kerala)",
+            malayalam_name="റബ്ബർ ഉൽപ്പാദന ബോണസ് പ്രോത്സാഹന പദ്ധതി (RPIS)",
+            scheme_code="RB-SCH-RPIS-04",
+            classification="Price support",
+            scheme_status="Active",
+            government_department="BD_RUBBER",
+            government_level="State/Board Joint",
+            scheme_objective="Ensuring guaranteed floor price (Rs. 180/kg) for natural sheet rubber (RSS-4) to insulate growers from international price volatility.",
+            scheme_description="Under RPIS, if the market price of RSS-4 falls below Rs. 180 per kg, the price deficit is credited directly to the farmer's bank account via DBT based on bills submitted through licensed rubber dealers/RPS.",
+            beneficiary_categories=["Rubber Tappers", "Small Rubber Growers"],
+            eligible_farmer_types=["Holdings up to 2 hectares (5 acres)"],
+            min_land_acres=0.1,
+            max_land_acres=5.0,
+            subsidy_amount=180.0,
+            subsidy_percentage=100.0,
+            unit_of_assistance="per kg guaranteed benchmark floor price",
+            disbursement_mode="Direct Benefit Transfer (DBT)",
+            eligible_crops=["Rubber"],
+            applicable_districts=["All 14 Districts of Kerala"],
+            application_procedure="Register in the RPIS Portal through local Rubber Producers Society (RPS) or licensed dealer with purchase invoices.",
+            official_application_portal="https://rubberboard.gov.in/",
+            required_documents=["Rubber Board Registration Certificate", "Current Land Tax Receipt", "Rubber Sales Bill", "Bank Passbook"],
+            source_document_name="Rubber Board EFC Modalities & RPIS Framework",
+            source_page_numbers=[1, 2],
+            is_confirmed=True,
+            confidence_score=0.99
+        )
+    },
+
+    # ---------------------------------------------------------------------
+    # DAIRY DEVELOPMENT DEPARTMENT (KSHEERASREE KERALA)
+    # ---------------------------------------------------------------------
+    {
+        "dept_id": "KL_DAIRY_DEPT",
+        "doc_match_keywords": ["milk incentive", "ksheerasree", "user manual", "schememis"],
+        "scheme": ExtractedSchemeInformation(
+            scheme_name="Dairy Development Department Milk Incentive Direct Benefit Transfer Scheme",
+            malayalam_name="ക്ഷീരവികസന വകുപ്പ് പാൽ സബ്സിഡി നേരിട്ടുള്ള ആനുകൂല്യ വിതരണ പദ്ധതി",
+            scheme_code="KL-DD-MI-01",
+            classification="Subsidy",
+            scheme_status="Active",
+            government_department="KL_DAIRY_DEPT",
+            government_level="State",
+            scheme_objective="Direct financial assistance to dairy farmers based on the quantity and quality of milk poured to primary dairy cooperative societies (APCOS).",
+            scheme_description="Provides monthly direct price incentive of Rs. 4 to Rs. 6 per litre of milk directly transferred into farmers' bank accounts through Ksheerasree portal to support dairy farming viability.",
+            beneficiary_categories=["Dairy Farmers", "Livestock Keepers", "Women Dairy Farmers"],
+            eligible_farmer_types=["Dairy farmers pouring milk regularly to primary milk cooperative societies"],
+            min_land_acres=0.0,
+            max_land_acres=10.0,
+            subsidy_amount=6.0,
+            subsidy_percentage=100.0,
+            unit_of_assistance="per litre of milk poured",
+            disbursement_mode="Direct Benefit Transfer via Ksheerasree Portal",
+            eligible_crops=["Dairy", "Cattle"],
+            applicable_districts=["All 14 Districts of Kerala"],
+            application_procedure="Register online at Ksheerasree Portal (ksheerasree.kerala.gov.in) with Aadhaar and bank details, verified by Primary Dairy Cooperative Secretary.",
+            official_application_portal="https://ksheerasree.kerala.gov.in/farmerlogin",
+            required_documents=["Aadhaar Card", "Dairy Society Passbook / Membership No.", "Bank Account Passbook (Aadhaar Seeded)", "Passport Photo"],
+            source_document_name="Ksheerasree Portal User Manual & Scheme MIS (KSHEERASREE-USERMANUAL-Malayalam.pdf)",
+            source_page_numbers=[1, 4, 8],
+            is_confirmed=True,
+            confidence_score=0.99
+        )
+    },
+    {
+        "dept_id": "KL_DAIRY_DEPT",
+        "doc_match_keywords": ["ksheera_gramam", "contract", "fodder", "document-42"],
+        "scheme": ExtractedSchemeInformation(
+            scheme_name="Dairy Development Department Ksheeragramam Panchayat Dairy Development Scheme",
+            malayalam_name="ക്ഷീരവികസന വകുപ്പ് ക്ഷീരഗ്രാമം സംയോജിത ക്ഷീരോൽപ്പാദന പദ്ധതി",
+            scheme_code="KL-DD-KG-02",
+            classification="Subsidy",
+            scheme_status="Active",
+            government_department="KL_DAIRY_DEPT",
+            government_level="State",
+            scheme_objective="Transforming selected 10 panchayats per year into self-sufficient model dairy hubs through complete cattle induction, cattle sheds, and mechanization.",
+            scheme_description="Provides 50% to 75% subsidy up to Rs. 1,50,000 for setting up 2-cow or 5-cow dairy units, modern cattle sheds, milking machines, fodder plots, and biogas units with stamp paper agreement.",
+            beneficiary_categories=["Small Dairy Farmers", "Unemployed Youth", "Women Dairy Cooperatives"],
+            eligible_farmer_types=["Selected dairy farmers within approved Ksheeragramam panchayats"],
+            min_land_acres=0.1,
+            max_land_acres=5.0,
+            subsidy_amount=150000.0,
+            subsidy_percentage=50.0,
+            unit_of_assistance="per dairy unit / package",
+            disbursement_mode="Direct Benefit Transfer in stages",
+            eligible_crops=["Dairy", "Fodder", "Napier"],
+            applicable_districts=["All 14 Districts of Kerala"],
+            application_procedure="Apply through Ksheerasree Portal or Dairy Extension Service Unit (DESU) in the designated block panchayat.",
+            official_application_portal="https://ksheerasree.kerala.gov.in/scheme/",
+            required_documents=["Stamp paper agreement (0438_KSHEERA_GRAMAM-CONTRACT_MODEL)", "Aadhaar Card", "Land Tax Receipt", "Bank Passbook"],
+            source_document_name="0438_KSHEERA_GRAMAM-CONTRACT_MODEL.pdf & Ksheeragramam Guidelines",
+            source_page_numbers=[1, 2],
+            is_confirmed=True,
+            confidence_score=0.98
+        )
+    },
+
+    # ---------------------------------------------------------------------
+    # CENTRAL CROP INSURANCE (PMFBY)
+    # ---------------------------------------------------------------------
+    {
+        "dept_id": "CEN_PMFBY",
+        "doc_match_keywords": ["pmfby", "operational_guidelines_pmfby", "fasal bima"],
+        "scheme": ExtractedSchemeInformation(
+            scheme_name="Pradhan Mantri Fasal Bima Yojana (PMFBY) Kerala Crop Insurance Scheme",
+            malayalam_name="പ്രധാനമന്ത്രി ഫസൽ ബീമാ യോജന വിള ഇൻഷുറൻസ് പദ്ധതി",
+            scheme_code="CEN-PMFBY-KL-01",
+            classification="Crop insurance",
+            scheme_status="Active",
+            government_department="CEN_PMFBY",
+            government_level="Central/State Joint",
+            scheme_objective="Comprehensive yield-based crop insurance coverage against non-preventable natural risks (floods, drought, landslides, pest outbreaks, cyclone).",
+            scheme_description="Farmers pay a uniform nominal premium of only 2% of sum insured for Kharif/Autumn crops (Paddy), 1.5% for Rabi/Winter crops, and 5% for annual commercial/horticultural crops (Banana, Tapioca, Pepper). The remaining 95%-98% premium is shared equally by the Government of India and the Government of Kerala.",
+            beneficiary_categories=["All Farmers (Loanee & Non-Loanee)", "Sharecroppers", "Tenant Farmers"],
+            eligible_farmer_types=["All farmers growing notified crops in notified panchayats/villages"],
+            min_land_acres=0.05,
+            max_land_acres=25.0,
+            subsidy_amount=50000.0,
+            subsidy_percentage=98.0,
+            unit_of_assistance="per hectare crop sum insured",
+            disbursement_mode="Direct Benefit Transfer (DBT)",
+            eligible_crops=["Paddy", "Banana", "Tapioca", "Pepper", "Ginger", "Turmeric", "Cardamom"],
+            applicable_districts=["All 14 Districts of Kerala"],
+            application_procedure="Enroll via National Crop Insurance Portal (pmfby.gov.in), Akshaya / CSC centres, or primary agricultural cooperative banks (PACS) before seasonal cutoff date.",
+            official_application_portal="https://pmfby.gov.in/",
+            required_documents=["Aadhaar Card", "Land Tax Receipt / Possession Certificate / Registered Lease Agreement", "Crop Sowing Certificate from Agriculture Officer (Krishi Bhavan)", "Bank Passbook"],
+            source_document_name="Operational Guidelines of Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+            source_page_numbers=[5, 12, 28, 45],
+            is_confirmed=True,
+            confidence_score=0.99
+        )
+    },
+    # ---------------------------------------------------------------------
+    # ALLIED LINE DEPARTMENTS WITH FARMER CONCESSIONS & SUBSIDIES
+    # ---------------------------------------------------------------------
+    {
+        "dept_id": "KL_POWER",
+        "doc_match_keywords": ["kseb", "tariff", "lt-v", "power", "electricity"],
+        "scheme": ExtractedSchemeInformation(
+            scheme_name="KSEB LT-V Agricultural Electricity Tariff Concession Scheme",
+            malayalam_name="കെ.എസ്.ഇ.ബി കാർഷിക വൈദ്യുതി താരിഫ് ഇളവും സബ്സിഡിയും",
+            scheme_code="KL-PWR-LTV-01",
+            classification="Subsidy",
+            scheme_status="Active",
+            government_department="KL_POWER",
+            government_level="State",
+            scheme_objective="To provide highly subsidized electrical power tariff (LT-V A & LT-V B) for irrigation pump sets, dewatering, and allied agricultural farming activities in Kerala.",
+            scheme_description="Subsidized power tariff of Rs 2.40/unit with fixed charges of Rs 20/kW for irrigation pump sets. Small and marginal farmers receive 100% electricity charge reimbursement from Department of Agriculture via Krishi Bhavan endorsement.",
+            beneficiary_categories=["All Farmers", "Small and Marginal Farmers", "Paddy Cultivators", "Dairy Farmers", "Poultry Farmers"],
+            eligible_farmer_types=["Owner cultivator", "Tenant farmer", "Padasekhara Samithi"],
+            min_land_acres=0.05,
+            max_land_acres=50.0,
+            subsidy_amount=2.40,
+            subsidy_percentage=75.0,
+            unit_of_assistance="per unit electricity subsidy",
+            disbursement_mode="Direct Tariff Concession / Bill Subvention",
+            eligible_crops=["Paddy", "Vegetables", "Banana", "Coconut", "Fodder Grass", "Spices"],
+            applicable_districts=["All 14 Districts of Kerala"],
+            application_procedure="Apply online via KSEB Web Self-Service portal (wss.kseb.in) or submit application at local Electrical Section office with Krishi Bhavan Agricultural Officer certificate.",
+            official_application_portal="https://wss.kseb.in/",
+            required_documents=["Aadhaar Card", "Current Land Tax Receipt / Lease Agreement", "Agricultural Officer (Krishi Bhavan) Certificate", "Pump Motor Specifications"],
+            source_document_name="KSEB LT-V Agricultural Electricity Tariff Schedule & Concession Order",
+            source_page_numbers=[1],
+            is_confirmed=True,
+            confidence_score=0.99
+        )
+    },
+    {
+        "dept_id": "KL_REVENUE",
+        "doc_match_keywords": ["sdrf", "calamity", "damage", "revenue", "disaster"],
+        "scheme": ExtractedSchemeInformation(
+            scheme_name="State Disaster Response Fund (SDRF) Agricultural Crop Damage Relief Scheme",
+            malayalam_name="പ്രകൃതിക്ഷോഭ കാർഷിക വിളനാശ ദുരിതാശ്വാസ സഹായം (എസ്.ഡി.ആർ.എഫ്)",
+            scheme_code="KL-REV-SDRF-02",
+            classification="Government Service",
+            scheme_status="Active",
+            government_department="KL_REVENUE",
+            government_level="State",
+            scheme_objective="Financial input subsidy assistance for farmers who suffer 33% or more crop damage caused by natural calamities such as floods, landslides, cyclones, and drought.",
+            scheme_description="Input subsidy assistance: Rs 8,500/ha for rainfed crops, Rs 17,000/ha for assured irrigated crops, and Rs 22,500/ha for perennial plantation crops (ceiling 2 ha). Farmland de-silting and landslide loss assistance up to Rs 47,000/ha.",
+            beneficiary_categories=["Small and Marginal Farmers", "All Farmers", "Disaster-affected Cultivators"],
+            eligible_farmer_types=["Owner cultivator", "Tenant farmer with registered lease", "Kudumbashree JLG"],
+            min_land_acres=0.05,
+            max_land_acres=5.0,
+            subsidy_amount=22500.0,
+            subsidy_percentage=100.0,
+            unit_of_assistance="per hectare input subsidy",
+            disbursement_mode="Direct Benefit Transfer (DBT)",
+            eligible_crops=["Paddy", "Banana", "Vegetables", "Rubber", "Coconut", "Pepper", "Cardamom", "Nutmeg", "Tapioca"],
+            applicable_districts=["All 14 Districts of Kerala"],
+            application_procedure="Apply through local Village Office or AIMS Kerala portal within 15 days of calamity. Joint damage inspection carried out by Village Officer and Agricultural Officer.",
+            official_application_portal="https://aimsnew.kerala.gov.in/",
+            required_documents=["Aadhaar Card", "Land Tax Receipt", "Bank Passbook Copy", "Crop Damage Inspection Report", "Geotagged Damage Photos"],
+            source_document_name="SDRF Norms of Assistance for Agricultural Crop Damage & Calamity Relief",
+            source_page_numbers=[1],
+            is_confirmed=True,
+            confidence_score=0.99
+        )
+    },
+    {
+        "dept_id": "KL_FOREST",
+        "doc_match_keywords": ["wildlife", "forest", "fencing", "fence", "animal"],
+        "scheme": ExtractedSchemeInformation(
+            scheme_name="Kerala Forest Wildlife Attack Crop Loss Compensation Scheme",
+            malayalam_name="വന്യജീവി ആക്രമണ വിളനാശ നഷ്ടപരിഹാരവും സോളാർ ഫെൻസിംഗ് സബ്‌സിഡിയും",
+            scheme_code="KL-FOR-WLC-03",
+            classification="Subsidy",
+            scheme_status="Active",
+            government_department="KL_FOREST",
+            government_level="State",
+            scheme_objective="To compensate agricultural farmers for 100% assessed crop damage caused by wild animals and provide 50% capital subsidy for solar power fencing on farm boundaries.",
+            scheme_description="Provides 100% assessed value compensation for destroyed rubber (up to Rs 1,500/tree), coconut (up to Rs 1,200/palm), banana (Rs 300/plant), arecanut, pepper, and paddy. 50% subsidy up to Rs 50,000 for energized solar farm fencing.",
+            beneficiary_categories=["Forest Fringe Farmers", "Small and Marginal Farmers", "Tribal Settlers"],
+            eligible_farmer_types=["Owner cultivator", "Forest land possessor", "Tenant farmer"],
+            min_land_acres=0.1,
+            max_land_acres=15.0,
+            subsidy_amount=50000.0,
+            subsidy_percentage=100.0,
+            unit_of_assistance="100% crop loss value / up to Rs 50,000 solar fence",
+            disbursement_mode="Direct Benefit Transfer (DBT)",
+            eligible_crops=["Rubber", "Coconut", "Banana", "Arecanut", "Pepper", "Paddy", "Cardamom", "Tapioca"],
+            applicable_districts=["All 14 Districts of Kerala", "Wayanad", "Idukki", "Palakkad", "Pathanamthitta", "Kollam", "Kannur", "Malappuram", "Thrissur"],
+            application_procedure="Submit Appendix I claim form to the local Forest Range Officer within 30 days of wildlife incident. Joint site inspection conducted by Forest Section Officer and Agricultural Officer.",
+            official_application_portal="https://forest.kerala.gov.in/",
+            required_documents=["Appendix I Application Form", "Current Land Tax Receipt", "Aadhaar Card", "Bank Passbook", "Photographs of damaged crop with wild animal traces"],
+            source_document_name="Kerala Forest Wildlife Attack Crop Loss Compensation Rules & Valuation Order",
+            source_page_numbers=[1],
+            is_confirmed=True,
+            confidence_score=0.99
+        )
+    },
+    {
+        "dept_id": "KL_WATER",
+        "doc_match_keywords": ["irrigation", "water", "lift", "canal", "minor"],
+        "scheme": ExtractedSchemeInformation(
+            scheme_name="Minor Irrigation & Surface Lift Irrigation Agricultural Water Supply Scheme",
+            malayalam_name="ചെറുകിട ജലസേചന - ലിഫ്റ്റ് ഇറിഗേഷൻ കാർഷിക ജലവിതരണ പദ്ധതി",
+            scheme_code="KL-WRD-LIFT-04",
+            classification="Government Service",
+            scheme_status="Active",
+            government_department="KL_WATER",
+            government_level="State",
+            scheme_objective="To provide continuous irrigation water to paddy fields and vegetable polders through state-maintained river lift irrigation pump houses, check dams, and canal networks.",
+            scheme_description="State constructs and maintains 100% of pumping machinery, pump houses, rising mains, and delivery cisterns. Subsidized or free water supply provided to Padasekhara Samithis and farmer groups for irrigating command areas.",
+            beneficiary_categories=["Paddy Farmers", "Vegetable Farmers", "Padasekhara Samithis"],
+            eligible_farmer_types=["Registered Padasekhara Samithi", "Farmer group of at least 10 members"],
+            min_land_acres=5.0,
+            max_land_acres=500.0,
+            subsidy_amount=500000.0,
+            subsidy_percentage=100.0,
+            unit_of_assistance="100% state infrastructure grant",
+            disbursement_mode="Direct Infrastructure Service",
+            eligible_crops=["Paddy", "Vegetables", "Banana", "Pulses"],
+            applicable_districts=["All 14 Districts of Kerala", "Palakkad", "Alappuzha", "Kottayam", "Thrissur", "Ernakulam", "Malappuram"],
+            application_procedure="Padasekhara Samithi submits resolution to Executive Engineer / Assistant Executive Engineer, Minor Irrigation Division, endorsed by Agricultural Officer.",
+            official_application_portal="https://irrigation.kerala.gov.in/",
+            required_documents=["Padasekhara Samithi Registration Certificate", "Ayacut Map & Farmer List", "Endorsement from Krishi Bhavan"],
+            source_document_name="Minor Irrigation Class-I & Class-II Lift Irrigation Schemes for Farmers Guidelines",
+            source_page_numbers=[1],
+            is_confirmed=True,
+            confidence_score=0.98
+        )
+    },
+    {
+        "dept_id": "KL_SC_DEPT",
+        "doc_match_keywords": ["scp", "scdd", "land", "scheduled caste", "mechanization"],
+        "scheme": ExtractedSchemeInformation(
+            scheme_name="Special Component Plan (SCP) Agricultural Land Purchase & Farm Mechanization Scheme",
+            malayalam_name="പട്ടികജാതി പ്രത്യേക ഘടകപദ്ധതി - കാർഷിക ഭൂമി വാങ്ങലും യന്ത്രവൽക്കരണവും",
+            scheme_code="KL-SC-AGRI-05",
+            classification="Subsidy",
+            scheme_status="Active",
+            government_department="KL_SC_DEPT",
+            government_level="State",
+            scheme_objective="To empower landless Scheduled Caste agricultural labourers by providing financial grants for agricultural land acquisition and 75% subsidy for modern farm implements.",
+            scheme_description="Financial assistance up to Rs 5.00 Lakhs for purchasing arable farm land (50% grant + 50% soft loan). Up to 75% subsidy (maximum Rs 75,000) for power tillers, sprayers, irrigation pumps, and brush cutters.",
+            beneficiary_categories=["Scheduled Caste Agricultural Labourers", "SC Small Farmers", "SC Women Farmers"],
+            eligible_farmer_types=["Landless agricultural worker", "Owner cultivator belonging to SC"],
+            min_land_acres=0.2,
+            max_land_acres=2.0,
+            subsidy_amount=250000.0,
+            subsidy_percentage=75.0,
+            unit_of_assistance="per beneficiary unit",
+            disbursement_mode="Direct Benefit Transfer (DBT)",
+            eligible_crops=["Paddy", "Vegetables", "Tapioca", "Banana", "Coconut"],
+            applicable_districts=["All 14 Districts of Kerala"],
+            application_procedure="Apply online via SCDD citizen portal or submit application to Block / District SC Development Officer with caste and income certificate.",
+            official_application_portal="https://scdd.kerala.gov.in/",
+            required_documents=["Caste Certificate", "Annual Family Income Certificate", "Aadhaar Card", "Ration Card", "Preliminary Land Agreement (for land purchase)"],
+            source_document_name="Scheduled Castes Special Component Plan (SCP) Agricultural Assistance Guidelines",
+            source_page_numbers=[1],
+            is_confirmed=True,
+            confidence_score=0.99
+        )
+    },
+    {
+        "dept_id": "KL_ST_DEPT",
+        "doc_match_keywords": ["tsp", "stdd", "tribal", "scheduled tribe", "traditional"],
+        "scheme": ExtractedSchemeInformation(
+            scheme_name="Tribal Sub-Plan (TSP) Comprehensive Agricultural & Traditional Farming Assistance Scheme",
+            malayalam_name="പട്ടികവർഗ്ഗ ഉപപദ്ധതി - സമഗ്ര കാർഷിക പരമ്പരാഗത കൃഷി സഹായ പദ്ധതി",
+            scheme_code="KL-ST-AGRI-06",
+            classification="Subsidy",
+            scheme_status="Active",
+            government_department="KL_ST_DEPT",
+            government_level="State",
+            scheme_objective="Livelihood upliftment for indigenous tribal farming families through free organic inputs, Robusta coffee/pepper rejuvenation, and traditional hill crop promotion.",
+            scheme_description="100% financial grant up to Rs 25,000 per family for native seeds, organic inputs, millets, and tubers. Free high-yielding coffee and pepper seedlings plus Rs 15,000/acre input aid over 2 years. Free scientific bee-keeping gear.",
+            beneficiary_categories=["Scheduled Tribe Cultivators", "Tribal Settlement Families", "Tribal Women SHGs"],
+            eligible_farmer_types=["ST Traditional Cultivator", "Forest Rights Holder under FRA"],
+            min_land_acres=0.1,
+            max_land_acres=10.0,
+            subsidy_amount=25000.0,
+            subsidy_percentage=100.0,
+            unit_of_assistance="per tribal farming family",
+            disbursement_mode="Direct Benefit Transfer (DBT)",
+            eligible_crops=["Coffee", "Pepper", "Cardamom", "Ginger", "Millets", "Tubers", "Paddy", "Honey"],
+            applicable_districts=["All 14 Districts of Kerala", "Wayanad", "Idukki", "Palakkad", "Kasaragod", "Kannur"],
+            application_procedure="Apply through local Tribal Extension Officer (TEO) / ITDP Project Office or Tribal Ooru Vikasana Samithi.",
+            official_application_portal="https://stdd.kerala.gov.in/",
+            required_documents=["Scheduled Tribe Certificate", "Forest Rights Certificate (FRC) / Land Possession Document", "Aadhaar Card", "Bank Passbook"],
+            source_document_name="Tribal Sub-Plan (TSP) Agricultural and Traditional Farming Assistance Guidelines",
+            source_page_numbers=[1],
+            is_confirmed=True,
+            confidence_score=0.99
+        )
+    },
+    {
+        "dept_id": "KL_LSGD",
+        "doc_match_keywords": ["lsgd", "janakeeya", "panchayat", "plan fund", "peoples plan"],
+        "scheme": ExtractedSchemeInformation(
+            scheme_name="Janakeeya Asoothranam (People's Plan) Grama Panchayat Agricultural Production Scheme",
+            malayalam_name="ജനകീയാസൂത്രണം ഗ്രാമപഞ്ചായത്ത് കാർഷിക ഉൽപ്പാദന വികസന പദ്ധതി",
+            scheme_code="KL-LSG-AGRI-07",
+            classification="Subsidy",
+            scheme_status="Active",
+            government_department="KL_LSGD",
+            government_level="Local-Body",
+            scheme_objective="Mandatory 10-15% Grama Panchayat plan fund deployment for localized vegetable clusters, fallow-land cultivation subsidies, and farm infrastructure through MGNREGS.",
+            scheme_description="Grama Panchayats provide Rs 30,000 - 40,000/ha subsidy for fallow land revival, subsidized vegetable seedlings/fruit plants, and 100% labour wage coverage for farm ponds and field bunding via MGNREGS.",
+            beneficiary_categories=["Household Farmers", "Kudumbashree JLGs", "Small and Marginal Farmers", "All Cultivators"],
+            eligible_farmer_types=["Owner cultivator", "Tenant farmer", "Joint Liability Group"],
+            min_land_acres=0.05,
+            max_land_acres=10.0,
+            subsidy_amount=40000.0,
+            subsidy_percentage=75.0,
+            unit_of_assistance="per hectare / per cluster unit",
+            disbursement_mode="Direct Benefit Transfer (DBT)",
+            eligible_crops=["Vegetables", "Paddy", "Banana", "Tapioca", "Tubers", "Fruit Plants"],
+            applicable_districts=["All 14 Districts of Kerala"],
+            application_procedure="Apply at the local Grama Panchayat or Krishi Bhavan during annual Grama Sabha plan finalization.",
+            official_application_portal="https://lsgkerala.gov.in/",
+            required_documents=["Aadhaar Card", "Land Tax Receipt / JLG Agreement", "Ration Card", "Bank Passbook"],
+            source_document_name="Janakeeya Asoothranam (People's Plan) Productive Sector Agriculture Guidelines",
+            source_page_numbers=[1],
+            is_confirmed=True,
+            confidence_score=0.99
+        )
+    },
+    {
+        "dept_id": "KL_INDUSTRIES",
+        "doc_match_keywords": ["fme", "processing", "food", "industry", "pm-fme"],
+        "scheme": ExtractedSchemeInformation(
+            scheme_name="PM Formalisation of Micro Food Processing Enterprises (PM-FME) Scheme Kerala",
+            malayalam_name="പി.എം. എഫ്.എം.ഇ ഭക്ഷ്യ സംസ്കരണ വ്യവസായ സബ്സിഡി പദ്ധതി",
+            scheme_code="KL-IND-FME-08",
+            classification="Subsidy",
+            scheme_status="Active",
+            government_department="KL_INDUSTRIES",
+            government_level="Central/State Share",
+            scheme_objective="To support individual farmers, FPOs, and SHGs in establishing micro food processing and value-addition units for agricultural produce with 35% capital subsidy.",
+            scheme_description="35% credit-linked capital subsidy up to Rs 10.00 Lakhs for setting up agro-processing units (coconut oil, banana chips, spice powders, jackfruit products, dairy). Seed capital of Rs 40,000 per SHG member for tools and working capital.",
+            beneficiary_categories=["Farmer Entrepreneurs", "FPOs", "Kudumbashree SHGs", "Agri-entrepreneurs"],
+            eligible_farmer_types=["Individual farm entrepreneur", "FPO", "Farmer Co-operative", "SHG/NHG"],
+            min_land_acres=0.0,
+            max_land_acres=50.0,
+            subsidy_amount=1000000.0,
+            subsidy_percentage=35.0,
+            unit_of_assistance="per processing unit (up to Rs 10 Lakhs)",
+            disbursement_mode="Direct Benefit Transfer (DBT)",
+            eligible_crops=["Coconut", "Banana", "Spices", "Jackfruit", "Cassava", "Paddy", "Honey", "Dairy Products"],
+            applicable_districts=["All 14 Districts of Kerala"],
+            application_procedure="Apply online at National PMFME portal (pmfme.mofpi.gov.in). District Resource Persons (DRP) at District Industries Centres (DIC) provide free project preparation assistance.",
+            official_application_portal="https://pmfme.mofpi.gov.in/",
+            required_documents=["Aadhaar Card", "PAN Card", "Detailed Project Report (DPR)", "Bank Account Statement", "Udyam Registration"],
+            source_document_name="PM Formalisation of Micro Food Processing Enterprises (PM-FME) Scheme Guidelines",
+            source_page_numbers=[1],
+            is_confirmed=True,
+            confidence_score=0.99
+        )
+    },
+    {
+        "dept_id": "KL_ANERT",
+        "doc_match_keywords": ["anert", "kusum", "solar", "pump", "dryer"],
+        "scheme": ExtractedSchemeInformation(
+            scheme_name="PM-KUSUM Standalone Solar Agriculture Pumps & Solarization Scheme (Component B & C)",
+            malayalam_name="പി.എം. കുസും സോളാർ കാർഷിക പമ്പ് പദ്ധതി (ഘടകം ബി & സി)",
+            scheme_code="KL-ANERT-KUSUM-09",
+            classification="Subsidy",
+            scheme_status="Active",
+            government_department="KL_ANERT",
+            government_level="Central/State Share",
+            scheme_objective="To install off-grid solar-powered agricultural pumps up to 7.5 HP (Component B) and solarize grid-connected irrigation pumps (Component C) with up to 70% combined government subsidy.",
+            scheme_description="Provides 60% to 70% total subsidy (30% Central MNRE + 30-40% ANERT/Kerala State) for standalone solar surface or submersible pumps (2 HP to 7.5 HP). 50% capital subsidy for solar agricultural greenhouses and copra/spice dryers.",
+            beneficiary_categories=["All Farmers", "Small and Marginal Farmers", "Water User Associations", "FPOs"],
+            eligible_farmer_types=["Owner cultivator", "Tenant farmer", "Group of farmers"],
+            min_land_acres=0.25,
+            max_land_acres=25.0,
+            subsidy_amount=180000.0,
+            subsidy_percentage=70.0,
+            unit_of_assistance="per solar pump set (up to 7.5 HP)",
+            disbursement_mode="Direct Benefit Transfer (DBT)",
+            eligible_crops=["Paddy", "Vegetables", "Banana", "Coconut", "Spices", "Tubers"],
+            applicable_districts=["All 14 Districts of Kerala"],
+            application_procedure="Apply online via ANERT PM-KUSUM Portal (pmkusum.kerala.gov.in or anert.gov.in) with land tax and water source proof.",
+            official_application_portal="https://pmkusum.kerala.gov.in/",
+            required_documents=["Aadhaar Card", "Current Land Tax Receipt", "Bank Passbook Copy", "Water Source Certificate / Open Well / Borewell Proof"],
+            source_document_name="PM-KUSUM Component B & C Solar Agricultural Pumps Scheme Operational Guidelines",
+            source_page_numbers=[1],
+            is_confirmed=True,
+            confidence_score=0.99
+        )
     }
 ]
 
@@ -601,7 +1128,7 @@ def run():
     embedding_gen = EmbeddingGenerator()
 
     # Phase 1: Register and Persist All Scheme Intelligence
-    print("\n[Phase 1/3] Registering Verified Schemes across All Collected Documents...")
+    print("\n[Phase 1/3] Registering Verified Schemes across All Collected Documents...", flush=True)
     registered_schemes: Dict[str, str] = {} # scheme_name -> scheme_id
     dept_schemes: Dict[str, List[str]] = {}
 
@@ -616,12 +1143,12 @@ def run():
         registered_schemes[scheme_name] = scheme_id
         dept_schemes.setdefault(dept_id, []).append(scheme_id)
 
-        print(f"  + [{dept_id}] {scheme_name} -> ID: {scheme_id}")
+        print(f"  + [{dept_id}] {scheme_name} -> ID: {scheme_id}", flush=True)
 
-    print(f"\nSuccessfully registered {len(registered_schemes)} comprehensive schemes in PostgreSQL.")
+    print(f"\nSuccessfully registered {len(registered_schemes)} comprehensive schemes in PostgreSQL.", flush=True)
 
     # Phase 2: Map Collected Documents to Schemes and Index Passages
-    print("\n[Phase 2/3] Mapping Downloaded Documents to Schemes & Indexing for Vector RAG...")
+    print("\n[Phase 2/3] Mapping Downloaded Documents to Schemes & Indexing for Vector RAG...", flush=True)
 
     with get_connection() as conn:
         with conn.cursor() as cur:
@@ -673,25 +1200,28 @@ def run():
                     """, (best_scheme_id, doc_id))
                     mapped_count += 1
 
-                # Extract text chunks and compute vector embeddings for key scheme documents
+                # Extract text chunks and compute vector embeddings for documents not yet indexed
                 fpath = Path(fpath_str)
-                if fpath.exists() and (idx <= 120 or best_scheme_id):
-                    chunks = extract_pdf_chunks(fpath, max_pages=3)
-                    for c in chunks:
-                        vec = embedding_gen.generate_embedding(c["text"][:1000])
-                        vec_str = "[" + ",".join(f"{x:.6f}" for x in vec) + "]"
-                        cur.execute("""
-                            INSERT INTO extracted_document_content (
-                                document_id, scheme_id, page_number, chunk_index,
-                                content_text, is_table, embedding, created_at
-                            ) VALUES (%s, %s, %s, %s, %s, FALSE, %s::vector, CURRENT_TIMESTAMP)
-                            ON CONFLICT DO NOTHING;
-                        """, (doc_id, best_scheme_id, c["page_number"], 0, c["text"][:5000], vec_str))
-                        indexed_chunks += 1
+                if fpath.exists():
+                    cur.execute("SELECT 1 FROM extracted_document_content WHERE document_id = %s LIMIT 1;", (doc_id,))
+                    already_indexed = cur.fetchone()
+                    if not already_indexed:
+                        chunks = extract_pdf_chunks(fpath, max_pages=3)
+                        for c in chunks:
+                            vec = embedding_gen.generate_embedding(c["text"][:1000])
+                            vec_str = "[" + ",".join(f"{x:.6f}" for x in vec) + "]"
+                            cur.execute("""
+                                INSERT INTO extracted_document_content (
+                                    document_id, scheme_id, page_number, chunk_index,
+                                    content_text, is_table, embedding, created_at
+                                ) VALUES (%s, %s, %s, %s, %s, FALSE, %s::vector, CURRENT_TIMESTAMP)
+                                ON CONFLICT DO NOTHING;
+                            """, (doc_id, best_scheme_id, c["page_number"], 0, c["text"][:5000], vec_str))
+                            indexed_chunks += 1
 
-                if idx % 50 == 0 or idx == len(all_downloaded):
+                if idx % 25 == 0 or idx == len(all_downloaded):
                     conn.commit()
-                    print(f"  Processed [{idx}/{len(all_downloaded)}] documents... (Mapped: {mapped_count}, Indexed chunks: {indexed_chunks})")
+                    print(f"  Processed [{idx}/{len(all_downloaded)}] documents... (Mapped: {mapped_count}, New indexed chunks: {indexed_chunks})", flush=True)
 
             conn.commit()
 

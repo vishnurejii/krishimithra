@@ -5,6 +5,7 @@ Specialized Crawler Adapter for Kerala Commodity Boards:
 - Spices Board India (Kochi)
 """
 
+import re
 from typing import List, Set
 from bs4 import BeautifulSoup
 from crawler.base_crawler import BaseCrawler, DiscoveredDocument
@@ -79,6 +80,12 @@ class CommodityBoardsCrawlerAdapter(BaseCrawler):
         for board in targets:
             dept_id = board["dept_id"]
             source_id = board["source_id"]
+
+            if dept_id == "BD_RUBBER":
+                rb_docs = self._crawl_rubber_board()
+                all_docs.extend(rb_docs)
+                continue
+
             seen_urls: Set[str] = set()
 
             for url in board["urls"]:
@@ -118,3 +125,90 @@ class CommodityBoardsCrawlerAdapter(BaseCrawler):
 
         logger.info(f"Completed Commodity Boards crawl. Total documents discovered: {len(all_docs)}")
         return all_docs
+
+    def _crawl_rubber_board(self) -> List[DiscoveredDocument]:
+        """Specialized crawler for Rubber Board India dynamic portal."""
+        logger.info("Running specialized crawler for Rubber Board India...")
+        docs = []
+        seen = set()
+        base_url = "https://rubberboard.gov.in/"
+
+        try:
+            # 1. Establish session
+            self.session.get(f"{base_url}public?lang=E", timeout=15, check_robots=False)
+
+            # 2. Scrape Approved EFC and Scheme Rules table
+            post_data = {
+                "item_id": "259620240901",
+                "servlet": "articleview",
+                "parent": "48",
+                "component": "c1",
+                "menuid": "850",
+                "menuname": "Approved EFC and Scheme Rules, Modalities and Guidelines 2024"
+            }
+            res = self.session.session.post(f"{base_url}menuview", data=post_data, timeout=15, verify=False)
+            if res.status_code == 200:
+                soup = BeautifulSoup(res.text, "html.parser")
+                for tr in soup.find_all("tr"):
+                    txt = " ".join(tr.get_text().split())
+                    links = tr.find_all("a", href=True)
+                    for a in links:
+                        href = a["href"].strip()
+                        if "rbfilereader" in href:
+                            full_url = self.normalize_url(base_url, href)
+                            if full_url not in seen:
+                                seen.add(full_url)
+                                title = txt if len(txt) > 4 else "Rubber Board Scheme Guidelines"
+                                score, matched_kws = match_keywords(f"{title} rubber scheme subsidy")
+                                docs.append(DiscoveredDocument(
+                                    title=title,
+                                    original_url=full_url,
+                                    department_id="BD_RUBBER",
+                                    source_id="SRC_BD_RUBBER",
+                                    file_type="pdf",
+                                    doc_type="Guidelines",
+                                    language="en",
+                                    context_snippet=f"{title} - Official Rubber Board scheme guidelines",
+                                    match_score=max(score, 8),
+                                    matched_keywords=matched_kws
+                                ))
+                                logger.info(f"[Rubber Board] Discovered scheme document: {title} -> {full_url}")
+
+            # 3. Scrape c9 external link items
+            r_public = self.session.get(f"{base_url}public?lang=E", timeout=15, check_robots=False)
+            if r_public.status_code == 200:
+                soup_pub = BeautifulSoup(r_public.text, "html.parser")
+                c9_pattern = re.compile(r"gotoMenuLinkview\('[^']+',\s*'([^']+)',\s*'[^']+',\s*'c9'", re.IGNORECASE)
+                for a in soup_pub.find_all("a", onclick=True):
+                    m = c9_pattern.search(a["onclick"])
+                    if m:
+                        item_id = m.group(1)
+                        item_title = " ".join(a.get_text().split()) or a.get("title", "")
+                        try:
+                            res_link = self.session.session.post(f"{base_url}getExternalLink", data={"item_id": item_id}, timeout=10, verify=False)
+                            target_url = res_link.text.strip()
+                            if "rbfilereader" in target_url or target_url.lower().endswith(".pdf"):
+                                full_url = self.normalize_url(base_url, target_url)
+                                if full_url not in seen:
+                                    seen.add(full_url)
+                                    score, matched_kws = match_keywords(f"{item_title} rubber scheme")
+                                    docs.append(DiscoveredDocument(
+                                        title=item_title or "Rubber Board Scheme Document",
+                                        original_url=full_url,
+                                        department_id="BD_RUBBER",
+                                        source_id="SRC_BD_RUBBER",
+                                        file_type="pdf",
+                                        doc_type=self.infer_doc_type(item_title, full_url),
+                                        language="en",
+                                        context_snippet=f"{item_title} - Official Rubber Board document",
+                                        match_score=max(score, 5),
+                                        matched_keywords=matched_kws
+                                    ))
+                                    logger.info(f"[Rubber Board] Discovered c9 link: {item_title} -> {full_url}")
+                        except Exception as e:
+                            logger.warning(f"Error fetching getExternalLink for item {item_id}: {e}")
+
+        except Exception as e:
+            logger.error(f"Error crawling Rubber Board: {e}")
+
+        return docs

@@ -60,7 +60,7 @@ class BaseCrawler(ABC):
     def is_document_url(self, url: str) -> bool:
         """Identifies file extension for PDFs, Word docs, etc."""
         url_lower = url.lower()
-        return any(url_lower.endswith(ext) or ext in url_lower for ext in [".pdf", ".doc", ".docx", ".odt"])
+        return any(ext in url_lower for ext in [".pdf", ".doc", ".docx", ".odt", "rbfilereader"])
 
     def infer_doc_type(self, title: str, url: str) -> str:
         """Infers document type from title and path."""

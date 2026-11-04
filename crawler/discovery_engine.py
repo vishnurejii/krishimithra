@@ -51,7 +51,7 @@ class DiscoveryEngine:
             crawler = AnimalHusbandryCrawlerAdapter(dept_id, f"SRC_{dept_id}", dept.official_website)
         elif dept_id in ["BD_COCONUT", "BD_RUBBER", "BD_SPICES", "BD_COFFEE", "BD_NABARD"]:
             crawler = CommodityBoardsCrawlerAdapter(target_dept_id=dept_id)
-        elif dept_id in ["CEN_PM_KISAN", "CEN_PMFBY", "CEN_MIDH", "CEN_AIF", "CEN_SOIL_HEALTH", "CEN_PM_KUSUM", "CEN_RKVY"]:
+        elif dept_id in ["CEN_PM_KISAN", "CEN_PMFBY", "CEN_MIDH", "CEN_AIF", "CEN_SOIL_HEALTH", "CEN_PM_KUSUM", "CEN_RKVY", "CEN_MISS_KCC"]:
             crawler = CentralSchemesCrawlerAdapter(target_dept_id=dept_id)
         else:
             entry_points = [dept.official_website]
