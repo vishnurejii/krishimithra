@@ -1,0 +1,1090 @@
+{
+  "ANERT (Agency for New and Renewable Energy Research and Technology)": [
+    {
+      "id": "sch_f515c8d939",
+      "name": "PM-KUSUM Standalone Solar Agriculture Pumps & Solarization Scheme (Component B & C)",
+      "classification": "Subsidy",
+      "level": "Central/State Share",
+      "objective": "To install off-grid solar-powered agricultural pumps up to 7.5 HP (Component B) and solarize grid-connected irrigation pumps (Component C) with up to 70% combined government subsidy.",
+      "portal": "https://pmkusum.kerala.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 70.0,
+      "subsidy_amt": 180000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Tenant farmer",
+        "Group of farmers"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 25.0,
+      "doc_count": 1,
+      "crops": "Banana, Coconut, Paddy, Spices, Tubers, Vegetables"
+    }
+  ],
+  "Agriculture Development and Farmers' Welfare Department": [
+    {
+      "id": "sch_334e6dd41d",
+      "name": "Guidelines For Weather Based Crop Insurance Scheme Kerala",
+      "classification": "Insurance",
+      "level": "State",
+      "objective": "Government assistance and support programme under Crop Insurance WBCIS Test",
+      "portal": "https://aimsnew.kerala.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 50000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [],
+      "caste": null,
+      "min_land": null,
+      "max_land": null,
+      "doc_count": 0,
+      "crops": "Banana, Cardamom, Paddy, Pepper"
+    },
+    {
+      "id": "sch_baf6961be7",
+      "name": "Kerala Agricultural Crops Base Price Scheme (Floor Price Guarantee)",
+      "classification": "Market support and price incentive",
+      "level": "State",
+      "objective": "First-in-India floor price guarantee scheme protecting vegetable and fruit farmers from market distress sales.",
+      "portal": "https://aimsnew.kerala.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": null,
+      "subsidy_amt": 34.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Tenant farmer",
+        "Self Help Groups"
+      ],
+      "caste": null,
+      "min_land": 0.05,
+      "max_land": 15.0,
+      "doc_count": 2,
+      "crops": "Banana, Ginger, Pineapple, Tapioca, Vegetables"
+    },
+    {
+      "id": "sch_95619a27a7",
+      "name": "Kerala Natural Calamity Crop Damage Relief Scheme",
+      "classification": "Government Service",
+      "level": "State",
+      "objective": "Emergency financial assistance under State Disaster Response Fund (SDRF) for farmers suffering crop loss due to flash floods, landslides, extreme rainfall, or wild animals.",
+      "portal": "https://aimsnew.kerala.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": null,
+      "subsidy_amt": 17000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Tenant cultivator"
+      ],
+      "caste": null,
+      "min_land": 0.01,
+      "max_land": 50.0,
+      "doc_count": 7,
+      "crops": "Banana, Cardamom, Coconut, Paddy, Pepper, Rubber, Vegetables"
+    },
+    {
+      "id": "sch_bc6b300262",
+      "name": "Operational Guidelines For Weather Based Crop Insurance Scheme (Wbcis)",
+      "classification": "Insurance",
+      "level": "State",
+      "objective": "Government assistance and support programme under Weather Based Crop Insurance Scheme (WBCIS)",
+      "portal": "https://aimsnew.kerala.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 50000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [],
+      "caste": null,
+      "min_land": null,
+      "max_land": null,
+      "doc_count": 0,
+      "crops": "Banana, Cardamom, Paddy, Pepper"
+    },
+    {
+      "id": "sch_87ad91558e",
+      "name": "Paddy Land Royalty Scheme Kerala",
+      "classification": "Market support and price incentive",
+      "level": "State",
+      "objective": "To promote wetland preservation, prevent paddy land conversion, and provide annual ecological service royalty to paddy cultivators.",
+      "portal": "https://aimsnew.kerala.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": null,
+      "subsidy_amt": 5500.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Tenant farmer",
+        "Padashekhara Samiti members"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 50.0,
+      "doc_count": 0,
+      "crops": "Paddy"
+    },
+    {
+      "id": "sch_7c69b1b61c",
+      "name": "Revamped Kerala State Crop Insurance Scheme (KISCS)",
+      "classification": "Insurance",
+      "level": "State",
+      "objective": "Comprehensive compensation against crop loss due to drought, flood, landslide, wild animal attacks, sea erosion, cyclone, and lightning for 27 notified crops.",
+      "portal": "https://aimsnew.kerala.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": null,
+      "subsidy_amt": 35000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Tenant farmer",
+        "Lessee",
+        "Kudumbashree JLG"
+      ],
+      "caste": null,
+      "min_land": 0.05,
+      "max_land": 25.0,
+      "doc_count": 96,
+      "crops": "Banana, Cardamom, Coconut, Ginger, Nutmeg, Paddy, Pepper, Rubber, Tapioca, Turmeric, Vegetables"
+    }
+  ],
+  "Agriculture Infrastructure Fund (AIF)": [
+    {
+      "id": "sch_8e56b257e8",
+      "name": "Agriculture Infrastructure Fund (AIF)",
+      "classification": "Agricultural loan",
+      "level": "Central",
+      "objective": "Medium-to-long term debt financing facility for post-harvest management infrastructure, cold chains, primary processing units, and community farming assets.",
+      "portal": "https://agriinfra.dac.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 3.0,
+      "subsidy_amt": 20000000.0,
+      "max_limit": 20000000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Individual farmers",
+        "Farmer Groups",
+        "FPOs",
+        "Cooperatives"
+      ],
+      "caste": null,
+      "min_land": null,
+      "max_land": null,
+      "doc_count": 10,
+      "crops": "Banana, Cardamom, Coconut, Coffee, Paddy, Pepper, Rubber, Spices, Vegetables"
+    }
+  ],
+  "Animal Husbandry Department, Kerala": [
+    {
+      "id": "sch_e2268f3912",
+      "name": "Kerala Commercial Dairy & Cow Rearing Assistance Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "To promote sustainable milk production, livelihood security for rural households, and establish modern mini dairy farms.",
+      "portal": "https://ahd.kerala.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 60000.0,
+      "max_limit": 150000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Individual livestock owners",
+        "Kudumbashree JLG"
+      ],
+      "caste": null,
+      "min_land": 0.05,
+      "max_land": 10.0,
+      "doc_count": 110,
+      "crops": "Dairy farming, Fodder grass"
+    }
+  ],
+  "Coconut Development Board (Kochi)": [
+    {
+      "id": "sch_8bdfa1ea4c",
+      "name": "CDB Expansion of Area under Coconut (New Planting Subsidy)",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Incentivizing farmers to expand coconut cultivation into new and fallow lands using recognized high-yielding varieties.",
+      "portal": "https://coconutboard.gov.in/ApplicationForms.aspx",
+      "benefit_type": null,
+      "subsidy_pct": 25.0,
+      "subsidy_amt": 8000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Long leaseholders"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 10.0,
+      "doc_count": 6,
+      "crops": "Coconut"
+    },
+    {
+      "id": "sch_484d04ad94",
+      "name": "CDB Financial Assistance for Small Coconut Nursery Establishment",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "To produce and distribute high quality, disease-free certified hybrid coconut seedlings at grassroots level.",
+      "portal": "https://coconutboard.gov.in/ApplicationForms.aspx",
+      "benefit_type": null,
+      "subsidy_pct": 25.0,
+      "subsidy_amt": 200000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Coconut Producer Societies"
+      ],
+      "caste": null,
+      "min_land": 0.5,
+      "max_land": 5.0,
+      "doc_count": 7,
+      "crops": "Coconut"
+    },
+    {
+      "id": "sch_e6dfdc5a57",
+      "name": "CDB Integrated Farming in Coconut Holdings for Productivity Improvement",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Laying out demonstration plots, adoption of integrated nutrient and pest management, and establishment of organic manure units in coconut gardens.",
+      "portal": "https://coconutboard.in/CoconutAssistance/Assistance/CoconutAssistance.aspx",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 35000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Tenant farmer with registered lease",
+        "Coconut Producer Societies (CPS)"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 10.0,
+      "doc_count": 65,
+      "crops": "Banana, Cocoa, Coconut, Ginger, Nutmeg, Pepper, Turmeric"
+    },
+    {
+      "id": "sch_0253aab007",
+      "name": "CDB Replanting and Rejuvenation of Coconut Gardens",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "To eradicate root-wilt diseased, senile, and unproductive coconut palms and replant with disease-tolerant hybrid quality seedlings.",
+      "portal": "https://coconutboard.in/CoconutAssistance/Assistance/CoconutAssistance.aspx",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 48000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Kudumbashree JLG"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 12.5,
+      "doc_count": 1,
+      "crops": "Coconut"
+    },
+    {
+      "id": "sch_da388bde05",
+      "name": "CDB Technology Mission on Coconut (TMOC) Demonstration & Technology Adoption Scheme",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "To support coconut farmers and processors in establishing modern farm-level processing technologies (virgin coconut oil, copra solar dryers, tender coconut water packing, pest biocontrol laboratories).",
+      "portal": "https://coconutboard.in/",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 1000000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Individual Coconut Grower",
+        "Coconut Producer Company (CPC)",
+        "Farmer Cooperative"
+      ],
+      "caste": null,
+      "min_land": 0.5,
+      "max_land": 50.0,
+      "doc_count": 0,
+      "crops": "Coconut"
+    },
+    {
+      "id": "sch_c3b7c16fce",
+      "name": "Coconut Development Board Replanting and Rejuvenation Scheme",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Cutting and removing disease-affected and senile palms and replanting with hybrid quality coconut seedlings.",
+      "portal": "https://coconutboard.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 17500.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": null,
+      "doc_count": 0,
+      "crops": "Coconut"
+    },
+    {
+      "id": "sch_302bdf3c76",
+      "name": "Kera Suraksha Insurance Scheme for Coconut Tree Climbers & Harvesters",
+      "classification": "Insurance",
+      "level": "Central/Board",
+      "objective": "Providing 24-hour accident insurance coverage to traditional coconut palm climbers, Friends of Coconut Tree (FoCT) trainees, and neera technicians.",
+      "portal": "https://coconutboard.gov.in/ApplicationForms.aspx",
+      "benefit_type": null,
+      "subsidy_pct": null,
+      "subsidy_amt": 500000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Traditional palm climbers",
+        "Certified FoCT climbers",
+        "Harvesters"
+      ],
+      "caste": null,
+      "min_land": null,
+      "max_land": null,
+      "doc_count": 7,
+      "crops": "Coconut"
+    },
+    {
+      "id": "sch_307a408b4c",
+      "name": "Technology Mission on Coconut (TMOC) - Processing & Product Diversification",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "To promote value addition, modern processing infrastructure, Neera packaging, virgin coconut oil (VCO), desiccated coconut, and shell activated carbon.",
+      "portal": "https://coconutboard.gov.in/TechnologyMission.aspx",
+      "benefit_type": null,
+      "subsidy_pct": 25.0,
+      "subsidy_amt": 5000000.0,
+      "max_limit": 10000000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Farmer Producer Organizations (FPO)",
+        "Coconut Producer Companies",
+        "Individual agri-processors"
+      ],
+      "caste": null,
+      "min_land": null,
+      "max_land": null,
+      "doc_count": 77,
+      "crops": "Coconut"
+    }
+  ],
+  "Coffee Board of India (Wayanad / Kerala Region)": [
+    {
+      "id": "sch_148b4e133f",
+      "name": "Coffee Board Integrated Coffee Development Project (ICDP)",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "To support coffee replanting, water augmentation, mechanization, and coffee sustainability certification in Wayanad and Travancore zones.",
+      "portal": "https://coffeeboard.gov.in/schemes.html",
+      "benefit_type": null,
+      "subsidy_pct": 40.0,
+      "subsidy_amt": 50000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Tribal coffee cultivators"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 25.0,
+      "doc_count": 8,
+      "crops": "Coffee, Pepper"
+    }
+  ],
+  "Dairy Development Department, Kerala": [
+    {
+      "id": "sch_844ebfff5a",
+      "name": "Dairy Development Department Ksheeragramam Panchayat Dairy Development Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Transforming selected 10 panchayats per year into self-sufficient model dairy hubs through complete cattle induction, cattle sheds, and mechanization.",
+      "portal": "https://ksheerasree.kerala.gov.in/scheme/",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 150000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Selected dairy farmers within approved Ksheeragramam panchayats"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 5.0,
+      "doc_count": 0,
+      "crops": "Dairy, Fodder, Napier"
+    },
+    {
+      "id": "sch_4c28d4ce96",
+      "name": "Dairy Development Department Milk Incentive Direct Benefit Transfer Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Direct financial assistance to dairy farmers based on the quantity and quality of milk poured to primary dairy cooperative societies (APCOS).",
+      "portal": "https://ksheerasree.kerala.gov.in/farmerlogin",
+      "benefit_type": null,
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 6.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Dairy farmers pouring milk regularly to primary milk cooperative societies"
+      ],
+      "caste": null,
+      "min_land": 0.0,
+      "max_land": 10.0,
+      "doc_count": 10,
+      "crops": "Cattle, Dairy"
+    }
+  ],
+  "Forest and Wildlife Department, Kerala": [
+    {
+      "id": "sch_f2a235e000",
+      "name": "Kerala Forest Wildlife Attack Crop Loss Compensation Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "To compensate agricultural farmers for 100% assessed crop damage caused by wild animals and provide 50% capital subsidy for solar power fencing on farm boundaries.",
+      "portal": "https://forest.kerala.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 50000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Forest land possessor",
+        "Tenant farmer"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 15.0,
+      "doc_count": 1,
+      "crops": "Arecanut, Banana, Cardamom, Coconut, Paddy, Pepper, Rubber, Tapioca"
+    }
+  ],
+  "Industries and Commerce Department (PM-FME & ODOP)": [
+    {
+      "id": "sch_e0677c6a1b",
+      "name": "PM Formalisation of Micro Food Processing Enterprises (PM-FME) Scheme Kerala",
+      "classification": "Subsidy",
+      "level": "Central/State Share",
+      "objective": "To support individual farmers, FPOs, and SHGs in establishing micro food processing and value-addition units for agricultural produce with 35% capital subsidy.",
+      "portal": "https://pmfme.mofpi.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 35.0,
+      "subsidy_amt": 1000000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Individual farm entrepreneur",
+        "FPO",
+        "Farmer Co-operative",
+        "SHG/NHG"
+      ],
+      "caste": null,
+      "min_land": 0.0,
+      "max_land": 50.0,
+      "doc_count": 1,
+      "crops": "Banana, Cassava, Coconut, Dairy Products, Honey, Jackfruit, Paddy, Spices"
+    }
+  ],
+  "Kudumbashree State Mission (Agriculture Wing)": [
+    {
+      "id": "sch_99dcec377e",
+      "name": "Kudumbashree Collective Farming and JLG Agricultural Subsidy",
+      "classification": "Agricultural loan",
+      "level": "State",
+      "objective": "Empowering women farmer collectives (Joint Liability Groups) to undertake group farming in fallow and leased lands.",
+      "portal": "https://www.kudumbashree.org/",
+      "benefit_type": null,
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 30000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Joint Liability Groups (JLG)",
+        "Kudumbashree Neighborhood Groups (NHG)"
+      ],
+      "caste": null,
+      "min_land": 0.5,
+      "max_land": 20.0,
+      "doc_count": 49,
+      "crops": "Banana, Paddy, Tapioca, Tuber crops, Vegetables"
+    }
+  ],
+  "Labour and Skills Department (Kerala Agricultural Workers Welfare Fund)": [
+    {
+      "id": "sch_bcad2ec3d2",
+      "name": "Kerala Agricultural Workers Pension Scheme",
+      "classification": "Pensions and welfare benefits for agricultural workers",
+      "level": "State",
+      "objective": "Provide social security and monthly welfare pension to agricultural laborers who have reached 60 years of age.",
+      "portal": "https://welfareboard.kerala.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": null,
+      "subsidy_amt": 1600.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Registered Agricultural Worker"
+      ],
+      "caste": null,
+      "min_land": null,
+      "max_land": null,
+      "doc_count": 1,
+      "crops": "All crops"
+    }
+  ],
+  "Local Self Government Department (Panchayats / LSGD)": [
+    {
+      "id": "sch_793fcbc1df",
+      "name": "Janakeeya Asoothranam (People's Plan) Grama Panchayat Agricultural Production Scheme",
+      "classification": "Subsidy",
+      "level": "Local-Body",
+      "objective": "Mandatory 10-15% Grama Panchayat plan fund deployment for localized vegetable clusters, fallow-land cultivation subsidies, and farm infrastructure through MGNREGS.",
+      "portal": "https://lsgkerala.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 75.0,
+      "subsidy_amt": 40000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Tenant farmer",
+        "Joint Liability Group"
+      ],
+      "caste": null,
+      "min_land": 0.05,
+      "max_land": 10.0,
+      "doc_count": 1,
+      "crops": "Banana, Fruit Plants, Paddy, Tapioca, Tubers, Vegetables"
+    }
+  ],
+  "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)": [
+    {
+      "id": "sch_8f50af7bf2",
+      "name": "Kisan Credit Card (KCC) Scheme with Interest Subvention",
+      "classification": "Agricultural loan",
+      "level": "Central",
+      "objective": "Timely, flexible, and simplified short-term credit for crop cultivation, animal husbandry, post-harvest expenses, and farm asset maintenance.",
+      "portal": "https://pmkisan.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 3.0,
+      "subsidy_amt": 300000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Tenant farmer",
+        "Sharecropper",
+        "Kudumbashree JLG"
+      ],
+      "caste": null,
+      "min_land": 0.01,
+      "max_land": 50.0,
+      "doc_count": 20,
+      "crops": "Banana, Cardamom, Coconut, Dairy, Paddy, Pepper, Poultry, Rubber, Vegetables"
+    },
+    {
+      "id": "sch_2a113f8d80",
+      "name": "Pradhan Mantri Kisan Maan-Dhan Yojana (PM-KMY)",
+      "classification": "Pensions and welfare benefits for agricultural workers",
+      "level": "Central",
+      "objective": "Old age social security and pension protection for small and marginal landholding farmers in their sunset years.",
+      "portal": "https://maandhan.in/",
+      "benefit_type": null,
+      "subsidy_pct": null,
+      "subsidy_amt": 3000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator"
+      ],
+      "caste": null,
+      "min_land": 0.01,
+      "max_land": 5.0,
+      "doc_count": 3,
+      "crops": "All crops"
+    },
+    {
+      "id": "sch_627970f381",
+      "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+      "classification": "Government Scheme",
+      "level": "Central",
+      "objective": "To provide income support to all landholding farmers' families in the country for agricultural inputs and domestic needs.",
+      "portal": "https://pmkisan.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": null,
+      "subsidy_amt": 6000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator"
+      ],
+      "caste": null,
+      "min_land": null,
+      "max_land": null,
+      "doc_count": 0,
+      "crops": "All crops, Coconut, Paddy, Pepper, Rubber, Vegetables"
+    }
+  ],
+  "PMFBY (Pradhan Mantri Fasal Bima Yojana)": [
+    {
+      "id": "sch_df957677de",
+      "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY) Kerala Crop Insurance Scheme",
+      "classification": "Crop insurance",
+      "level": "Central/State Joint",
+      "objective": "Comprehensive yield-based crop insurance coverage against non-preventable natural risks (floods, drought, landslides, pest outbreaks, cyclone).",
+      "portal": "https://pmfby.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 98.0,
+      "subsidy_amt": 50000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "All farmers growing notified crops in notified panchayats/villages"
+      ],
+      "caste": null,
+      "min_land": 0.05,
+      "max_land": 25.0,
+      "doc_count": 1,
+      "crops": "Banana, Cardamom, Ginger, Paddy, Pepper, Tapioca, Turmeric"
+    }
+  ],
+  "Power Department / Kerala State Electricity Board (KSEB)": [
+    {
+      "id": "sch_ca03d287b4",
+      "name": "KSEB LT-V Agricultural Electricity Tariff Concession Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "To provide highly subsidized electrical power tariff (LT-V A & LT-V B) for irrigation pump sets, dewatering, and allied agricultural farming activities in Kerala.",
+      "portal": "https://wss.kseb.in/",
+      "benefit_type": null,
+      "subsidy_pct": 75.0,
+      "subsidy_amt": 2.4,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Tenant farmer",
+        "Padasekhara Samithi"
+      ],
+      "caste": null,
+      "min_land": 0.05,
+      "max_land": 50.0,
+      "doc_count": 1,
+      "crops": "Banana, Coconut, Fodder Grass, Paddy, Spices, Vegetables"
+    }
+  ],
+  "Revenue and Disaster Management Department (KSDMA)": [
+    {
+      "id": "sch_f24c7f4f55",
+      "name": "State Disaster Response Fund (SDRF) Agricultural Crop Damage Relief Scheme",
+      "classification": "Government Service",
+      "level": "State",
+      "objective": "Financial input subsidy assistance for farmers who suffer 33% or more crop damage caused by natural calamities such as floods, landslides, cyclones, and drought.",
+      "portal": "https://aimsnew.kerala.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 22500.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Tenant farmer with registered lease",
+        "Kudumbashree JLG"
+      ],
+      "caste": null,
+      "min_land": 0.05,
+      "max_land": 5.0,
+      "doc_count": 1,
+      "crops": "Banana, Cardamom, Coconut, Nutmeg, Paddy, Pepper, Rubber, Tapioca, Vegetables"
+    }
+  ],
+  "Rubber Board India": [
+    {
+      "id": "sch_e85d7d96ad",
+      "name": "Rubber Board Group Processing Centre (GPC) & Smokehouse Infrastructure Subsidy",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "To establish modern group processing centres (GPCs), community smokehouses, and sheeting equipment for small rubber growers to produce RSS-4 and RSS-5 grade rubber sheets.",
+      "portal": "https://rubberboard.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 500000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "RPS Member",
+        "Small Rubber Grower Group",
+        "Self Help Group"
+      ],
+      "caste": null,
+      "min_land": 0.5,
+      "max_land": 20.0,
+      "doc_count": 5,
+      "crops": "Natural Rubber"
+    },
+    {
+      "id": "sch_175e3071d2",
+      "name": "Rubber Board High-Yielding Clonal Nursery & Planting Material Generation Subsidy",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "To promote the establishment of certified high-yielding root trainer and polybag rubber nurseries for producing disease-free clonal planting materials.",
+      "portal": "https://rubberboard.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 50000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Registered Nursery Grower",
+        "Smallholder with Budwood source",
+        "RPS"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 5.0,
+      "doc_count": 1,
+      "crops": "Natural Rubber"
+    },
+    {
+      "id": "sch_c16994fcf2",
+      "name": "Rubber Board Plantation Development Subsidy Scheme (Traditional Region)",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Encouraging replanting of senile, unproductive rubber trees and new planting in suitable areas with high-yielding clones (RRII 105, 414, 430).",
+      "portal": "https://serviceonline.gov.in/dbt/",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 40000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Small growers with holdings up to 5 hectares"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 12.5,
+      "doc_count": 3,
+      "crops": "Rubber"
+    },
+    {
+      "id": "sch_d95638b386",
+      "name": "Rubber Board Rain Guarding Financial Assistance Scheme",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Financial assistance for fixing rain guard polythene and sealant on tapping trees to ensure uninterrupted tapping during monsoon months.",
+      "portal": "https://serviceonline.gov.in/dbt/",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 4000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Small rubber holders up to 5 hectares",
+        "RPS members"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 12.5,
+      "doc_count": 19,
+      "crops": "Rubber"
+    },
+    {
+      "id": "sch_05d999b90c",
+      "name": "Rubber Board Rubber Tapper Housing & Worker Welfare Scheme",
+      "classification": "Pensions and welfare benefits for agricultural workers",
+      "level": "Central/Board",
+      "objective": "To provide financial housing assistance for rubber tappers and small plantation workers in both organized and unorganized rubber sectors in Kerala.",
+      "portal": "https://rubberboard.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 100000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Certified Rubber Tapper",
+        "Owner-tapper",
+        "Unorganized plantation worker"
+      ],
+      "caste": null,
+      "min_land": 0.03,
+      "max_land": 5.0,
+      "doc_count": 4,
+      "crops": "Natural Rubber"
+    },
+    {
+      "id": "sch_6a7f89da10",
+      "name": "Rubber Board SC/ST & Tribal Rubber Plantation Development Scheme",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "To uplift Scheduled Tribe and Scheduled Caste families through 100% grant assistance for planting rubber in traditional rubber tracts of Kerala.",
+      "portal": "https://rubberboard.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 120000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "ST Smallholder",
+        "SC Smallholder",
+        "Forest Rights Act (FRA) title holder"
+      ],
+      "caste": "SC/ST",
+      "min_land": 0.25,
+      "max_land": 5.0,
+      "doc_count": 0,
+      "crops": "Natural Rubber"
+    },
+    {
+      "id": "sch_770b9a6118",
+      "name": "Rubber Board Spraying & Plant Protection Assistance Scheme",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "To safeguard rubber holdings from Phytophthora abnormal leaf fall disease through timely prophylactic copper fungicide spraying.",
+      "portal": "https://rubberboard.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 4000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Small rubber growers"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 12.5,
+      "doc_count": 1,
+      "crops": "Rubber"
+    },
+    {
+      "id": "sch_deff294ccd",
+      "name": "Rubber Production Incentive Scheme (RPIS Kerala)",
+      "classification": "Price support",
+      "level": "State/Board Joint",
+      "objective": "Ensuring guaranteed floor price (Rs. 180/kg) for natural sheet rubber (RSS-4) to insulate growers from international price volatility.",
+      "portal": "https://rubberboard.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 180.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Holdings up to 2 hectares (5 acres)"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 5.0,
+      "doc_count": 1,
+      "crops": "Rubber"
+    }
+  ],
+  "Scheduled Castes Development Department, Kerala": [
+    {
+      "id": "sch_7c77704831",
+      "name": "Special Component Plan (SCP) Agricultural Land Purchase & Farm Mechanization Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "To empower landless Scheduled Caste agricultural labourers by providing financial grants for agricultural land acquisition and 75% subsidy for modern farm implements.",
+      "portal": "https://scdd.kerala.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 75.0,
+      "subsidy_amt": 250000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Landless agricultural worker",
+        "Owner cultivator belonging to SC"
+      ],
+      "caste": null,
+      "min_land": 0.2,
+      "max_land": 2.0,
+      "doc_count": 1,
+      "crops": "Banana, Coconut, Paddy, Tapioca, Vegetables"
+    }
+  ],
+  "Scheduled Tribes Development Department, Kerala": [
+    {
+      "id": "sch_79f115e68c",
+      "name": "Tribal Sub-Plan (TSP) Comprehensive Agricultural & Traditional Farming Assistance Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Livelihood upliftment for indigenous tribal farming families through free organic inputs, Robusta coffee/pepper rejuvenation, and traditional hill crop promotion.",
+      "portal": "https://stdd.kerala.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 25000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "ST Traditional Cultivator",
+        "Forest Rights Holder under FRA"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 10.0,
+      "doc_count": 1,
+      "crops": "Cardamom, Coffee, Ginger, Honey, Millets, Paddy, Pepper, Tubers"
+    }
+  ],
+  "Spices Board India (Kochi)": [
+    {
+      "id": "sch_5e6d8fa670",
+      "name": "Spices Board Production Incentives and Pepper & Cardamom Rejuvenation",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "To encourage replanting of senile cardamom and black pepper vines, and installation of modern post-harvest processing equipment.",
+      "portal": "https://indianspices.com/schemes",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 100000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Tribal spice farmers"
+      ],
+      "caste": null,
+      "min_land": 0.2,
+      "max_land": 10.0,
+      "doc_count": 44,
+      "crops": "Cardamom, Ginger, Nutmeg, Pepper, Turmeric"
+    },
+    {
+      "id": "sch_9749423508",
+      "name": "Spices Board Production Incentives and Pepper Rejuvenation",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Replanting, rejuvenation and disease control of black pepper and cardamom plantations in Wayanad, Idukki, and High Ranges.",
+      "portal": "https://indianspices.com/schemes",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": null,
+      "max_limit": 40000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Registered Spices Grower"
+      ],
+      "caste": null,
+      "min_land": 0.5,
+      "max_land": 10.0,
+      "doc_count": 0,
+      "crops": "Cardamom, Ginger, Pepper"
+    }
+  ],
+  "Vegetable and Fruit Promotion Council Keralam (VFPCK)": [
+    {
+      "id": "sch_fd0e32666a",
+      "name": "VFPCK Commercial Banana Crop Insurance Premium Assistance Scheme",
+      "classification": "Insurance",
+      "level": "State",
+      "objective": "To safeguard commercial banana growers against storm, wind, flood, and pest losses by providing 50% state assistance on crop insurance premiums.",
+      "portal": "https://vfpck.org/",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 15000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Tenant farmer with consent / lease deed",
+        "SHG member"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 15.0,
+      "doc_count": 0,
+      "crops": "Banana, Plantain"
+    },
+    {
+      "id": "sch_40db019449",
+      "name": "VFPCK Swasraya Karshaka Samithi (SKS) Rural Farmer Market & Direct Marketing Scheme",
+      "classification": "Market support and price incentive",
+      "level": "State",
+      "objective": "To empower fruit and vegetable farmers with direct village-level marketing infrastructure, eliminating middlemen through Swasraya Karshaka Samithis (SKS).",
+      "portal": "https://vfpck.org/",
+      "benefit_type": null,
+      "subsidy_pct": 75.0,
+      "subsidy_amt": 50000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Registered VFPCK SKS member",
+        "Small Farmer Group"
+      ],
+      "caste": null,
+      "min_land": 0.05,
+      "max_land": 20.0,
+      "doc_count": 0,
+      "crops": "Banana, Jackfruit, Mango, Papaya, Pineapple, Vegetables"
+    },
+    {
+      "id": "sch_ac2e82b98f",
+      "name": "VFPCK Vegetable Production Promotion & Crop Loan Interest Subvention Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "To promote commercial vegetable and banana cultivation through Self Help Groups (SHGs) with interest subvention on crop loans, subsidized hybrid seedlings, and organic PGS certification support.",
+      "portal": "https://vfpck.org/",
+      "benefit_type": null,
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 25000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Tenant farmer",
+        "Self Help Groups (SHG)",
+        "Joint Liability Groups (JLG)"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 10.0,
+      "doc_count": 3,
+      "crops": "Banana, Bhindi, Bitter Gourd, Brinjal, Cowpea, Snake Gourd, Tubers, Vegetables"
+    }
+  ],
+  "Water Resources Department (Minor Irrigation), Kerala": [
+    {
+      "id": "sch_7552a4ec4a",
+      "name": "Minor Irrigation & Surface Lift Irrigation Agricultural Water Supply Scheme",
+      "classification": "Government Service",
+      "level": "State",
+      "objective": "To provide continuous irrigation water to paddy fields and vegetable polders through state-maintained river lift irrigation pump houses, check dams, and canal networks.",
+      "portal": "https://irrigation.kerala.gov.in/",
+      "benefit_type": null,
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 500000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Registered Padasekhara Samithi",
+        "Farmer group of at least 10 members"
+      ],
+      "caste": null,
+      "min_land": 5.0,
+      "max_land": 500.0,
+      "doc_count": 1,
+      "crops": "Banana, Paddy, Pulses, Vegetables"
+    }
+  ]
+}

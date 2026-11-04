@@ -1,13 +1,13 @@
 # KrishiMitra AI: Complete Kerala Government Scheme Coverage Matrix
-**Generated:** 2026-11-04 19:26:57 UTC
+**Generated:** 2026-11-04 20:29:00 UTC
 
 ## Executive Coverage Summary
 - **Total Departments & Agencies Cataloged:** 36 (All 62 IGOD Kerala departments + Central & Commodity Boards)
 - **Agriculture & Farmer Impacting Departments:** 36
 - **Non-Agriculture Line Departments (Verified No Schemes):** 0
 - **Total Discovered & Cataloged Documents:** 776
-- **Total Identified Schemes:** 39
-- **Active Verified Schemes:** 37
+- **Total Identified Schemes:** 47
+- **Active Verified Schemes:** 45
 
 ---
 
@@ -21,7 +21,7 @@
 | **Agriculture Infrastructure Fund (AIF)** | Central Ministry / Scheme | `Verified` | 10 | 1 | 1 | [Portal](https://agriinfra.dac.gov.in/) | None (Up to date) |
 | **Animal Husbandry Department, Kerala** | Allied Agriculture | `Verified` | 111 | 1 | 1 | [Portal](https://ahd.kerala.gov.in/) | None (Up to date) |
 | **Co-operation Department, Kerala** | Welfare, Credit & Cooperation | `Documents collected` | 0 | 0 | 0 | [Portal](https://corass.kerala.gov.in/) | Awaiting automated deep crawler run to extract circulars & guidelines |
-| **Coconut Development Board (Kochi)** | Commodity Board | `Verified` | 163 | 7 | 7 | [Portal](https://coconutboard.gov.in/) | None (Up to date) |
+| **Coconut Development Board (Kochi)** | Commodity Board | `Verified` | 163 | 8 | 8 | [Portal](https://coconutboard.gov.in/) | None (Up to date) |
 | **Coffee Board of India (Wayanad / Kerala Region)** | Commodity Board | `Verified` | 8 | 1 | 1 | [Portal](https://coffeeboard.gov.in/) | None (Up to date) |
 | **Dairy Development Department, Kerala** | Allied Agriculture | `Verified` | 10 | 2 | 2 | [Portal](https://ksheerasree.kerala.gov.in/) | None (Up to date) |
 | **Fisheries and Ports Department, Kerala** | Allied Agriculture | `Documents collected` | 0 | 0 | 0 | [Portal](https://safkerala.org/) | Awaiting automated deep crawler run to extract circulars & guidelines |
@@ -43,11 +43,11 @@
 | **Power Department / Kerala State Electricity Board (KSEB)** | Line Department (Non-Agriculture) | `Verified` | 1 | 1 | 1 | [Portal](https://kseb.in/) | None (Up to date) |
 | **Rashtriya Krishi Vikas Yojana (RKVY-RAFTAAR)** | Central Ministry / Scheme | `Documents collected` | 0 | 0 | 0 | [Portal](https://rkvy.da.gov.in/) | Awaiting automated deep crawler run to extract circulars & guidelines |
 | **Revenue and Disaster Management Department (KSDMA)** | Line Department (Non-Agriculture) | `Verified` | 1 | 1 | 1 | [Portal](https://revenue.kerala.gov.in/) | None (Up to date) |
-| **Rubber Board India** | Commodity Board | `Verified` | 34 | 4 | 4 | [Portal](https://rubberboard.gov.in/) | None (Up to date) |
+| **Rubber Board India** | Commodity Board | `Verified` | 34 | 8 | 8 | [Portal](https://rubberboard.gov.in/) | None (Up to date) |
 | **Scheduled Castes Development Department, Kerala** | Welfare, Credit & Cooperation | `Verified` | 1 | 1 | 1 | [Portal](https://scdd.kerala.gov.in/) | None (Up to date) |
 | **Scheduled Tribes Development Department, Kerala** | Welfare, Credit & Cooperation | `Verified` | 1 | 1 | 1 | [Portal](https://stdd.kerala.gov.in/) | None (Up to date) |
 | **Soil Health Card Scheme** | Central Ministry / Scheme | `Documents collected` | 0 | 0 | 0 | [Portal](https://soilhealth.dac.gov.in/) | Awaiting automated deep crawler run to extract circulars & guidelines |
 | **Soil Survey and Soil Conservation Department** | Water & Natural Resources | `Documents collected` | 8 | 0 | 0 | [Portal](https://www.keralasoils.gov.in/) | Awaiting automated deep crawler run to extract circulars & guidelines |
 | **Spices Board India (Kochi)** | Commodity Board | `Verified` | 44 | 2 | 2 | [Portal](https://indianspices.com/) | None (Up to date) |
-| **Vegetable and Fruit Promotion Council Keralam (VFPCK)** | Core Agriculture | `Documents collected` | 3 | 0 | 0 | [Portal](https://vfpck.org/) | Awaiting automated deep crawler run to extract circulars & guidelines |
+| **Vegetable and Fruit Promotion Council Keralam (VFPCK)** | Core Agriculture | `Verified` | 3 | 3 | 3 | [Portal](https://vfpck.org/) | None (Up to date) |
 | **Water Resources Department (Minor Irrigation), Kerala** | Water & Natural Resources | `Verified` | 1 | 1 | 1 | [Portal](https://wrd.kerala.gov.in/) | None (Up to date) |
