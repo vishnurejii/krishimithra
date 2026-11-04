@@ -10,7 +10,8 @@ from pathlib import Path
 from typing import List, Dict, Any
 
 # Ensure proper encoding and workspace path
-sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE_DIR))
 
@@ -75,7 +76,7 @@ def crawl_and_collect_all_departments(engine: DiscoveryEngine) -> Dict[str, Any]
     agri_depts = [d for d in DEPARTMENTS_REGISTRY if d.get("has_agriculture_schemes")]
     print(f"Targeting {len(agri_depts)} Agriculture & Allied Departments / Boards / Portals.")
 
-    # High-priority core departments first, then boards, central schemes, and allied departments
+    # High-priority core agriculture departments, commodity boards, and central schemes
     priority_order = [
         # Core state agriculture
         "KL_AGRI_DEPT",
@@ -84,13 +85,20 @@ def crawl_and_collect_all_departments(engine: DiscoveryEngine) -> Dict[str, Any]
         "KL_AHD_DEPT",
         "KL_DAIRY_DEPT",
         "KL_FISHERIES_DEPT",
+        "KL_SOIL_CONS_DEPT",
+        "KL_COOPERATION_DEPT",
+        "KL_KSCARDB",
+        "KL_KUDUMBASHREE",
+        "KL_KAU_ACAD",
+        "KL_VFPCK",
+        "KL_HORTICORP",
         # Commodity boards
         "BD_COCONUT",
         "BD_RUBBER",
         "BD_SPICES",
         "BD_COFFEE",
         "BD_NABARD",
-        # Central schemes
+        # Central agricultural schemes
         "CEN_PM_KISAN",
         "CEN_PMFBY",
         "CEN_MIDH",
@@ -99,34 +107,6 @@ def crawl_and_collect_all_departments(engine: DiscoveryEngine) -> Dict[str, Any]
         "CEN_PM_KUSUM",
         "CEN_RKVY",
         "CEN_MISS_KCC",
-        # Allied state departments & agencies
-        "KL_SOIL_CONS_DEPT",
-        "KL_KUDUMBASHREE",
-        "KL_COOPERATION_DEPT",
-        "KL_KSCARDB",
-        "KL_KAU_ACAD",
-        "KL_VFPCK",
-        "KL_HORTICORP",
-        "KL_WATER_RESOURCES",
-        "KL_GROUND_WATER",
-        "KL_INDUSTRIES_DEPT",
-        "KL_FOOD_CS",
-        "KL_LABOUR",
-        "KL_REVENUE",
-        "KL_RURAL_DEV",
-        "KL_FOREST_DEPT",
-        "KL_SCDD_DEPT",
-        "KL_STDD_DEPT",
-        "KL_FINANCE_DEPT",
-        "KL_SPB_DEPT",
-        "KL_POWER",
-        "KL_TOURISM",
-        "KL_ENV_CLIMATE",
-        "KL_COASTAL",
-        "KL_AYUSH",
-        "KL_NON_RESIDENT",
-        "KL_BACKWARD_CLASSES",
-        "KL_STATISTICS",
     ]
 
     # Reorder agri_depts based on priority_order

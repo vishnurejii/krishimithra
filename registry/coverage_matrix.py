@@ -119,6 +119,7 @@ class SchemeCoverageMatrix:
                 "active_schemes_verified": active,
                 "expired_schemes": expired,
                 "sources_accessible": dept.sources_accessible,
+                "has_agriculture_schemes": dept.has_agriculture_schemes,
                 "missing_information": missing_info,
                 "last_checked_date": dept.last_checked_date or datetime.now(timezone.utc).strftime("%Y-%m-%d")
             }

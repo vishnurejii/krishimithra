@@ -34,8 +34,11 @@ def admin_dashboard_view(request):
     return render(request, "admin.html")
 
 def api_coverage_matrix(request):
-    """Returns the live 62 department Scheme Coverage Matrix."""
+    """Returns the live Scheme Coverage Matrix with optional agri_only filter."""
+    agri_only = request.GET.get("agri_only", "false").lower() in ["true", "1"]
     matrix = coverage_engine.compute_matrix()
+    if agri_only:
+        matrix = [m for m in matrix if m.get("has_agriculture_schemes")]
     return JsonResponse({"status": "success", "total_departments": len(matrix), "matrix": matrix})
 
 def api_schemes_list(request):

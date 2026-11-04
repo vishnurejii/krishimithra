@@ -57,41 +57,63 @@
     <div class="card-header">
       <div>
         <h2 class="card-title">Trigger Manual Department Crawl</h2>
-        <p style="font-size: 0.85rem; color: #64748b;">Run the specialized crawler adapter live on any Kerala Government department</p>
+        <p style="font-size: 0.85rem; color: #64748b;">Run the specialized crawler adapter live on any Kerala agriculture department or commodity board</p>
       </div>
     </div>
     <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
-      <select id="crawlDeptSelect" class="form-control" style="max-width: 450px;">
-        <option value="KL_AGRI_DEPT">Agriculture Development and Farmers' Welfare Department</option>
-        <option value="KL_AIMS_PORTAL">AIMS Kerala Portal (Agricultural Information Management)</option>
-        <option value="KL_AHD_DEPT">Animal Husbandry Department</option>
-        <option value="KL_DAIRY_DEPT">Dairy Development Department</option>
-        <option value="KL_FISHERIES_DEPT">Fisheries Department</option>
-        <option value="BD_COCONUT">Coconut Development Board</option>
-        <option value="CEN_PM_KISAN">PM-KISAN Central Portal</option>
-        <option value="KL_KUDUMBASHREE">Kudumbashree State Mission (Agri Wing)</option>
-        <option value="KL_SOIL_CONS_DEPT">Soil Survey and Soil Conservation</option>
-        <option value="KL_LSGD_DEPT">Local Self Government Department (LSGD)</option>
+      <select id="crawlDeptSelect" class="form-control" style="max-width: 480px;">
+        <optgroup label="Core Kerala Agriculture & Allied Departments">
+          <option value="KL_AGRI_DEPT">Agriculture Development and Farmers' Welfare Department</option>
+          <option value="KL_AIMS_PORTAL">AIMS Kerala Portal (Agricultural Information Management)</option>
+          <option value="KL_KATHIR_PORTAL">KATHIR Kerala Portal</option>
+          <option value="KL_AHD_DEPT">Animal Husbandry Department</option>
+          <option value="KL_DAIRY_DEPT">Dairy Development Department</option>
+          <option value="KL_FISHERIES_DEPT">Fisheries Department</option>
+          <option value="KL_SOIL_CONS_DEPT">Soil Survey and Soil Conservation</option>
+          <option value="KL_COOPERATION_DEPT">Co-operation Department (PACS & Farm Credit)</option>
+          <option value="KL_KSCARDB">Kerala State Co-op Agri & Rural Dev Bank (KSCARDB)</option>
+          <option value="KL_KUDUMBASHREE">Kudumbashree State Mission (Agriculture Wing)</option>
+          <option value="KL_KAU_ACAD">Kerala Agricultural University (KAU)</option>
+          <option value="KL_VFPCK">Vegetable and Fruit Promotion Council Keralam (VFPCK)</option>
+          <option value="KL_HORTICORP">Horticorp Kerala</option>
+        </optgroup>
+        <optgroup label="Statutory Commodity Boards">
+          <option value="BD_COCONUT">Coconut Development Board (Kochi)</option>
+          <option value="BD_RUBBER">Rubber Board India (Kottayam)</option>
+          <option value="BD_SPICES">Spices Board India (Kochi)</option>
+          <option value="BD_COFFEE">Coffee Board of India (Wayanad)</option>
+          <option value="BD_NABARD">NABARD Kerala Regional Office</option>
+        </optgroup>
+        <optgroup label="Central Agricultural Schemes">
+          <option value="CEN_PM_KISAN">PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)</option>
+          <option value="CEN_PMFBY">PMFBY (Crop Insurance Scheme)</option>
+          <option value="CEN_AIF">Agriculture Infrastructure Fund (AIF)</option>
+          <option value="CEN_MIDH">Mission for Integrated Development of Horticulture (MIDH)</option>
+          <option value="CEN_SOIL_HEALTH">Soil Health Card Scheme</option>
+          <option value="CEN_PM_KUSUM">PM-KUSUM (Solar Agricultural Pumps)</option>
+          <option value="CEN_RKVY">Rashtriya Krishi Vikas Yojana (RKVY-RAFTAAR)</option>
+          <option value="CEN_MISS_KCC">Kisan Credit Card (MISS/KCC)</option>
+        </optgroup>
       </select>
       <button id="manualCrawlBtn" class="btn-primary" style="width: auto; padding: 0.65rem 1.5rem;">Start Crawl Now</button>
     </div>
     <div id="crawlStatusMsg" style="display: none; margin-top: 1rem; padding: 0.75rem 1rem; background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; color: #166534; font-weight: 600;"></div>
   </div>
 
-  <!-- Complete 62 Department Coverage Matrix -->
+  <!-- Agriculture Scheme Coverage Matrix -->
   <div class="card">
     <div class="card-header" style="flex-direction: column; gap: 0.5rem;">
       <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
         <div>
-          <h2 class="card-title">Kerala Government Scheme Coverage Matrix</h2>
-          <p style="font-size: 0.85rem; color: #64748b;">Tracking all 62 Kerala Government departments from IGOD, statutory boards & central agencies</p>
+          <h2 class="card-title">Agriculture Department & Board Coverage Matrix</h2>
+          <p style="font-size: 0.85rem; color: #64748b;">Live scheme discovery and document collection tracking across agriculture portals</p>
         </div>
       </div>
       <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
-        <button class="pill active" onclick="loadCoverageMatrix('')">All Departments (82)</button>
+        <button class="pill active" onclick="loadCoverageMatrix('agri')">Agriculture Portals & Boards (26)</button>
         <button class="pill" onclick="loadCoverageMatrix('Documents collected')">Docs Collected</button>
-        <button class="pill" onclick="loadCoverageMatrix('Investigating')">Investigating</button>
-        <button class="pill" onclick="loadCoverageMatrix('No relevant schemes found')">Non-Agri Line Depts</button>
+        <button class="pill" onclick="loadCoverageMatrix('Verified')">Verified Schemes</button>
+        <button class="pill" onclick="loadCoverageMatrix('all')">All IGOD Departments (82)</button>
       </div>
     </div>
 
