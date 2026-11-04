@@ -54,8 +54,14 @@ class VectorStore:
                         (vec_str, top_k)
                     )
                     rows = cur.fetchall()
+                    seen_chunks = set()
                     for r in rows:
-                        results.append(dict(r))
+                        row_dict = dict(r)
+                        chunk_key = (row_dict.get("scheme_id"), row_dict.get("content_text", "")[:80])
+                        if chunk_key in seen_chunks:
+                            continue
+                        seen_chunks.add(chunk_key)
+                        results.append(row_dict)
 
         except Exception as e:
             logger.warning(f"Vector search exception (falling back to full-text search): {e}")
@@ -69,8 +75,9 @@ class VectorStore:
         return results
 
     def _fallback_fulltext_search(self, query: str, top_k: int = 5) -> List[Dict[str, Any]]:
-        """Keyword and ILIKE search fallback across schemes and passages."""
+        """Keyword and ILIKE search fallback across schemes and passages with deduplication."""
         results = []
+        seen_scheme_ids = set()
         terms = [t for t in query.lower().split() if len(t) > 3]
         if not terms:
             terms = [query.lower()]
@@ -88,20 +95,27 @@ class VectorStore:
                             s.description as content_text,
                             s.official_portal_url,
                             s.last_verified_at as scheme_verified_at,
-                            d.id as document_id,
-                            d.title as document_title,
-                            d.original_url as document_url,
+                            (SELECT id FROM scheme_documents WHERE scheme_id = s.id LIMIT 1) as document_id,
+                            (SELECT title FROM scheme_documents WHERE scheme_id = s.id LIMIT 1) as document_title,
+                            (SELECT original_url FROM scheme_documents WHERE scheme_id = s.id LIMIT 1) as document_url,
                             1 as page_number
                         FROM schemes s
-                        LEFT JOIN scheme_documents d ON s.id = d.scheme_id
                         WHERE LOWER(s.name) LIKE %s OR LOWER(s.description) LIKE %s
                         LIMIT %s;
                         """,
-                        (pattern, pattern, top_k)
+                        (pattern, pattern, top_k * 2)
                     )
                     rows = cur.fetchall()
                     for r in rows:
-                        results.append(dict(r))
+                        row_dict = dict(r)
+                        sid = row_dict.get("scheme_id")
+                        if sid and sid in seen_scheme_ids:
+                            continue
+                        if sid:
+                            seen_scheme_ids.add(sid)
+                        results.append(row_dict)
+                        if len(results) >= top_k:
+                            break
         except Exception as e:
             logger.error(f"Fallback fulltext search error: {e}")
         return results

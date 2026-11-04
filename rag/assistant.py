@@ -96,6 +96,7 @@ class FarmerAssistant:
         term = terms[0] if terms else "paddy"
 
         schemes = []
+        seen_ids = set()
         try:
             with get_connection() as conn:
                 with conn.cursor() as cur:
@@ -105,26 +106,24 @@ class FarmerAssistant:
                             s.id, s.name, s.malayalam_name, s.classification, s.level,
                             s.objective, s.description, s.application_procedure,
                             s.official_portal_url, s.last_verified_at,
-                            d.title as document_title, d.original_url as document_url,
-                            b.subsidy_percentage, b.subsidy_amount, b.max_assistance_limit,
+                            (SELECT title FROM scheme_documents WHERE scheme_id = s.id AND title IS NOT NULL ORDER BY id LIMIT 1) as document_title,
+                            (SELECT original_url FROM scheme_documents WHERE scheme_id = s.id AND original_url IS NOT NULL ORDER BY id LIMIT 1) as document_url,
+                            MAX(b.subsidy_percentage) as subsidy_percentage,
+                            MAX(b.subsidy_amount) as subsidy_amount,
+                            MAX(b.max_assistance_limit) as max_assistance_limit,
                             COALESCE(ARRAY_AGG(DISTINCT sc.crop_name) FILTER (WHERE sc.crop_name IS NOT NULL), '{}') as crops,
-                            COALESCE(ARRAY_AGG(DISTINCT ag.document_name) FILTER (WHERE ag.document_name IS NOT NULL), '{}') as guidelines,
-                            COALESCE(ARRAY_AGG(DISTINCT bc) FILTER (WHERE bc IS NOT NULL), '{}') as beneficiary_categories
+                            COALESCE((SELECT ARRAY_AGG(DISTINCT document_name) FROM application_guidelines WHERE scheme_id = s.id), '{}') as guidelines,
+                            COALESCE((SELECT ARRAY_AGG(DISTINCT bc) FROM scheme_eligibility se, LATERAL unnest(se.beneficiary_categories) bc WHERE se.scheme_id = s.id), '{}') as beneficiary_categories
                         FROM schemes s
-                        LEFT JOIN scheme_documents d ON s.id = d.scheme_id
                         LEFT JOIN scheme_benefits b ON s.id = b.scheme_id
                         LEFT JOIN scheme_crops sc ON s.id = sc.scheme_id
-                        LEFT JOIN application_guidelines ag ON s.id = ag.scheme_id
-                        LEFT JOIN scheme_eligibility e ON s.id = e.scheme_id
-                        LEFT JOIN LATERAL unnest(e.beneficiary_categories) bc ON TRUE
                         WHERE LOWER(s.name) LIKE %s
                            OR LOWER(COALESCE(s.malayalam_name, '')) LIKE %s
                            OR LOWER(COALESCE(s.description, '')) LIKE %s
                            OR LOWER(COALESCE(sc.crop_name, '')) LIKE %s
                         GROUP BY s.id, s.name, s.malayalam_name, s.classification, s.level,
                                  s.objective, s.description, s.application_procedure,
-                                 s.official_portal_url, s.last_verified_at, d.title, d.original_url,
-                                 b.subsidy_percentage, b.subsidy_amount, b.max_assistance_limit
+                                 s.official_portal_url, s.last_verified_at
                         LIMIT 3;
                         """,
                         (f"%{term}%", f"%{term}%", f"%{term}%", f"%{term}%")
@@ -132,6 +131,9 @@ class FarmerAssistant:
                     rows = cur.fetchall()
 
                     for r in rows:
+                        if r["id"] in seen_ids:
+                            continue
+                        seen_ids.add(r["id"])
                         schemes.append({
                             "id": r["id"],
                             "name": r["name"],

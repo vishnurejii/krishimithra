@@ -48,6 +48,7 @@ def api_schemes_list(request):
     status = request.GET.get("status", "").strip().upper()
 
     schemes = []
+    seen_ids = set()
     try:
         with get_connection() as conn:
             with conn.cursor() as cur:
@@ -57,23 +58,36 @@ def api_schemes_list(request):
                         s.id, s.name, s.malayalam_name, s.classification, s.status, s.level,
                         s.official_portal_url, s.last_verified_at,
                         d.name as dept_name,
-                        b.subsidy_percentage, b.subsidy_amount, b.max_assistance_limit,
-                        COALESCE(ARRAY_AGG(DISTINCT sc.crop_name) FILTER (WHERE sc.crop_name IS NOT NULL), '{}') as crops
+                        MAX(b.subsidy_percentage) as subsidy_percentage,
+                        MAX(b.subsidy_amount) as subsidy_amount,
+                        MAX(b.max_assistance_limit) as max_assistance_limit,
+                        COALESCE(ARRAY_AGG(DISTINCT sc.crop_name) FILTER (WHERE sc.crop_name IS NOT NULL), '{}') as crops,
+                        COALESCE(ARRAY_AGG(DISTINCT sd.district_name) FILTER (WHERE sd.district_name IS NOT NULL), '{}') as districts,
+                        BOOL_OR(COALESCE(sd.is_statewide, FALSE)) as has_statewide
                     FROM schemes s
                     LEFT JOIN government_departments d ON s.department_id = d.id
                     LEFT JOIN scheme_benefits b ON s.id = b.scheme_id
                     LEFT JOIN scheme_crops sc ON s.id = sc.scheme_id
+                    LEFT JOIN scheme_districts sd ON s.id = sd.scheme_id
                     GROUP BY s.id, s.name, s.malayalam_name, s.classification, s.status, s.level,
-                             s.official_portal_url, s.last_verified_at, d.name,
-                             b.subsidy_percentage, b.subsidy_amount, b.max_assistance_limit
+                             s.official_portal_url, s.last_verified_at, d.name, s.created_at
                     ORDER BY s.created_at DESC;
                     """
                 )
                 rows = cur.fetchall()
 
                 for r in rows:
+                    if r["id"] in seen_ids:
+                        continue
+                    seen_ids.add(r["id"])
+
                     crops = r["crops"] or []
+                    districts = [d.lower() for d in (r["districts"] or [])]
+                    is_statewide = r["has_statewide"] or len(districts) == 0
+
                     if crop and not any(crop in c.lower() for c in crops):
+                        continue
+                    if district and not is_statewide and district not in districts and not any("all" in d for d in districts):
                         continue
                     if status and r["status"] != status:
                         continue

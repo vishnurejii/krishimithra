@@ -22,6 +22,7 @@ class EligibilityChecker:
 
         eligible_matches: List[SchemeEligibilityMatch] = []
         conditional_matches: List[SchemeEligibilityMatch] = []
+        seen_scheme_ids: set = set()
 
         try:
             with get_connection() as conn:
@@ -35,36 +36,36 @@ class EligibilityChecker:
                             s.level as government_level,
                             s.official_portal_url,
                             s.last_verified_at,
-                            e.min_land_acres,
-                            e.max_land_acres,
-                            e.income_limit,
-                            e.caste_category,
-                            e.beneficiary_categories,
-                            e.eligible_farmer_types,
-                            b.subsidy_percentage,
-                            b.subsidy_amount,
-                            b.max_assistance_limit,
-                            d.title as doc_title,
-                            COALESCE(ARRAY_AGG(DISTINCT sc.crop_name) FILTER (WHERE sc.crop_name IS NOT NULL), '{}') as crops,
-                            COALESCE(ARRAY_AGG(DISTINCT sd.district_name) FILTER (WHERE sd.district_name IS NOT NULL), '{}') as districts,
-                            BOOL_OR(COALESCE(sd.is_statewide, FALSE)) as has_statewide,
-                            COALESCE(ARRAY_AGG(DISTINCT ag.document_name) FILTER (WHERE ag.document_name IS NOT NULL), '{}') as guidelines
+                            MIN(e.min_land_acres) as min_land_acres,
+                            MAX(e.max_land_acres) as max_land_acres,
+                            MAX(e.income_limit) as income_limit,
+                            MAX(e.caste_category) as caste_category,
+                            MAX(b.subsidy_percentage) as subsidy_percentage,
+                            MAX(b.subsidy_amount) as subsidy_amount,
+                            MAX(b.max_assistance_limit) as max_assistance_limit,
+                            (SELECT title FROM scheme_documents WHERE scheme_id = s.id AND title IS NOT NULL ORDER BY id LIMIT 1) as doc_title,
+                            COALESCE((SELECT ARRAY_AGG(DISTINCT crop_name) FROM scheme_crops WHERE scheme_id = s.id), '{}') as crops,
+                            COALESCE((SELECT ARRAY_AGG(DISTINCT district_name) FROM scheme_districts WHERE scheme_id = s.id), '{}') as districts,
+                            COALESCE((SELECT BOOL_OR(is_statewide) FROM scheme_districts WHERE scheme_id = s.id), FALSE) as has_statewide,
+                            COALESCE((SELECT ARRAY_AGG(DISTINCT document_name) FROM application_guidelines WHERE scheme_id = s.id), '{}') as guidelines,
+                            COALESCE((SELECT ARRAY_AGG(DISTINCT ft) FROM scheme_eligibility se, LATERAL unnest(se.eligible_farmer_types) ft WHERE se.scheme_id = s.id), '{}') as eligible_farmer_types,
+                            COALESCE((SELECT ARRAY_AGG(DISTINCT bc) FROM scheme_eligibility se, LATERAL unnest(se.beneficiary_categories) bc WHERE se.scheme_id = s.id), '{}') as beneficiary_categories
                         FROM schemes s
                         LEFT JOIN scheme_eligibility e ON s.id = e.scheme_id
                         LEFT JOIN scheme_benefits b ON s.id = b.scheme_id
-                        LEFT JOIN scheme_documents d ON s.id = d.scheme_id
-                        LEFT JOIN scheme_crops sc ON s.id = sc.scheme_id
-                        LEFT JOIN scheme_districts sd ON s.id = sd.scheme_id
-                        LEFT JOIN application_guidelines ag ON s.id = ag.scheme_id
-                        GROUP BY s.id, s.name, s.classification, s.level, s.official_portal_url, s.last_verified_at,
-                                 e.min_land_acres, e.max_land_acres, e.income_limit, e.caste_category,
-                                 e.beneficiary_categories, e.eligible_farmer_types,
-                                 b.subsidy_percentage, b.subsidy_amount, b.max_assistance_limit, d.title;
+                        WHERE s.is_active = TRUE OR s.status = 'ACTIVE'
+                        GROUP BY s.id, s.name, s.classification, s.level, s.official_portal_url, s.last_verified_at
+                        ORDER BY s.name ASC;
                         """
                     )
                     schemes = cur.fetchall()
 
                     for sch in schemes:
+                        scheme_id = sch["scheme_id"]
+                        if scheme_id in seen_scheme_ids:
+                            continue
+                        seen_scheme_ids.add(scheme_id)
+
                         crops = [c.lower() for c in (sch["crops"] or [])]
                         districts = [d.lower() for d in (sch["districts"] or [])]
                         is_statewide = sch["has_statewide"] or len(districts) == 0
@@ -107,6 +108,14 @@ class EligibilityChecker:
                         if inc_limit is not None and profile.annual_income and profile.annual_income > float(inc_limit):
                             is_eligible = False
                             unmet_reasons.append(f"Income cap: Rs {inc_limit}")
+
+                        # 5. Community / Caste Check
+                        caste = sch["caste_category"]
+                        if caste and caste.strip().upper() not in ["ALL", "GENERAL", "ANY", ""]:
+                            farmer_caste = (profile.caste_category or "General").strip().upper()
+                            if farmer_caste != caste.strip().upper():
+                                is_eligible = False
+                                unmet_reasons.append(f"Restricted to {caste} community")
 
                         # Estimate benefit string
                         pct = sch["subsidy_percentage"]

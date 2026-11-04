@@ -143,7 +143,18 @@ async function loadSchemesList(crop = '', district = '') {
       return;
     }
     
-    container.innerHTML = data.schemes.map(s => `
+    // Client-side deduplication by scheme ID / name
+    const uniqueSchemes = [];
+    const seenSchemeIds = new Set();
+    for (const s of data.schemes) {
+      const key = (s.id || s.name || "").trim().toLowerCase();
+      if (!seenSchemeIds.has(key)) {
+        seenSchemeIds.add(key);
+        uniqueSchemes.push(s);
+      }
+    }
+
+    container.innerHTML = uniqueSchemes.map(s => `
       <div class="scheme-card" id="scheme-${s.id}">
         <div class="scheme-card-header">
           <h3 class="scheme-card-title">${currentLang === 'ml' && s.malayalam_name ? s.malayalam_name : s.name}</h3>
@@ -214,7 +225,18 @@ function setupEligibilityForm() {
       const data = await resp.json();
       const res = data.result;
       
-      if (!res.eligible_schemes || res.eligible_schemes.length === 0) {
+      // Deduplicate schemes by ID / name
+      const uniqueEligible = [];
+      const seenEligibleIds = new Set();
+      for (const s of (res.eligible_schemes || [])) {
+        const key = (s.scheme_id || s.scheme_name || "").trim().toLowerCase();
+        if (!seenEligibleIds.has(key)) {
+          seenEligibleIds.add(key);
+          uniqueEligible.push(s);
+        }
+      }
+
+      if (uniqueEligible.length === 0) {
         resultBox.innerHTML = `
           <div style="background: #fef2f2; border: 1px solid #fecaca; padding: 1rem; border-radius: 8px; color: #991b1b; font-size: 0.9rem;">
             No direct matches found. Please consult your local Krishi Bhavan for customized local-body projects.
@@ -224,10 +246,10 @@ function setupEligibilityForm() {
       
       resultBox.innerHTML = `
         <div style="background: #f0fdf4; border: 1px solid #86efac; padding: 1rem; border-radius: 8px; margin-bottom: 0.75rem;">
-          <h4 style="color: #166534; font-weight: 700; margin-bottom: 0.25rem;">You qualify for ${res.eligible_schemes.length} Scheme(s)!</h4>
+          <h4 style="color: #166534; font-weight: 700; margin-bottom: 0.25rem;">You qualify for ${uniqueEligible.length} Verified Scheme(s)!</h4>
           <p style="font-size: 0.85rem; color: #15803d;">Matched criteria: Landholding, District notification, and Crops.</p>
         </div>
-        ${res.eligible_schemes.map(s => `
+        ${uniqueEligible.map(s => `
           <div style="background: white; border: 1px solid #cbd5e1; border-radius: 8px; padding: 1rem; margin-bottom: 0.75rem;">
             <div style="font-weight: 700; color: #064e3b; font-size: 0.95rem;">${s.scheme_name}</div>
             <div style="font-size: 0.85rem; color: #059669; font-weight: 600; margin: 0.25rem 0;">${s.estimated_benefit}</div>
