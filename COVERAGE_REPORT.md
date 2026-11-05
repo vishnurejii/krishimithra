@@ -1,13 +1,13 @@
 # KrishiMitra AI: Complete Kerala Government Scheme Coverage Matrix
-**Generated:** 2026-11-04 20:29:00 UTC
+**Generated:** 2026-11-05 08:10:38 UTC
 
 ## Executive Coverage Summary
 - **Total Departments & Agencies Cataloged:** 36 (All 62 IGOD Kerala departments + Central & Commodity Boards)
 - **Agriculture & Farmer Impacting Departments:** 36
 - **Non-Agriculture Line Departments (Verified No Schemes):** 0
 - **Total Discovered & Cataloged Documents:** 776
-- **Total Identified Schemes:** 47
-- **Active Verified Schemes:** 45
+- **Total Identified Schemes:** 67
+- **Active Verified Schemes:** 65
 
 ---
 
@@ -17,7 +17,7 @@
 | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :--- |
 | **AIMS Kerala (Agricultural Information Management System)** | Core Agriculture | `Documents collected` | 4 | 0 | 0 | [Portal](https://aimsnew.kerala.gov.in/) | Awaiting automated deep crawler run to extract circulars & guidelines |
 | **ANERT (Agency for New and Renewable Energy Research and Technology)** | Line Department (Non-Agriculture) | `Verified` | 1 | 1 | 1 | [Portal](https://anert.gov.in/) | None (Up to date) |
-| **Agriculture Development and Farmers' Welfare Department** | Core Agriculture | `Verified` | 106 | 6 | 4 | [Portal](https://keralaagriculture.gov.in/) | None (Up to date) |
+| **Agriculture Development and Farmers' Welfare Department** | Core Agriculture | `Verified` | 106 | 26 | 24 | [Portal](https://keralaagriculture.gov.in/) | None (Up to date) |
 | **Agriculture Infrastructure Fund (AIF)** | Central Ministry / Scheme | `Verified` | 10 | 1 | 1 | [Portal](https://agriinfra.dac.gov.in/) | None (Up to date) |
 | **Animal Husbandry Department, Kerala** | Allied Agriculture | `Verified` | 111 | 1 | 1 | [Portal](https://ahd.kerala.gov.in/) | None (Up to date) |
 | **Co-operation Department, Kerala** | Welfare, Credit & Cooperation | `Documents collected` | 0 | 0 | 0 | [Portal](https://corass.kerala.gov.in/) | Awaiting automated deep crawler run to extract circulars & guidelines |

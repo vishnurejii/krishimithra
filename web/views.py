@@ -7,6 +7,7 @@ import json
 from django.shortcuts import render
 from django.http import JsonResponse, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
+from django.core.serializers.json import DjangoJSONEncoder
 from registry.source_registry import SourceRegistry
 from registry.coverage_matrix import SchemeCoverageMatrix
 from crawler.discovery_engine import DiscoveryEngine
@@ -147,7 +148,7 @@ def api_scheme_detail(request, scheme_id):
                     "crops": crops,
                     "districts": districts,
                     "documents_checklist": [dict(g) for g in guidelines]
-                })
+                }, encoder=DjangoJSONEncoder)
     except Exception as e:
         return JsonResponse({"status": "error", "message": str(e)}, status=500)
 
@@ -223,7 +224,7 @@ def api_admin_metrics(request):
                         "expired_schemes": expired_schemes
                     },
                     "recent_documents": recent_docs
-                })
+                }, encoder=DjangoJSONEncoder)
     except Exception as e:
         return JsonResponse({"status": "error", "message": str(e)}, status=500)
 
