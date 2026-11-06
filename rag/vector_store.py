@@ -45,7 +45,7 @@ class VectorStore:
                             s.official_portal_url,
                             s.last_verified_at as scheme_verified_at
                         FROM extracted_document_content c
-                        JOIN scheme_documents d ON c.document_id = d.id
+                        LEFT JOIN scheme_documents d ON c.document_id = d.id
                         LEFT JOIN schemes s ON c.scheme_id = s.id OR d.scheme_id = s.id
                         WHERE c.embedding IS NOT NULL
                         ORDER BY c.embedding <=> %s::vector

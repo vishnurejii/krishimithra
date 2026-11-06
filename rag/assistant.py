@@ -84,6 +84,8 @@ class FarmerAssistant:
 
     def _fetch_schemes_context(self, passages: List[Dict[str, Any]], query: str) -> List[Dict[str, Any]]:
         """Retrieves complete eligibility, benefits, and crops for the matched schemes using aggregated SQL."""
+        passage_sids = [p["scheme_id"] for p in passages if p.get("scheme_id")]
+
         stopwords = {
             "what", "is", "the", "in", "for", "are", "available", "scheme", "schemes",
             "how", "to", "apply", "can", "get", "give", "tell", "about", "which",
@@ -91,8 +93,6 @@ class FarmerAssistant:
         }
         tokens = [w.lower().strip("?,.!\"'") for w in query.split()]
         terms = [w for w in tokens if len(w) > 2 and w not in stopwords]
-        if not terms and tokens:
-            terms = [tokens[0]]
         term = terms[0] if terms else "paddy"
 
         schemes = []
@@ -117,16 +117,18 @@ class FarmerAssistant:
                         FROM schemes s
                         LEFT JOIN scheme_benefits b ON s.id = b.scheme_id
                         LEFT JOIN scheme_crops sc ON s.id = sc.scheme_id
-                        WHERE LOWER(s.name) LIKE %s
+                        WHERE s.id = ANY(%s)
+                           OR LOWER(s.name) LIKE %s
                            OR LOWER(COALESCE(s.malayalam_name, '')) LIKE %s
                            OR LOWER(COALESCE(s.description, '')) LIKE %s
                            OR LOWER(COALESCE(sc.crop_name, '')) LIKE %s
                         GROUP BY s.id, s.name, s.malayalam_name, s.classification, s.level,
                                  s.objective, s.description, s.application_procedure,
                                  s.official_portal_url, s.last_verified_at
-                        LIMIT 3;
+                        ORDER BY (s.id = ANY(%s)) DESC
+                        LIMIT 4;
                         """,
-                        (f"%{term}%", f"%{term}%", f"%{term}%", f"%{term}%")
+                        (passage_sids, f"%{term}%", f"%{term}%", f"%{term}%", f"%{term}%", passage_sids)
                     )
                     rows = cur.fetchall()
 
