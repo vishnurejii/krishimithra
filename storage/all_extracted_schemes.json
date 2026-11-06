@@ -644,6 +644,29 @@
   ],
   "Animal Husbandry Department, Kerala": [
     {
+      "id": "sch_09bfc4a66f",
+      "name": "Backyard Poultry & Gramasree Layer Chicks Distribution Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Providing high-egg-laying indigenous cross (Gramasree / BV 380) chicks to homesteads and women self-help groups to improve nutritional security.",
+      "portal": "https://ahd.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 75.0,
+      "subsidy_amt": 2000.0,
+      "max_limit": 2000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Women Farmers",
+        "Homestead Cultivators",
+        "BPL Families"
+      ],
+      "caste": null,
+      "min_land": 0.01,
+      "max_land": 2.0,
+      "doc_count": 1,
+      "crops": "Eggs, Poultry"
+    },
+    {
       "id": "sch_e2268f3912",
       "name": "Kerala Commercial Dairy & Cow Rearing Assistance Scheme",
       "classification": "Subsidy",
@@ -662,8 +685,53 @@
       "caste": null,
       "min_land": 0.05,
       "max_land": 10.0,
-      "doc_count": 110,
+      "doc_count": 107,
       "crops": "Dairy farming, Fodder grass"
+    },
+    {
+      "id": "sch_28090e322c",
+      "name": "Kerala Commercial Goat Rearing & Malabari Breeding Unit Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "To promote rural employment and meat production by establishing 5-doe + 1-buck or 10-doe Malabari goat breeding units.",
+      "portal": "https://ahd.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 25000.0,
+      "max_limit": 50000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Small and Marginal Farmers",
+        "Women Cultivators",
+        "Kudumbashree JLGs"
+      ],
+      "caste": null,
+      "min_land": 0.02,
+      "max_land": 5.0,
+      "doc_count": 0,
+      "crops": "Fodder, Goat Farming"
+    },
+    {
+      "id": "sch_e146f43015",
+      "name": "Livestock Health & Disease Control Program (LHDCP) Free Vaccination Scheme",
+      "classification": "Government Service",
+      "level": "Central/State Share",
+      "objective": "Universal doorstep free bi-annual vaccination of all cattle, buffaloes, and goats against Foot and Mouth Disease (FMD), Brucellosis, and Anthrax.",
+      "portal": "https://ahd.kerala.gov.in/",
+      "benefit_type": "Government Service",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 500.0,
+      "max_limit": 5000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "All Dairy Farmers",
+        "Livestock Owners"
+      ],
+      "caste": null,
+      "min_land": 0.0,
+      "max_land": 50.0,
+      "doc_count": 2,
+      "crops": "Buffalo, Dairy Cattle, Goat, Livestock"
     }
   ],
   "Coconut Development Board (Kochi)": [
@@ -731,8 +799,76 @@
       "caste": null,
       "min_land": 0.25,
       "max_land": 10.0,
-      "doc_count": 65,
+      "doc_count": 63,
       "crops": "Banana, Cocoa, Coconut, Ginger, Nutmeg, Pepper, Turmeric"
+    },
+    {
+      "id": "sch_f8f7b2ab40",
+      "name": "CDB Integrated Pest & Disease Management (IPM/IDM) Demonstration Scheme",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Field-level demonstration of biocontrol-based Integrated Disease Management against Leaf Rot, Root-Wilt, and Ganoderma Wilt in coconut gardens.",
+      "portal": "https://coconutboard.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 15000.0,
+      "max_limit": 30000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Coconut Growers",
+        "Coconut Producer Societies"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 10.0,
+      "doc_count": 1,
+      "crops": "Coconut"
+    },
+    {
+      "id": "sch_720bd6dce1",
+      "name": "CDB Market Promotion & Export Branding of Coconut Products",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Financial support to coconut product manufacturers, FPOs, and exporters for national & international branding, packaging design, and domestic trade fair participation.",
+      "portal": "https://coconutboard.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 1000000.0,
+      "max_limit": 1000000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Coconut Producer Companies",
+        "FPOs",
+        "Agri-Processors"
+      ],
+      "caste": null,
+      "min_land": 0.0,
+      "max_land": 100.0,
+      "doc_count": 2,
+      "crops": "Coconut"
+    },
+    {
+      "id": "sch_f0905289ae",
+      "name": "CDB Preservation & Packaging of Tender Coconut Water Unit Assistance",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Setting up state-of-the-art tender coconut water preservation, micro-filtration, and pouch/tetra packaging units to prevent post-harvest spoilage.",
+      "portal": "https://coconutboard.gov.in/TechnologyMission.aspx",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 25.0,
+      "subsidy_amt": 5000000.0,
+      "max_limit": 5000000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Coconut Producer Societies (CPS)",
+        "Farmer Cooperatives",
+        "Entrepreneurs"
+      ],
+      "caste": null,
+      "min_land": 0.5,
+      "max_land": 25.0,
+      "doc_count": 5,
+      "crops": "Coconut"
     },
     {
       "id": "sch_0253aab007",
@@ -754,6 +890,29 @@
       "min_land": 0.1,
       "max_land": 12.5,
       "doc_count": 1,
+      "crops": "Coconut"
+    },
+    {
+      "id": "sch_e9a02d3a91",
+      "name": "CDB Technology Mission - Virgin Coconut Oil (VCO) Processing Unit Subsidy",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "To establish modern commercial Virgin Coconut Oil (VCO) processing and centrifugal extraction units for high-value export and wellness markets.",
+      "portal": "https://coconutboard.gov.in/TechnologyMission.aspx",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 25.0,
+      "subsidy_amt": 5000000.0,
+      "max_limit": 10000000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Coconut Growers",
+        "Farmer Producer Companies (FPOs)",
+        "Agri-Entrepreneurs"
+      ],
+      "caste": null,
+      "min_land": 0.5,
+      "max_land": 50.0,
+      "doc_count": 6,
       "crops": "Coconut"
     },
     {
@@ -801,6 +960,28 @@
       "crops": "Coconut"
     },
     {
+      "id": "sch_bad5892f6e",
+      "name": "Coconut Palm Insurance Scheme (CPIS)",
+      "classification": "Insurance",
+      "level": "Central/Board",
+      "objective": "To provide insurance coverage to bearing coconut palms (4 to 60 years old) against natural perils (cyclone, storm, flood, drought, pests, lightning).",
+      "portal": "https://coconutboard.gov.in/",
+      "benefit_type": "Insurance",
+      "subsidy_pct": 75.0,
+      "subsidy_amt": 3000.0,
+      "max_limit": 150000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Owner cultivator",
+        "Tenant farmer with registered lease"
+      ],
+      "caste": null,
+      "min_land": 0.05,
+      "max_land": 25.0,
+      "doc_count": 0,
+      "crops": "Coconut"
+    },
+    {
       "id": "sch_302bdf3c76",
       "name": "Kera Suraksha Insurance Scheme for Coconut Tree Climbers & Harvesters",
       "classification": "Insurance",
@@ -843,7 +1024,7 @@
       "caste": null,
       "min_land": null,
       "max_land": null,
-      "doc_count": 77,
+      "doc_count": 65,
       "crops": "Coconut"
     }
   ],
@@ -911,8 +1092,51 @@
       "caste": null,
       "min_land": 0.0,
       "max_land": 10.0,
-      "doc_count": 10,
+      "doc_count": 0,
       "crops": "Cattle, Dairy"
+    },
+    {
+      "id": "sch_16cdb63ab5",
+      "name": "Kerala Fodder Cultivation & Chaff Cutter Subsidy Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "To promote scientific high-yielding hybrid green fodder (CO-3, CO-4, Super Napier) and reduce dairy feed costs through mechanized chaff cutters.",
+      "portal": "https://ksheerasree.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 20000.0,
+      "max_limit": 20000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Dairy Farmers with minimum 2 milch cows"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 10.0,
+      "doc_count": 10,
+      "crops": "Dairy, Fodder Grass, Maize, Napier"
+    },
+    {
+      "id": "sch_b4c7793398",
+      "name": "Modern Cattle Shed Construction & Milking Machine Subsidy Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Improving dairy hygiene, reducing mastitis infections, and mechanizing milking operations through modern bio-secure cattle sheds.",
+      "portal": "https://ksheerasree.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 50000.0,
+      "max_limit": 50000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Registered Dairy Farmers",
+        "Women Milk Pourers"
+      ],
+      "caste": null,
+      "min_land": 0.05,
+      "max_land": 5.0,
+      "doc_count": 0,
+      "crops": "Dairy Cattle"
     }
   ],
   "Forest and Wildlife Department, Kerala": [
@@ -1181,6 +1405,28 @@
   ],
   "Rubber Board India": [
     {
+      "id": "sch_e154643094",
+      "name": "Rubber Board Additional Smokehouse Establishment Scheme",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Constructing additional smokehouses in high-capacity Rubber Producers' Societies (RPS) to accelerate scientific drying of RSS sheets and eliminate mold growth.",
+      "portal": "https://rubberboard.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 150000.0,
+      "max_limit": 150000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Active RPS Units",
+        "Small Rubber Farmer Collectives"
+      ],
+      "caste": null,
+      "min_land": 0.5,
+      "max_land": 25.0,
+      "doc_count": 1,
+      "crops": "Natural Rubber"
+    },
+    {
       "id": "sch_e85d7d96ad",
       "name": "Rubber Board Group Processing Centre (GPC) & Smokehouse Infrastructure Subsidy",
       "classification": "Subsidy",
@@ -1200,7 +1446,7 @@
       "caste": null,
       "min_land": 0.5,
       "max_land": 20.0,
-      "doc_count": 5,
+      "doc_count": 2,
       "crops": "Natural Rubber"
     },
     {
@@ -1224,6 +1470,28 @@
       "min_land": 0.25,
       "max_land": 5.0,
       "doc_count": 1,
+      "crops": "Natural Rubber"
+    },
+    {
+      "id": "sch_4067c37978",
+      "name": "Rubber Board Modernization of Group Processing Centres (GPC) Subsidy",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Upgrading existing community rubber processing facilities with motorized sheeting rollers, energy-efficient biomass furnaces, and effluent treatment systems.",
+      "portal": "https://rubberboard.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 55000.0,
+      "max_limit": 55000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Rubber Producers' Societies (RPS)",
+        "Self Help Groups"
+      ],
+      "caste": null,
+      "min_land": 0.5,
+      "max_land": 20.0,
+      "doc_count": 2,
       "crops": "Natural Rubber"
     },
     {
@@ -1266,7 +1534,7 @@
       "caste": null,
       "min_land": 0.25,
       "max_land": 12.5,
-      "doc_count": 19,
+      "doc_count": 17,
       "crops": "Rubber"
     },
     {
@@ -1289,7 +1557,7 @@
       "caste": null,
       "min_land": 0.03,
       "max_land": 5.0,
-      "doc_count": 4,
+      "doc_count": 3,
       "crops": "Natural Rubber"
     },
     {
@@ -1316,6 +1584,28 @@
       "crops": "Natural Rubber"
     },
     {
+      "id": "sch_be7713a2ab",
+      "name": "Rubber Board SC/ST Sheeting Roller Financial Assistance Scheme",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Empowering individual rubber smallholders from Scheduled Caste and Scheduled Tribe communities by subsidizing manual/motorized sheeting rollers.",
+      "portal": "https://rubberboard.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 75.0,
+      "subsidy_amt": 15000.0,
+      "max_limit": 15000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "SC Smallholders",
+        "ST Smallholders"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 5.0,
+      "doc_count": 2,
+      "crops": "Natural Rubber"
+    },
+    {
       "id": "sch_770b9a6118",
       "name": "Rubber Board Spraying & Plant Protection Assistance Scheme",
       "classification": "Subsidy",
@@ -1335,6 +1625,29 @@
       "max_land": 12.5,
       "doc_count": 1,
       "crops": "Rubber"
+    },
+    {
+      "id": "sch_41be64c65b",
+      "name": "Rubber Board Tapper Training & Skill Development Scheme",
+      "classification": "Government Service",
+      "level": "Central/Board",
+      "objective": "Training rural youth, unemployed women, and tappers in scientific controlled upward and downward tapping, rainguarding, and yield stimulation.",
+      "portal": "https://rubberboard.gov.in/",
+      "benefit_type": "Government Service",
+      "subsidy_pct": null,
+      "subsidy_amt": 3000.0,
+      "max_limit": null,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Unemployed Youth",
+        "Women Tappers",
+        "Small Growers"
+      ],
+      "caste": null,
+      "min_land": 0.0,
+      "max_land": 10.0,
+      "doc_count": 1,
+      "crops": "Natural Rubber"
     },
     {
       "id": "sch_deff294ccd",
@@ -1406,7 +1719,77 @@
       "crops": "Cardamom, Coffee, Ginger, Honey, Millets, Paddy, Pepper, Tubers"
     }
   ],
+  "Soil Survey and Soil Conservation Department": [
+    {
+      "id": "sch_ae7750be7e",
+      "name": "Soil Conservation & Ridge-to-Valley Watershed Development Scheme",
+      "classification": "Government Service",
+      "level": "State",
+      "objective": "Preventing catastrophic topsoil erosion and landslide vulnerability in Kerala's sloping hill farming lands through stone contour bunds, bench terracing, and vegetative barriers.",
+      "portal": "https://www.keralasoils.gov.in/",
+      "benefit_type": "Government Service",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 25000.0,
+      "max_limit": 50000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Hill Farmers",
+        "Small and Marginal Farmers in Sloping Terrain"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 20.0,
+      "doc_count": 0,
+      "crops": "Banana, Cardamom, Coffee, Pepper, Rubber, Tapioca"
+    }
+  ],
   "Spices Board India (Kochi)": [
+    {
+      "id": "sch_eceef8b8f1",
+      "name": "Spices Board Geographical Indication (GI) & Export Quality Certification Grant",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Assisting spice cultivators in obtaining GI Authorised User Certificates for Alleppey Green Cardamom, Malabar Pepper, and Wayanad Robusta Coffee, and testing chemical residues.",
+      "portal": "https://indianspices.com/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 100000.0,
+      "max_limit": 100000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Registered Spice Growers",
+        "FPOs",
+        "Spice Exporters"
+      ],
+      "caste": null,
+      "min_land": 0.2,
+      "max_land": 25.0,
+      "doc_count": 7,
+      "crops": "Cardamom, Ginger, Pepper, Turmeric"
+    },
+    {
+      "id": "sch_c1b810bbde",
+      "name": "Spices Board Post-Harvest Quality Improvement & Curing House Subsidy",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Assistance for modern cardamom curing houses, diesel/firewood efficient burners, mechanical pepper threshers, and polytunnel solar dryers.",
+      "portal": "https://indianspices.com/schemes",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 150000.0,
+      "max_limit": 150000.0,
+      "benefit_desc": null,
+      "farmer_types": [
+        "Cardamom Growers",
+        "Pepper Growers",
+        "Spices Farmers"
+      ],
+      "caste": null,
+      "min_land": 0.5,
+      "max_land": 20.0,
+      "doc_count": 0,
+      "crops": "Cardamom, Ginger, Nutmeg, Pepper, Turmeric"
+    },
     {
       "id": "sch_5e6d8fa670",
       "name": "Spices Board Production Incentives and Pepper & Cardamom Rejuvenation",
@@ -1426,7 +1809,7 @@
       "caste": null,
       "min_land": 0.2,
       "max_land": 10.0,
-      "doc_count": 44,
+      "doc_count": 37,
       "crops": "Cardamom, Ginger, Nutmeg, Pepper, Turmeric"
     },
     {
