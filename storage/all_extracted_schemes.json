@@ -26,6 +26,28 @@
   ],
   "Agriculture Development and Farmers' Welfare Department": [
     {
+      "id": "sch_5d6fe3c9cf",
+      "name": "Agricultural Open Well Recharging & Groundwater Augmentation Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Recharging depleted agricultural open irrigation wells with filtered rooftop and surface runoff water to survive dry summer months.",
+      "portal": "https://aimsnew.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 75.0,
+      "subsidy_amt": 15000.0,
+      "max_limit": 15000.0,
+      "benefit_desc": "75% subsidy up to ₹15,000 for constructing slow-sand and charcoal filtration pits linked to open agricultural irrigation wells.",
+      "farmer_types": [
+        "Smallholders with Irrigation Wells",
+        "Marginal Farmers"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 10.0,
+      "doc_count": 0,
+      "crops": "Banana, Coconut, Nutmeg, Pepper, Vegetables"
+    },
+    {
       "id": "sch_d86c4c8fa6",
       "name": "Agro Service Centres (ASC) Modernization & Machinery Bank Grant",
       "classification": "Subsidy",
@@ -68,6 +90,29 @@
       "max_land": 50.0,
       "doc_count": 0,
       "crops": "All Crops, Banana, Coconut, Paddy, Spices, Vegetables"
+    },
+    {
+      "id": "sch_460ada7c13",
+      "name": "Agro-Tourism & Farm Tourism Homestead Accreditation Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Creating supplementary farm income by enabling tourists to experience Kerala's spices, paddy, and plantation heritage.",
+      "portal": "https://keralaagriculture.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 200000.0,
+      "max_limit": 200000.0,
+      "benefit_desc": "50% subsidy up to ₹2,00,000 for setting up farm interpretation trails, traditional tree houses, organic farm kitchens, and eco-signage on operating farms.",
+      "farmer_types": [
+        "Plantation Owners",
+        "Spices Farmers",
+        "Integrated Organic Farms"
+      ],
+      "caste": null,
+      "min_land": 1.0,
+      "max_land": 50.0,
+      "doc_count": 0,
+      "crops": "Coconut, Coffee, Fruits, Spices, Tea"
     },
     {
       "id": "sch_600f6d9675",
@@ -273,6 +318,29 @@
       "crops": "Black Gram, Cowpea (Payar), Green Gram, Groundnut, Sesame (Ellu)"
     },
     {
+      "id": "sch_d648d078d2",
+      "name": "Integrated Oilseeds & Onattukara Sesame Development Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Promoting high-antioxidant Onattukara Sesame (GI Tagged) and groundnut in summer fallow paddy lands following Mundakan harvest.",
+      "portal": "https://aimsnew.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 10000.0,
+      "max_limit": 25000.0,
+      "benefit_desc": "100% free certified foundation seeds (Thilak / Surya) plus ₹10,000 per hectare incentive for cultivating sesame and pulses as third crop in paddy fields.",
+      "farmer_types": [
+        "Padasekhara Samithis",
+        "Wetland Farmers",
+        "Smallholders"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 10.0,
+      "doc_count": 0,
+      "crops": "Groundnut, Sesame (Ellu)"
+    },
+    {
       "id": "sch_1657d19ba7",
       "name": "Jaiva Keralam (State Organic Farming Promotion & Bio-Input Kit Scheme)",
       "classification": "Subsidy",
@@ -297,6 +365,29 @@
       "crops": "Banana, Fruits, Paddy, Spices, Tubers, Vegetables"
     },
     {
+      "id": "sch_9a1b9a2a3b",
+      "name": "Jaiva Samithi Organic Farming & Third-Party NPOP Certification Support",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Assisting progressive organic farmers to obtain formal NPOP/EU organic certification through accredited bodies like INDOCERT and Aditi Organic.",
+      "portal": "https://keralaagriculture.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 75.0,
+      "subsidy_amt": 50000.0,
+      "max_limit": 50000.0,
+      "benefit_desc": "75% reimbursement of third-party inspection, soil/residue lab testing fees, and certification costs up to ₹50,000 per farmer group/individual.",
+      "farmer_types": [
+        "Organic Farmer Collectives",
+        "Individual Certified Cultivators",
+        "FPCs"
+      ],
+      "caste": null,
+      "min_land": 0.5,
+      "max_land": 25.0,
+      "doc_count": 0,
+      "crops": "Banana, Coconut, Coffee, Paddy, Spices, Vegetables"
+    },
+    {
       "id": "sch_1f4b175481",
       "name": "KERA Project - Climate Resilient Agri-Value Chain Modernization",
       "classification": "Subsidy",
@@ -317,7 +408,7 @@
       "caste": null,
       "min_land": 0.25,
       "max_land": 25.0,
-      "doc_count": 100,
+      "doc_count": 91,
       "crops": "Banana, Cardamom, Coconut, Coffee, Ginger, Nutmeg, Pepper, Vegetables"
     },
     {
@@ -477,6 +568,75 @@
       "crops": "Banana, Cardamom, Coconut, Paddy, Pepper, Rubber, Vegetables"
     },
     {
+      "id": "sch_b8edec9f3c",
+      "name": "Kerala State Farmers' Debt Relief Commission (KSFDRC) Relief Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Providing comprehensive debt relief, interest waiver, and principal debt write-off for distressed small and marginal farmers affected by natural calamities.",
+      "portal": "https://keralaagriculture.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 200000.0,
+      "max_limit": 200000.0,
+      "benefit_desc": "Comprehensive debt waiver of up to ₹2,00,000 per distressed farmer on overdue agricultural loans taken from primary cooperative agricultural credit societies.",
+      "farmer_types": [
+        "Distressed Farmers",
+        "Small and Marginal Farmers",
+        "Widows of Farmers"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 10.0,
+      "doc_count": 0,
+      "crops": "All Crops, Banana, Coffee, Paddy, Pepper, Rubber"
+    },
+    {
+      "id": "sch_fdc002112b",
+      "name": "Kerala Tuber Crops Mission (Cassava, Yam & Colocasia Cluster Support)",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Ensuring food security and raw material supply for starch industries by expanding high-yielding cassava and elephant foot yam farming.",
+      "portal": "https://aimsnew.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 60.0,
+      "subsidy_amt": 20000.0,
+      "max_limit": 40000.0,
+      "benefit_desc": "Assistance of ₹20,000 per hectare for commercial cultivation of cassava, elephant foot yam (Gajendra/Sree Padma), and colocasia in fallow uplands and homesteads.",
+      "farmer_types": [
+        "Small and Marginal Farmers",
+        "Tribal Cultivators",
+        "Kudumbashree JLGs"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 10.0,
+      "doc_count": 0,
+      "crops": "Colocasia (Chembu), Sweet Potato, Tapioca, Tubers"
+    },
+    {
+      "id": "sch_cb0917bc9c",
+      "name": "Kisan Call Centre & Karshika Mithra Agri-Advisory Tele-Services",
+      "classification": "Government Service",
+      "level": "Central/State Share",
+      "objective": "Providing immediate telephonic agricultural advisory in Malayalam regarding weather forecasts, mandi prices, pest outbreaks, and scheme eligibility.",
+      "portal": "https://dackkms.gov.in/",
+      "benefit_type": "Government Service",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 1000.0,
+      "max_limit": 1000.0,
+      "benefit_desc": "100% free toll-free advisory service (1800-180-1551 / 1800-425-1661) operating from 6:00 AM to 10:00 PM with direct escalation to Subject Matter Specialists.",
+      "farmer_types": [
+        "All Farmers in Kerala",
+        "Agri-entrepreneurs",
+        "General Public"
+      ],
+      "caste": null,
+      "min_land": 0.0,
+      "max_land": 100.0,
+      "doc_count": 0,
+      "crops": "All Crops"
+    },
+    {
       "id": "sch_ad78e5d95a",
       "name": "Madhu Gramam Apiculture & Honey Production Development Scheme",
       "classification": "Subsidy",
@@ -522,6 +682,29 @@
       "max_land": 10.0,
       "doc_count": 0,
       "crops": "Foxtail Millet, Little Millet, Millets, Pulses, Ragi (Finger Millet)"
+    },
+    {
+      "id": "sch_3ebf612a5c",
+      "name": "Mobile Plant Health Clinic & Crop Doctor Diagnostic Service",
+      "classification": "Government Service",
+      "level": "State",
+      "objective": "Delivering on-the-spot mobile microscopic disease diagnosis, pest identification, and prescription of biocontrol remedies directly in farm fields.",
+      "portal": "https://keralaagriculture.gov.in/",
+      "benefit_type": "Government Service",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 2000.0,
+      "max_limit": 2000.0,
+      "benefit_desc": "100% free doorstep diagnostic service equipped with field microscope, soil salinity/pH meters, plant pathologists, and free emergency bio-input samples.",
+      "farmer_types": [
+        "All Farmers",
+        "Small and Marginal Farmers",
+        "Padasekharams"
+      ],
+      "caste": null,
+      "min_land": 0.0,
+      "max_land": 50.0,
+      "doc_count": 0,
+      "crops": "All Crops, Banana, Cardamom, Coconut, Paddy, Pepper, Vegetables"
     },
     {
       "id": "sch_2f99c06623",
@@ -703,6 +886,52 @@
       "crops": "Beetroot, Cabbage, Carrot, Cauliflower, French Beans, Garlic, Potato"
     },
     {
+      "id": "sch_f2fe57c5e1",
+      "name": "Protected Cultivation in Rain Shelters & Naturally Ventilated Polyhouses",
+      "classification": "Subsidy",
+      "level": "Central/State Share",
+      "objective": "Shielding high-value vegetable crops from heavy southwest monsoons and pest attacks to enable uninterrupted year-round production.",
+      "portal": "https://shm.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 50000.0,
+      "max_limit": 500000.0,
+      "benefit_desc": "50% subsidy up to ₹50,000 for 100 sq.m rain shelters and 50% subsidy up to ₹5,00,000 for 1,000 sq.m naturally ventilated GI polyhouses with drip fertigation.",
+      "farmer_types": [
+        "Progressive Farmers",
+        "Women Cultivators",
+        "Youth Agri-entrepreneurs"
+      ],
+      "caste": null,
+      "min_land": 0.05,
+      "max_land": 10.0,
+      "doc_count": 0,
+      "crops": "Bitter Gourd, Capsicum, Orchids, Salad Cucumber, String Beans, Tomato"
+    },
+    {
+      "id": "sch_f0552579ab",
+      "name": "Pulse Village (Payar Gramam) Commercial Cultivation Scheme",
+      "classification": "Subsidy",
+      "level": "Central/State Share",
+      "objective": "Achieving local self-reliance in protein-rich pulses by establishing contiguous 50-hectare pulse villages across paddy fallows.",
+      "portal": "https://aimsnew.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 15000.0,
+      "max_limit": 30000.0,
+      "benefit_desc": "100% free high-yielding cowpea/gram seed supply (Anaswara, Bhagyalakshmi, Lola) plus ₹15,000 per hectare incentive covering bio-fertilizers and harvesting support.",
+      "farmer_types": [
+        "Padasekhara Samithis",
+        "Joint Liability Groups",
+        "Smallholders"
+      ],
+      "caste": null,
+      "min_land": 0.2,
+      "max_land": 10.0,
+      "doc_count": 0,
+      "crops": "Black Gram, Cowpea (Payar), Green Gram"
+    },
+    {
       "id": "sch_7c69b1b61c",
       "name": "Revamped Kerala State Crop Insurance Scheme (KISCS)",
       "classification": "Insurance",
@@ -814,7 +1043,7 @@
       "caste": null,
       "min_land": 0.5,
       "max_land": 20.0,
-      "doc_count": 1,
+      "doc_count": 0,
       "crops": "Banana, Coconut, Paddy, Rubber, Spices, Tapioca"
     },
     {
@@ -837,6 +1066,29 @@
       "max_land": 15.0,
       "doc_count": 0,
       "crops": "Banana, Cardamom, Flowers, Garlic, Paddy, Pepper, Vegetables"
+    },
+    {
+      "id": "sch_a9812cbcab",
+      "name": "State Crop Insurance Scheme (SCIS) Kerala",
+      "classification": "Insurance",
+      "level": "State",
+      "objective": "Providing immediate financial compensation to farmers for yield loss and crop damage caused by floods, droughts, landslides, lightning, and wild animal attacks for 27 notified crops.",
+      "portal": "https://aimsnew.kerala.gov.in/",
+      "benefit_type": "Insurance",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 100000.0,
+      "max_limit": 100000.0,
+      "benefit_desc": "Covers 27 crops with nominal premium of ₹3 to ₹15 per plant/holding and guaranteed compensation up to ₹1,00,000/ha for paddy, ₹300/palm for coconut, and ₹100/plant for banana.",
+      "farmer_types": [
+        "All Cultivating Farmers",
+        "Tenant Farmers",
+        "Lessee Farmers"
+      ],
+      "caste": null,
+      "min_land": 0.01,
+      "max_land": 50.0,
+      "doc_count": 9,
+      "crops": "Banana, Cardamom, Coconut, Ginger, Paddy, Pepper, Rubber, Tapioca, Turmeric, Vegetables"
     },
     {
       "id": "sch_26befb4f18",
@@ -937,6 +1189,29 @@
       "crops": "Banana, Paddy, Pulses, Tapioca, Tubers, Vegetables"
     },
     {
+      "id": "sch_a2228f462f",
+      "name": "Tissue Culture Banana Commercial Cultivation & Rejuvenation Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Promoting high-yielding, virus-indexed Tissue Culture Nendran and Grand Naine banana plantations for bumper Onam harvests.",
+      "portal": "https://aimsnew.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 30000.0,
+      "max_limit": 60000.0,
+      "benefit_desc": "50% subsidy up to ₹30,000 per hectare for procuring hardened tissue culture plantlets, micro-nutrients, bunch sleeves, and propping poles.",
+      "farmer_types": [
+        "Commercial Banana Farmers",
+        "Kudumbashree JLGs",
+        "Smallholders"
+      ],
+      "caste": null,
+      "min_land": 0.2,
+      "max_land": 10.0,
+      "doc_count": 1,
+      "crops": "Banana, Plantain"
+    },
+    {
       "id": "sch_4b1f3c1e1b",
       "name": "Vegetable Development Programme (VDP) - Commercial Cultivation Cluster Scheme",
       "classification": "Subsidy",
@@ -1011,6 +1286,29 @@
       "crops": "General"
     },
     {
+      "id": "sch_914ec7547f",
+      "name": "AHD Commercial Broiler Poultry Farming Assistance Scheme (1000 Birds)",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Augmenting local poultry meat production and generating self-employment for rural youth through deep litter broiler farms.",
+      "portal": "https://ahd.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 40.0,
+      "subsidy_amt": 100000.0,
+      "max_limit": 100000.0,
+      "benefit_desc": "40% capital subsidy up to ₹1,00,000 for constructing a 1,000-bird environmentally controlled deep litter poultry shed, automated drinkers, and feeders.",
+      "farmer_types": [
+        "Unemployed Youth",
+        "Small Farmers",
+        "Poultry Entrepreneurs"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 5.0,
+      "doc_count": 0,
+      "crops": "Livestock Poultry"
+    },
+    {
       "id": "sch_711f373f5a",
       "name": "AHD Commercial Duck Rearing & Egg Production Scheme",
       "classification": "Subsidy",
@@ -1055,6 +1353,28 @@
       "max_land": 50.0,
       "doc_count": 0,
       "crops": "Livestock All"
+    },
+    {
+      "id": "sch_3b5db1d0fe",
+      "name": "AHD Fodder Seed & Root Slip Distribution Scheme for Livestock Keepers",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Supplying high-biomass fodder seeds and vegetative planting slips to dairy farmers to lower feed expenditures.",
+      "portal": "https://ahd.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 2000.0,
+      "max_limit": 2000.0,
+      "benefit_desc": "100% free distribution of African Tall Fodder Maize seeds, Sorghum sudan seeds, and certified Co-4/Co-5 Hybrid Napier rooted cuttings to dairy farmers.",
+      "farmer_types": [
+        "Dairy Cattle Owners",
+        "Goat Keepers"
+      ],
+      "caste": null,
+      "min_land": 0.02,
+      "max_land": 5.0,
+      "doc_count": 0,
+      "crops": "Fodder Crops"
     },
     {
       "id": "sch_20bb53e396",
@@ -1147,6 +1467,29 @@
       "crops": "Eggs, Poultry"
     },
     {
+      "id": "sch_607bf41746",
+      "name": "Gosuraksha Comprehensive Dairy Cattle & Livestock Insurance Scheme",
+      "classification": "Insurance",
+      "level": "State",
+      "objective": "Protecting smallholder dairy farmers from catastrophic financial loss caused by sudden cow mortality, diseases, or permanent disability.",
+      "portal": "https://ahd.kerala.gov.in/",
+      "benefit_type": "Insurance",
+      "subsidy_pct": 75.0,
+      "subsidy_amt": 3500.0,
+      "max_limit": 70000.0,
+      "benefit_desc": "50% to 75% subsidy on insurance premium (farmer pays only 1.25% to 2.5% of animal value) with assured death compensation up to ₹70,000 per crossbred cow.",
+      "farmer_types": [
+        "Dairy Farmers",
+        "Livestock Keepers",
+        "BPL / SC / ST Farmers"
+      ],
+      "caste": null,
+      "min_land": 0.0,
+      "max_land": 25.0,
+      "doc_count": 0,
+      "crops": "Livestock Cattle"
+    },
+    {
       "id": "sch_e2268f3912",
       "name": "Kerala Commercial Dairy & Cow Rearing Assistance Scheme",
       "classification": "Subsidy",
@@ -1210,8 +1553,101 @@
       "caste": null,
       "min_land": 0.0,
       "max_land": 50.0,
-      "doc_count": 2,
+      "doc_count": 0,
       "crops": "Buffalo, Dairy Cattle, Goat, Livestock"
+    },
+    {
+      "id": "sch_5c8f382233",
+      "name": "National Animal Disease Control Programme (NADCP) FMD & Brucellosis Vaccination",
+      "classification": "Government Service",
+      "level": "Central/State Share",
+      "objective": "Eradicating Foot and Mouth Disease (FMD) and controlling Brucellosis in cattle and buffaloes through 100% bi-annual vaccination coverage.",
+      "portal": "https://ahd.kerala.gov.in/",
+      "benefit_type": "Government Service",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 1000.0,
+      "max_limit": 1000.0,
+      "benefit_desc": "100% free doorstep mass vaccination, ear tagging, and health monitoring by veterinary squads for all bovine animals twice every year.",
+      "farmer_types": [
+        "All Dairy Farmers",
+        "Livestock Keepers"
+      ],
+      "caste": null,
+      "min_land": 0.0,
+      "max_land": 50.0,
+      "doc_count": 2,
+      "crops": "Livestock Cattle"
+    }
+  ],
+  "Co-operation Department, Kerala": [
+    {
+      "id": "sch_d82d8b9e7c",
+      "name": "Cooperative Produce Pledge Loan & Rural Godown Storage Scheme",
+      "classification": "Market support and price incentive",
+      "level": "State",
+      "objective": "Preventing distress sales of harvested paddy, rubber, and spices immediately after harvest by providing safe storage and quick liquidity.",
+      "portal": "https://corass.kerala.gov.in/",
+      "benefit_type": "Market support and price incentive",
+      "subsidy_pct": 75.0,
+      "subsidy_amt": 25000.0,
+      "max_limit": 500000.0,
+      "benefit_desc": "Concessional pledge loans up to 75% of the market value of stored produce (up to ₹5,00,000) at 5% interest rate for up to 6 months in scientific cooperative godowns.",
+      "farmer_types": [
+        "Paddy Farmers",
+        "Rubber Growers",
+        "Spices Cultivators"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 25.0,
+      "doc_count": 0,
+      "crops": "Arecanut, Cardamom, Paddy, Pepper, Rubber"
+    },
+    {
+      "id": "sch_4cf6884daf",
+      "name": "KSCARDB Long-Term Agricultural Development & Farm Machinery Credit Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Facilitating capital investments in farm mechanization, open well digging, solar pumping, and land terracing through long-term concessional credit.",
+      "portal": "https://kscardb.com/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 30.0,
+      "subsidy_amt": 30000.0,
+      "max_limit": 100000.0,
+      "benefit_desc": "Concessional long-term loans up to ₹10,00,000 with 3% interest rebate for prompt repayment, repayable over 7 to 15 years with initial 2-year moratorium.",
+      "farmer_types": [
+        "Landholding Farmers",
+        "FPOs",
+        "Agri-entrepreneurs"
+      ],
+      "caste": null,
+      "min_land": 0.5,
+      "max_land": 50.0,
+      "doc_count": 0,
+      "crops": "Coconut, Coffee, Paddy, Rubber, Spices"
+    },
+    {
+      "id": "sch_6a385dfd9b",
+      "name": "Primary Agricultural Credit Society (PACS) 0% Interest Crop Loan Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Ensuring timely and affordable short-term credit to smallholder farmers for seeds, fertilizers, and seasonal labor without any interest burden.",
+      "portal": "https://corass.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 7000.0,
+      "max_limit": 7000.0,
+      "benefit_desc": "100% interest subvention providing effective 0% interest on short-term crop loans up to ₹1,00,000 disbursed through local Primary Agricultural Cooperative Banks (PACS) upon prompt repayment within 1 year.",
+      "farmer_types": [
+        "Small and Marginal Farmers",
+        "Tenant Farmers",
+        "Kudumbashree JLGs"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 10.0,
+      "doc_count": 0,
+      "crops": "Banana, Coconut, Paddy, Pepper, Tapioca, Vegetables"
     }
   ],
   "Coconut Development Board (Kochi)": [
@@ -1420,6 +1856,28 @@
       "crops": "Coconut"
     },
     {
+      "id": "sch_545b5a25e4",
+      "name": "CDB Laying Out of Demonstration Plots & Replanting of Diseased Palms",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Eliminating senile and root-wilt diseased coconut palms and rejuvenating holdings with disease-tolerant high-yielding varieties.",
+      "portal": "https://www.coconutboard.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 75.0,
+      "subsidy_amt": 40000.0,
+      "max_limit": 40000.0,
+      "benefit_desc": "Financial compensation of ₹1,000 per diseased palm cut and removed (up to ₹32,000/ha) plus ₹8,000 per hectare replanting assistance for quality hybrid seedlings.",
+      "farmer_types": [
+        "Coconut Growers in Disease Zones",
+        "Smallholders"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 10.0,
+      "doc_count": 0,
+      "crops": "Coconut"
+    },
+    {
       "id": "sch_720bd6dce1",
       "name": "CDB Market Promotion & Export Branding of Coconut Products",
       "classification": "Subsidy",
@@ -1465,6 +1923,28 @@
       "crops": "Coconut"
     },
     {
+      "id": "sch_0bd4ee0c55",
+      "name": "CDB Organic Farming & On-Farm Vermicompost Unit Scheme for Coconut",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Restoring soil organic carbon and microbial biomass in coconut gardens through on-farm recycling of coconut biomass and husk.",
+      "portal": "https://www.coconutboard.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 20000.0,
+      "max_limit": 20000.0,
+      "benefit_desc": "50% subsidy up to ₹20,000 for setting up permanent masonry vermicompost pits or silpaulin HDPE beds and establishing green manure cover crops (Calopogonium/Mucuna).",
+      "farmer_types": [
+        "Coconut Farmers",
+        "Coconut Producer Societies"
+      ],
+      "caste": null,
+      "min_land": 0.5,
+      "max_land": 10.0,
+      "doc_count": 0,
+      "crops": "Coconut"
+    },
+    {
       "id": "sch_77e1a77e79",
       "name": "CDB Packed Tender Coconut Water & Beverage Processing Subsidy",
       "classification": "Subsidy",
@@ -1503,6 +1983,28 @@
         "Coconut Producer Societies (CPS)",
         "Farmer Cooperatives",
         "Entrepreneurs"
+      ],
+      "caste": null,
+      "min_land": 0.5,
+      "max_land": 25.0,
+      "doc_count": 0,
+      "crops": "Coconut"
+    },
+    {
+      "id": "sch_93c0ed7921",
+      "name": "CDB Primary Processing & Copra Aggregation Infrastructure Grant for FPCs",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Strengthening Coconut Producer Companies (FPCs) with primary sorting, de-husking, and copra drying infrastructure.",
+      "portal": "https://www.coconutboard.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 1500000.0,
+      "max_limit": 1500000.0,
+      "benefit_desc": "50% capital grant up to ₹15,00,000 for Coconut Producer Companies for installing automated de-husking machines, digital moisture meters, and storage sheds.",
+      "farmer_types": [
+        "Coconut Producer Companies",
+        "Coconut Producer Federations"
       ],
       "caste": null,
       "min_land": 0.5,
@@ -1983,6 +2485,123 @@
       "crops": "Azolla, Co-4 Grass, Guinea Grass, Hybrid Napier, Maize Fodder"
     }
   ],
+  "Fisheries and Ports Department, Kerala": [
+    {
+      "id": "sch_998515ef20",
+      "name": "Backyard Ornamental Fish Breeding & Aquarium Unit Subsidy",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Providing profitable self-employment to rural women through backyard captive breeding of high-value indigenous and exotic ornamental fishes.",
+      "portal": "https://fisheries.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 50000.0,
+      "max_limit": 50000.0,
+      "benefit_desc": "50% financial subsidy up to ₹50,000 for setting up a 10-tank glass/masonry ornamental fish breeding unit with broodstock, aerators, and live feed cultures.",
+      "farmer_types": [
+        "Women SHGs",
+        "Unemployed Youth",
+        "Kudumbashree Members"
+      ],
+      "caste": null,
+      "min_land": 0.01,
+      "max_land": 2.0,
+      "doc_count": 0,
+      "crops": "Aquaculture Ornamental"
+    },
+    {
+      "id": "sch_50b746cd0a",
+      "name": "Biofloc & Recirculating Aquaculture System (RAS) Intensive Fish Farming Subsidy",
+      "classification": "Subsidy",
+      "level": "Central/State Share",
+      "objective": "Promoting high-density, zero-water exchange Biofloc technology and Recirculating Aquaculture Systems (RAS) on small homestead plots.",
+      "portal": "https://pmmsy.dof.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 60.0,
+      "subsidy_amt": 300000.0,
+      "max_limit": 300000.0,
+      "benefit_desc": "40% to 60% capital subsidy (up to ₹3,00,000 under PMMSY) for setting up 4-tank PVC-coated tarpaulin Biofloc units with aeration blowers, backup generator, and probiotic microbial kits.",
+      "farmer_types": [
+        "Youth Fish Farmers",
+        "Agri-entrepreneurs",
+        "Women SHGs"
+      ],
+      "caste": null,
+      "min_land": 0.02,
+      "max_land": 5.0,
+      "doc_count": 0,
+      "crops": "Aquaculture Fish (GIFT Tilapia, Pangasius)"
+    },
+    {
+      "id": "sch_e270715f94",
+      "name": "Integrated 'One Paddy One Fish' (OPOF) & Pokkali Prawn Filtration Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Sustaining unique organic rotational farming where saline-tolerant Pokkali/Kaipad rice is cultivated from June-October, followed by tiger shrimp and fish filtration from November-April.",
+      "portal": "https://fisheries.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 75.0,
+      "subsidy_amt": 25000.0,
+      "max_limit": 100000.0,
+      "benefit_desc": "₹25,000 per hectare financial assistance for sluice gate repair, outer earthen bund strengthening, quality juvenile shrimp (PL-20) stocking, and watch-and-ward.",
+      "farmer_types": [
+        "Pokkali Paddy Farmers",
+        "Wetland Shrimp Filterers",
+        "Padasekhara Samithis"
+      ],
+      "caste": null,
+      "min_land": 0.5,
+      "max_land": 50.0,
+      "doc_count": 0,
+      "crops": "Aquaculture Shrimp, Pokkali Rice"
+    },
+    {
+      "id": "sch_0f4e1c3ed2",
+      "name": "Matsya Samrudhi Inland Freshwater Aquaculture & Fish Pond Scheme",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Expanding inland fish production in Kerala's farm ponds, wetlands, and quarries using high-growth carp (Catla, Rohu, Mrigal) and Genetically Improved Farmed Tilapia (GIFT).",
+      "portal": "https://fisheries.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 60000.0,
+      "max_limit": 60000.0,
+      "benefit_desc": "40% to 50% subsidy up to ₹60,000 for constructing 0.1 ha freshwater fish ponds, procuring certified fingerlings, feed, and pond lime.",
+      "farmer_types": [
+        "Fish Farmers",
+        "Integrated Agri-Fish Farmers",
+        "Smallholders"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 10.0,
+      "doc_count": 0,
+      "crops": "Aquaculture Fish, Paddy"
+    },
+    {
+      "id": "sch_5667cacc88",
+      "name": "Open Water & Reservoir Floating Cage Fish Farming Scheme",
+      "classification": "Subsidy",
+      "level": "Central/State Share",
+      "objective": "Harnessing public reservoirs, backwaters, and estuaries for intensive commercial production of Asian Seabass (Kalanji), Pearlspot (Karimeen), and Pompano.",
+      "portal": "https://fisheries.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 60.0,
+      "subsidy_amt": 180000.0,
+      "max_limit": 180000.0,
+      "benefit_desc": "40% to 60% capital grant up to ₹1,80,000 per 4m x 4m GI floating cage unit, covering HDPE flotation barrels, predator netting, floating feed, and solar navigational markers.",
+      "farmer_types": [
+        "Fishermen SHGs",
+        "Youth Collectives",
+        "Aquaculture Cooperatives"
+      ],
+      "caste": null,
+      "min_land": 0.0,
+      "max_land": 10.0,
+      "doc_count": 0,
+      "crops": "Aquaculture Fish (Karimeen, Seabass)"
+    }
+  ],
   "Forest and Wildlife Department, Kerala": [
     {
       "id": "sch_f2a235e000",
@@ -2082,7 +2701,123 @@
       "crops": "Banana, Ginger, Paddy, Pepper, Vegetables"
     }
   ],
+  "Kerala State Horticultural Products Development Corporation (Horticorp)": [
+    {
+      "id": "sch_74491d4ebd",
+      "name": "Horticorp 'Safe to Eat' Farm Stall & Direct Franchise Subsidy",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Creating rural and semi-urban retail outlets run by farmer youth to market certified pesticide-free vegetables directly to consumers.",
+      "portal": "https://horticorp.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 100000.0,
+      "max_limit": 100000.0,
+      "benefit_desc": "50% subsidy up to ₹1,00,000 for setting up standardized Horticorp retail kiosks equipped with electronic weighing scales, refrigerated vegetable display rack, and signage.",
+      "farmer_types": [
+        "Unemployed Agri Youth",
+        "Farmer Producer Companies",
+        "Kudumbashree CDS"
+      ],
+      "caste": null,
+      "min_land": 0.0,
+      "max_land": 5.0,
+      "doc_count": 0,
+      "crops": "Banana, Fruits, Tubers, Vegetables"
+    },
+    {
+      "id": "sch_ba88bc7af1",
+      "name": "Horticorp Guaranteed Honey Procurement & Marketing Scheme (Amruth Honey)",
+      "classification": "Market support and price incentive",
+      "level": "State",
+      "objective": "Providing fair, stable, and remunerative minimum purchase prices to beekeepers for pure raw honey, eliminating exploitative middlemen.",
+      "portal": "https://horticorp.kerala.gov.in/",
+      "benefit_type": "Market support and price incentive",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 40000.0,
+      "max_limit": 150000.0,
+      "benefit_desc": "Guaranteed bulk procurement of raw unprocessed apiary honey at minimum guaranteed price of ₹250 to ₹350 per kg, with free moisture testing and hygienic food-grade barrel containers.",
+      "farmer_types": [
+        "Registered Beekeepers",
+        "Tribal Honey Gatherers",
+        "Apiary Cooperatives"
+      ],
+      "caste": null,
+      "min_land": 0.0,
+      "max_land": 20.0,
+      "doc_count": 0,
+      "crops": "Honey"
+    },
+    {
+      "id": "sch_2697fc4b84",
+      "name": "Kerala Base Price (MSP) Scheme for 16 Vegetables & Fruits",
+      "classification": "Market support and price incentive",
+      "level": "State",
+      "objective": "Guaranteeing a minimum floor price (20% above production cost) for 16 essential vegetables and fruits, shielding farmers from market price crashes.",
+      "portal": "https://aimsnew.kerala.gov.in/",
+      "benefit_type": "Market support and price incentive",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 50000.0,
+      "max_limit": 100000.0,
+      "benefit_desc": "When open wholesale market prices drop below notified base price, Horticorp directly reimburses the price differential into farmer's bank account (e.g., Banana ₹30/kg, Tapioca ₹12/kg, Tomato ₹8/kg).",
+      "farmer_types": [
+        "Registered Vegetable & Fruit Farmers",
+        "Kudumbashree JLGs",
+        "VFPCK Members"
+      ],
+      "caste": null,
+      "min_land": 0.05,
+      "max_land": 20.0,
+      "doc_count": 0,
+      "crops": "Banana, Beans, Bhindi, Bitter Gourd, Brinjal, Cabbage, Carrot, Chilli, Cowpea, Garlic, Pineapple, Potato, Snake Gourd, Tapioca, Tomato"
+    }
+  ],
   "Kudumbashree State Mission (Agriculture Wing)": [
+    {
+      "id": "sch_b3ca6c7cdc",
+      "name": "Kudumbashree Agri-Nutri Garden Campaign for Household Nutrition",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Establishing nutrition-dense home vegetable gardens in 10 lakh rural families to tackle anemia and lifestyle diseases.",
+      "portal": "https://kudumbashree.org/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 1200.0,
+      "max_limit": 1200.0,
+      "benefit_desc": "100% free distribution of a multi-tier seed kit containing 8 varieties of vegetables, drumstick saplings, organic manure pack, and biocontrol formulation.",
+      "farmer_types": [
+        "Kudumbashree NHG Members",
+        "Women Cultivators",
+        "BPL Families"
+      ],
+      "caste": null,
+      "min_land": 0.01,
+      "max_land": 1.0,
+      "doc_count": 0,
+      "crops": "Amaranthus (Cheera), Bhindi, Cowpea, Moringa, Vegetables"
+    },
+    {
+      "id": "sch_911e68de0c",
+      "name": "Kudumbashree Attappady Comprehensive Tribal Agriculture & Millet Project",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Reviving traditional indigenous millet (Ragi, Chama, Thina) and pulse cultivation in 192 tribal hamlets (Oorus) of Attappady.",
+      "portal": "https://kudumbashree.org/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 20000.0,
+      "max_limit": 40000.0,
+      "benefit_desc": "100% assistance covering traditional certified seeds, ₹20,000 per acre cultivation grant, community threshing machines, and guaranteed procurement by Kudumbashree at premium prices.",
+      "farmer_types": [
+        "Irula, Muduga and Kurumba Tribal Farmers",
+        "Attappady Hamlet Dwellers"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 10.0,
+      "doc_count": 21,
+      "crops": "Foxtail Millet (Thina), Little Millet (Chama), Pulses, Ragi (Finger Millet)"
+    },
     {
       "id": "sch_99dcec377e",
       "name": "Kudumbashree Collective Farming and JLG Agricultural Subsidy",
@@ -2102,8 +2837,98 @@
       "caste": null,
       "min_land": 0.5,
       "max_land": 20.0,
-      "doc_count": 49,
+      "doc_count": 28,
       "crops": "Banana, Paddy, Tapioca, Tuber crops, Vegetables"
+    },
+    {
+      "id": "sch_4cc4f0d956",
+      "name": "Kudumbashree Haritha Karma Sena Farm Bio-Input Enterprise Grant",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Supporting Haritha Karma Sena groups in establishing commercial decentralized vermicompost, coir pith compost, and bio-fertilizer production units.",
+      "portal": "https://kudumbashree.org/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 75.0,
+      "subsidy_amt": 250000.0,
+      "max_limit": 250000.0,
+      "benefit_desc": "75% capital grant up to ₹2,50,000 for setting up shredder machines, vermicompost sheds, packing machines, and brand marketing support.",
+      "farmer_types": [
+        "Haritha Karma Sena Groups",
+        "Kudumbashree Micro-enterprises"
+      ],
+      "caste": null,
+      "min_land": 0.05,
+      "max_land": 2.0,
+      "doc_count": 0,
+      "crops": "General"
+    },
+    {
+      "id": "sch_936c381314",
+      "name": "Kudumbashree Joint Liability Group (JLG) Collective Farming Incentive",
+      "classification": "Subsidy",
+      "level": "State",
+      "objective": "Mobilizing rural women into 4-5 member Joint Liability Groups to undertake collective food crop cultivation on leased fallow lands.",
+      "portal": "https://kudumbashree.org/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 80.0,
+      "subsidy_amt": 25000.0,
+      "max_limit": 50000.0,
+      "benefit_desc": "Annual area incentive of ₹7,500 per hectare for vegetables, ₹10,000 per hectare for banana/paddy, and revolving start-up fund of ₹25,000 per registered JLG.",
+      "farmer_types": [
+        "Kudumbashree JLGs",
+        "Women Farmers",
+        "Landless Agricultural Workers"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 10.0,
+      "doc_count": 0,
+      "crops": "Banana, Paddy, Tapioca, Tubers, Vegetables"
+    },
+    {
+      "id": "sch_331aff6e93",
+      "name": "Kudumbashree Naattuchantha Rural Farmer Market Infrastructure Grant",
+      "classification": "Market support and price incentive",
+      "level": "State",
+      "objective": "Eliminating middlemen exploitation by providing weekly village market infrastructure where JLG women farmers sell produce directly to consumers.",
+      "portal": "https://kudumbashree.org/",
+      "benefit_type": "Market support and price incentive",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 150000.0,
+      "max_limit": 150000.0,
+      "benefit_desc": "100% financial grant up to ₹1,50,000 per CDS for erecting eco-friendly bamboo/steel sales stalls, digital electronic weighing scales, and solar cold display counters.",
+      "farmer_types": [
+        "Kudumbashree CDS / ADS",
+        "JLG Farmer Collectives"
+      ],
+      "caste": null,
+      "min_land": 0.0,
+      "max_land": 5.0,
+      "doc_count": 0,
+      "crops": "Banana, Fruits, Spices, Tubers, Vegetables"
+    },
+    {
+      "id": "sch_86eedca18e",
+      "name": "Mahila Kisan Sashaktikaran Pariyojana (MKSP) Sustainable Agriculture Scheme",
+      "classification": "Subsidy",
+      "level": "Central/State Share",
+      "objective": "Empowering women smallholders by transitioning them towards non-chemical, agro-ecological sustainable farming practices and local seed conservation.",
+      "portal": "https://kudumbashree.org/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 15000.0,
+      "max_limit": 30000.0,
+      "benefit_desc": "100% grant for training, free bio-resource centre inputs (Jeevamrutham, Beejamrutham), pest traps, and ₹15,000 per cluster for establishing community seed banks.",
+      "farmer_types": [
+        "Women Farmers",
+        "Tribal Women Cultivators",
+        "MKSP Beneficiaries"
+      ],
+      "caste": null,
+      "min_land": 0.1,
+      "max_land": 5.0,
+      "doc_count": 0,
+      "crops": "Millets, Paddy, Pulses, Tubers, Vegetables"
     }
   ],
   "Labour and Skills Department (Kerala Agricultural Workers Welfare Fund)": [
@@ -2152,6 +2977,103 @@
       "max_land": 10.0,
       "doc_count": 1,
       "crops": "Banana, Fruit Plants, Paddy, Tapioca, Tubers, Vegetables"
+    }
+  ],
+  "Mission for Integrated Development of Horticulture (MIDH)": [
+    {
+      "id": "sch_a1ed6d83e4",
+      "name": "MIDH High-Tech Commercial Horticulture Nursery Grant",
+      "classification": "Subsidy",
+      "level": "Central/State Share",
+      "objective": "Ensuring widespread availability of certified true-to-type grafted fruit plants (Mango, Nutmeg, Jackfruit, Rambutan) and vegetable seedlings.",
+      "portal": "https://midh.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 1250000.0,
+      "max_limit": 1250000.0,
+      "benefit_desc": "40% to 50% capital subsidy up to ₹12,50,000 for setting up 1-hectare hi-tech nurseries with poly-houses, mist chambers, and automated fertigation systems.",
+      "farmer_types": [
+        "Registered Nursery Owners",
+        "FPOs",
+        "KAU Research Stations"
+      ],
+      "caste": null,
+      "min_land": 1.0,
+      "max_land": 10.0,
+      "doc_count": 0,
+      "crops": "Fruits, Jackfruit, Mango, Nutmeg, Vegetables"
+    },
+    {
+      "id": "sch_9c35b66e71",
+      "name": "MIDH Integrated Post-Harvest Pack House & Cold Storage Subsidy",
+      "classification": "Subsidy",
+      "level": "Central/State Share",
+      "objective": "Minimizing perishable post-harvest losses of fruits, vegetables, and flowers through on-farm sorting, grading, and precooling units.",
+      "portal": "https://shm.kerala.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 200000.0,
+      "max_limit": 1500000.0,
+      "benefit_desc": "50% project capital subsidy up to ₹2,00,000 for on-farm pack houses (9m x 6m) and 50% subsidy up to ₹15,00,000 for 10-30 MT solar-powered cold storage rooms.",
+      "farmer_types": [
+        "Individual Horticulturists",
+        "FPOs",
+        "Kudumbashree Collectives"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 25.0,
+      "doc_count": 0,
+      "crops": "Banana, Flowers, Mango, Papaya, Pineapple, Vegetables"
+    }
+  ],
+  "Modified Interest Subvention Scheme (MISS) & Kisan Credit Card (KCC)": [
+    {
+      "id": "sch_74822aacdd",
+      "name": "Kisan Credit Card (KCC) for Animal Husbandry & Fisheries Working Capital",
+      "classification": "Subsidy",
+      "level": "Central",
+      "objective": "Extending concessional 4% crop loan interest benefits to dairy farmers, goat keepers, poultry farmers, and fish cultivators for seasonal feed and operational expenses.",
+      "portal": "https://dahd.nic.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 6000.0,
+      "max_limit": 10000.0,
+      "benefit_desc": "Collateral-free working capital loan up to ₹1,60,000 (and up to ₹2,00,000 with tie-up) at 4% interest rate with 3% prompt repayment incentive, covering feed, medicine, and fingerlings.",
+      "farmer_types": [
+        "Dairy Farmers",
+        "Goat Rearing Farmers",
+        "Fish Cultivators",
+        "Poultry Farmers"
+      ],
+      "caste": null,
+      "min_land": 0.0,
+      "max_land": 20.0,
+      "doc_count": 0,
+      "crops": "Aquaculture Fish, Livestock Dairy"
+    },
+    {
+      "id": "sch_794775d52e",
+      "name": "Modified Interest Subvention Scheme (MISS) & Kisan Credit Card (KCC)",
+      "classification": "Subsidy",
+      "level": "Central",
+      "objective": "Providing short-term crop loans up to ₹3,00,000 at highly subsidized effective interest rate of 4% per annum.",
+      "portal": "https://agriwelfare.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 9000.0,
+      "max_limit": 15000.0,
+      "benefit_desc": "Standard interest rate of 9% is reduced by 2% upfront Central subvention and an additional 3% prompt repayment incentive (PRI), bringing the effective loan interest down to just 4% per annum for up to ₹3,00,000.",
+      "farmer_types": [
+        "All Cultivating Farmers",
+        "Tenant Cultivators",
+        "Sharecroppers"
+      ],
+      "caste": null,
+      "min_land": 0.05,
+      "max_land": 50.0,
+      "doc_count": 0,
+      "crops": "All Crops, Banana, Dairy, Paddy, Rubber, Spices"
     }
   ],
   "NABARD Kerala Regional Office": [
@@ -2317,6 +3239,54 @@
       "crops": "Banana, Coconut, Fodder Grass, Paddy, Spices, Vegetables"
     }
   ],
+  "Rashtriya Krishi Vikas Yojana (RKVY-RAFTAAR)": [
+    {
+      "id": "sch_b9023928d0",
+      "name": "RKVY Agripreneurship Orientation & Idea-Stage Grant (SAAMARTH)",
+      "classification": "Subsidy",
+      "level": "Central",
+      "objective": "Nurturing innovative agri-tech concepts of rural youth, student innovators, and progressive farmers into viable commercial startups.",
+      "portal": "https://rkvy.da.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 500000.0,
+      "max_limit": 500000.0,
+      "benefit_desc": "100% grant-in-aid of ₹5,00,000 for idea-stage innovators along with 2-month paid residential incubation mentorship at KAU R-ABI Mannuthy.",
+      "farmer_types": [
+        "Agri Innovators",
+        "Farmer Startups",
+        "Rural Youth"
+      ],
+      "caste": null,
+      "min_land": 0.0,
+      "max_land": 10.0,
+      "doc_count": 0,
+      "crops": "All Crops"
+    },
+    {
+      "id": "sch_f155307262",
+      "name": "RKVY-RAFTAAR Farm Infrastructure & FPO Incubation Project Grant",
+      "classification": "Subsidy",
+      "level": "Central/State Share",
+      "objective": "Strengthening Farmer Producer Organizations (FPOs) and primary cooperatives through comprehensive post-harvest infrastructure, processing mills, and custom hiring fleets.",
+      "portal": "https://rkvy.da.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 75.0,
+      "subsidy_amt": 2500000.0,
+      "max_limit": 2500000.0,
+      "benefit_desc": "50% to 75% capital grant up to ₹25,00,000 per project for setting up community grain dryers, spice grinding mills, cold rooms, and sorting lines.",
+      "farmer_types": [
+        "Farmer Producer Companies (FPCs)",
+        "PACS",
+        "Padasekhara Samithis"
+      ],
+      "caste": null,
+      "min_land": 0.5,
+      "max_land": 50.0,
+      "doc_count": 0,
+      "crops": "All Crops, Banana, Coconut, Paddy, Spices"
+    }
+  ],
   "Revenue and Disaster Management Department (KSDMA)": [
     {
       "id": "sch_f24c7f4f55",
@@ -2364,6 +3334,29 @@
       "max_land": 25.0,
       "doc_count": 1,
       "crops": "Natural Rubber"
+    },
+    {
+      "id": "sch_341dd5b55e",
+      "name": "Rubber Board Certified Polybag Budded Planting Material Concession",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Ensuring smallholders plant only disease-free, high-yielding authentic RRII polybag budded plants to prevent plantation failure.",
+      "portal": "https://www.rubberboard.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 40.0,
+      "subsidy_amt": 9000.0,
+      "max_limit": 18000.0,
+      "benefit_desc": "Price concession of ₹20 per plant (up to 450 plants per hectare) for purchasing certified two-whorled polybag budded plants from Rubber Board Central Nurries.",
+      "farmer_types": [
+        "Small Rubber Farmers",
+        "New Planters",
+        "SC/ST Growers"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 5.0,
+      "doc_count": 0,
+      "crops": "Rubber"
     },
     {
       "id": "sch_e85d7d96ad",
@@ -2519,7 +3512,29 @@
       "caste": null,
       "min_land": 0.25,
       "max_land": 12.5,
-      "doc_count": 14,
+      "doc_count": 13,
+      "crops": "Rubber"
+    },
+    {
+      "id": "sch_1d8009af8e",
+      "name": "Rubber Board Replanting Subsidy Scheme (RRSS) for Smallholdings",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Aiding smallholders to uproot unproductive, old, or disease-afflicted rubber trees and replant with certified high-yielding RRII-105/400 series clones.",
+      "portal": "https://www.rubberboard.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 25000.0,
+      "max_limit": 50000.0,
+      "benefit_desc": "Cash subsidy of ₹25,000 per hectare released in 6 annual installments, covering land clearance, polybag budded plant cost, fertilizer application, and maintenance.",
+      "farmer_types": [
+        "Small Rubber Growers (holding up to 2.0 ha)",
+        "Individual Planters"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 5.0,
+      "doc_count": 0,
       "crops": "Rubber"
     },
     {
@@ -2742,6 +3757,28 @@
       "max_land": 5.0,
       "doc_count": 0,
       "crops": "Rubber"
+    },
+    {
+      "id": "sch_f39dd2f981",
+      "name": "Rubber Rain Guarding Subsidy Scheme for Continuous Monsoon Tapping",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Preventing wash-out of latex and enabling uninterrupted rubber tapping during heavy monsoon months (June-September).",
+      "portal": "https://www.rubberboard.gov.in/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 5000.0,
+      "max_limit": 10000.0,
+      "benefit_desc": "50% subsidy up to ₹5,000 per hectare for purchasing specialized transparent UV-resistant LDPE rain-guard polythene aprons, adhesive compounds, and staple wires.",
+      "farmer_types": [
+        "Small Rubber Growers",
+        "Rubber Tapper Cooperatives"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 10.0,
+      "doc_count": 1,
+      "crops": "Rubber"
     }
   ],
   "Scheduled Castes Development Department, Kerala": [
@@ -2790,6 +3827,30 @@
       "max_land": 10.0,
       "doc_count": 1,
       "crops": "Cardamom, Coffee, Ginger, Honey, Millets, Paddy, Pepper, Tubers"
+    }
+  ],
+  "Soil Health Card Scheme": [
+    {
+      "id": "sch_fc9c261d55",
+      "name": "National Soil Health Card & Targeted Fertilizer Prescription Scheme",
+      "classification": "Government Service",
+      "level": "Central/State Share",
+      "objective": "Providing every farmer with an authentic crop-specific soil fertility assessment report covering 12 vital chemical parameters to curb excessive fertilizer expenses.",
+      "portal": "https://soilhealth.dac.gov.in/",
+      "benefit_type": "Government Service",
+      "subsidy_pct": 100.0,
+      "subsidy_amt": 1500.0,
+      "max_limit": 1500.0,
+      "benefit_desc": "100% free lab testing of 12 parameters (N, P, K, S, Zn, Fe, Cu, Mn, Bo, pH, EC, OC) issued as a laminated 3-year Soil Health Card with precise dose recommendations.",
+      "farmer_types": [
+        "All Landholding Cultivators",
+        "Tenant Farmers"
+      ],
+      "caste": null,
+      "min_land": 0.01,
+      "max_land": 50.0,
+      "doc_count": 0,
+      "crops": "All Crops, Banana, Coconut, Paddy, Pepper, Rubber, Vegetables"
     }
   ],
   "Soil Survey and Soil Conservation Department": [
@@ -2931,6 +3992,28 @@
       "crops": "Cardamom, Ginger, Pepper, Turmeric"
     },
     {
+      "id": "sch_9e1a9eb1ca",
+      "name": "Spices Board HDPE Vermicompost Bed Grant for Organic Spice Estates",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Equipping spice growers with portable, UV-stabilized HDPE vermicompost beds to recycle cardamom and pepper plantation waste into rich organic humus.",
+      "portal": "https://indianspices.com/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 8000.0,
+      "max_limit": 16000.0,
+      "benefit_desc": "50% subsidy up to ₹8,000 per unit for purchasing IS-standard HDPE woven vermiculture beds (12ft x 4ft x 2ft) with aeration net windows and earthworm culture.",
+      "farmer_types": [
+        "Registered Spice Growers",
+        "Organic Spice Farmers"
+      ],
+      "caste": null,
+      "min_land": 0.2,
+      "max_land": 10.0,
+      "doc_count": 0,
+      "crops": "Cardamom, Ginger, Pepper, Turmeric"
+    },
+    {
       "id": "sch_96589cfc7b",
       "name": "Spices Board Organic Cultivation & Group Certification Scheme",
       "classification": "Subsidy",
@@ -2977,6 +4060,28 @@
       "crops": "Cardamom, Ginger, Pepper, Turmeric"
     },
     {
+      "id": "sch_59d651d43f",
+      "name": "Spices Board Pepper Support Staking & Trellis Grant Scheme",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Providing high-tensile wire trellises or non-living concrete/bamboo support poles for rapid trailing of bush and vine black pepper in homesteads.",
+      "portal": "https://indianspices.com/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 25000.0,
+      "max_limit": 25000.0,
+      "benefit_desc": "50% financial subsidy up to ₹25,000 per hectare for erecting treated bamboo support posts or concrete trellises for high-density pepper cultivation.",
+      "farmer_types": [
+        "Pepper Cultivators",
+        "Small and Marginal Farmers"
+      ],
+      "caste": null,
+      "min_land": 0.2,
+      "max_land": 5.0,
+      "doc_count": 0,
+      "crops": "Pepper"
+    },
+    {
       "id": "sch_c1b810bbde",
       "name": "Spices Board Post-Harvest Quality Improvement & Curing House Subsidy",
       "classification": "Subsidy",
@@ -3018,7 +4123,7 @@
       "caste": null,
       "min_land": 0.2,
       "max_land": 10.0,
-      "doc_count": 37,
+      "doc_count": 31,
       "crops": "Cardamom, Ginger, Nutmeg, Pepper, Turmeric"
     },
     {
@@ -3042,6 +4147,28 @@
       "max_land": 10.0,
       "doc_count": 0,
       "crops": "Cardamom, Ginger, Pepper"
+    },
+    {
+      "id": "sch_87c6903856",
+      "name": "Spices Board Small Cardamom Replanting Assistance Scheme",
+      "classification": "Subsidy",
+      "level": "Central/Board",
+      "objective": "Helping cardamom planters in Idukki and Wayanad uproot senile, drought-hit, or thrips-infested plantations and replant with high-yielding clonal varieties (Njallani).",
+      "portal": "https://indianspices.com/",
+      "benefit_type": "Subsidy",
+      "subsidy_pct": 50.0,
+      "subsidy_amt": 50000.0,
+      "max_limit": 100000.0,
+      "benefit_desc": "Replanting subsidy of ₹50,000 per hectare for small growers holding up to 4 hectares, disbursed in 2 installments for land preparation, pitting, and clonal suckers.",
+      "farmer_types": [
+        "Smallholder Cardamom Planters (up to 4.0 ha)",
+        "Tribal Spice Farmers"
+      ],
+      "caste": null,
+      "min_land": 0.25,
+      "max_land": 10.0,
+      "doc_count": 6,
+      "crops": "Cardamom"
     }
   ],
   "Vegetable and Fruit Promotion Council Keralam (VFPCK)": [
